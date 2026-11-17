@@ -1,0 +1,49 @@
+@startuml
+title Casos de uso — Menú y progreso
+
+top to bottom direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 16
+skinparam ArrowFontSize 13
+skinparam ArrowColor #333333
+skinparam ActorBorderColor #222222
+skinparam ActorFontColor #111111
+skinparam UsecaseBorderColor #333333
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor #111111
+skinparam RectangleBorderColor #222222
+skinparam RectangleFontColor #111111
+skinparam NoteBackgroundColor white
+skinparam NoteBorderColor #333333
+skinparam linetype ortho
+skinparam nodesep 56
+skinparam ranksep 72
+
+actor Jugador
+
+rectangle " " {
+  usecase "Iniciar nueva partida" as UC_New
+  usecase "Continuar partida\nguardada" as UC_Continue
+  usecase "Guardar progreso\nautomáticamente" as UC_Save
+  usecase "Reiniciar sala\ntras morir" as UC_Retry
+  usecase "Regresar al\nmenú principal" as UC_Menu
+
+  note right of UC_Retry
+    Ejecución automática al finalizar
+    la derrota de C.O.R.E.-9.
+  end note
+
+  UC_New -[hidden]right-> UC_Continue
+  UC_Continue -[hidden]right-> UC_Menu
+  UC_New -[hidden]down-> UC_Save
+  UC_Save -[hidden]right-> UC_Retry
+}
+
+Jugador -- UC_New
+Jugador -- UC_Continue
+Jugador -- UC_Menu
+
+UC_New .> UC_Save : <<include>>
+@enduml

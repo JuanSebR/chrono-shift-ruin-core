@@ -1,0 +1,133 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/sprites movimiento/running.png" id="1_sif3y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_laber"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(0, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ko7sx"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(0, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai85y"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(0, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjpht"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(181, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vabey"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(362, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dc7q"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(543, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_314m5"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(724, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgujg"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(905, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c14ex"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(1086, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_paelp"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(1267, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llpc2"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(1448, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pr0hb"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(1629, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07lf3"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(1810, 0, 181, 724)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7m14"]
+atlas = ExtResource("1_sif3y")
+region = Rect2(1991, 0, 181, 724)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_laber")
+}],
+"loop": 0,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ko7sx")
+}],
+"loop": 0,
+"name": &"jump",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai85y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjpht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vabey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8dc7q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_314m5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgujg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c14ex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_paelp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_llpc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pr0hb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07lf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7m14")
+}],
+"loop": 1,
+"name": &"running",
+"speed": 15.0
+}]

@@ -1,0 +1,61 @@
+# Godot 4: cachés e importaciones regenerables
+.godot/
+.android/
+/android/
+*.import
+
+# Salidas de compilación y distribución (se publican mediante Releases)
+/build/
+*.exe
+*.zip
+
+# Evidencias, diagnósticos y respaldos locales
+/artifacts/
+/backups/
+**/backups/
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Configuración local de agentes y herramientas
+/.codex/
+/.agents/
+/opencode.json
+
+# Perfiles y accesos de práctica locales
+/Probar-Sala5.cmd
+/tools/dev/
+progress_v1.json
+progress_v1.json.*
+*.save
+
+# Secretos y configuración privada
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*credentials*
+*secrets*
+
+# Fuentes multimedia grandes no utilizadas por el juego en ejecución
+/assets/Sonidos/Cancion/videoplayback.m4a
+/assets/Sonidos/Cancion/derived/global_background_loop.ogg
+/assets/Sonidos/Efectos de sonido/Login_Sound.wav
+/assets/Sonidos/Efectos de sonido/derived/menu/login_ambient.ogg
+
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+
+# Cachés de herramientas Python
+__pycache__/
+*.py[cod]
+.pytest_cache/

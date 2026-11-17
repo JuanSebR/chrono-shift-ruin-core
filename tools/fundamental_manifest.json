@@ -1,0 +1,542 @@
+{
+  "running": {
+    "fps": 15,
+    "loop": true,
+    "frames": [
+      {
+        "source": "running v2.png",
+        "source_frame": 1,
+        "region": [
+          26,
+          263,
+          149,
+          224
+        ],
+        "destination": [
+          16,
+          282
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 2,
+        "region": [
+          222,
+          267,
+          130,
+          219
+        ],
+        "destination": [
+          26,
+          286
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 3,
+        "region": [
+          401,
+          270,
+          129,
+          216
+        ],
+        "destination": [
+          26,
+          289
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 4,
+        "region": [
+          557,
+          268,
+          153,
+          216
+        ],
+        "destination": [
+          14,
+          287
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 5,
+        "region": [
+          740,
+          262,
+          151,
+          215
+        ],
+        "destination": [
+          15,
+          281
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 6,
+        "region": [
+          916,
+          257,
+          158,
+          201
+        ],
+        "destination": [
+          12,
+          276
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 7,
+        "region": [
+          1093,
+          252,
+          160,
+          197
+        ],
+        "destination": [
+          10,
+          271
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 8,
+        "region": [
+          1295,
+          263,
+          135,
+          221
+        ],
+        "destination": [
+          23,
+          282
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 9,
+        "region": [
+          1472,
+          267,
+          135,
+          217
+        ],
+        "destination": [
+          23,
+          286
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 10,
+        "region": [
+          1657,
+          267,
+          128,
+          219
+        ],
+        "destination": [
+          26,
+          286
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 11,
+        "region": [
+          1826,
+          265,
+          137,
+          221
+        ],
+        "destination": [
+          22,
+          284
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "running v2.png",
+        "source_frame": 12,
+        "region": [
+          2008,
+          265,
+          134,
+          221
+        ],
+        "destination": [
+          24,
+          284
+        ],
+        "duration": 1.0
+      }
+    ]
+  },
+  "idle": {
+    "fps": 10,
+    "loop": true,
+    "frames": [
+      {
+        "source": "repose v3.png",
+        "source_frame": 1,
+        "region": [
+          42,
+          264,
+          130,
+          226
+        ],
+        "destination": [
+          26,
+          279
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 2,
+        "region": [
+          222,
+          264,
+          127,
+          226
+        ],
+        "destination": [
+          27,
+          279
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 3,
+        "region": [
+          400,
+          261,
+          128,
+          229
+        ],
+        "destination": [
+          26,
+          276
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 4,
+        "region": [
+          578,
+          257,
+          131,
+          233
+        ],
+        "destination": [
+          25,
+          272
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 5,
+        "region": [
+          757,
+          249,
+          135,
+          241
+        ],
+        "destination": [
+          23,
+          264
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 6,
+        "region": [
+          937,
+          243,
+          133,
+          247
+        ],
+        "destination": [
+          24,
+          258
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 7,
+        "region": [
+          1118,
+          245,
+          134,
+          245
+        ],
+        "destination": [
+          24,
+          260
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 8,
+        "region": [
+          1297,
+          247,
+          131,
+          243
+        ],
+        "destination": [
+          25,
+          262
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 9,
+        "region": [
+          1476,
+          254,
+          130,
+          236
+        ],
+        "destination": [
+          26,
+          269
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 10,
+        "region": [
+          1654,
+          260,
+          131,
+          230
+        ],
+        "destination": [
+          25,
+          275
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 11,
+        "region": [
+          1833,
+          264,
+          128,
+          226
+        ],
+        "destination": [
+          26,
+          279
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "repose v3.png",
+        "source_frame": 12,
+        "region": [
+          2011,
+          264,
+          128,
+          226
+        ],
+        "destination": [
+          26,
+          279
+        ],
+        "duration": 1.0
+      }
+    ]
+  },
+  "jump": {
+    "fps": 15,
+    "loop": false,
+    "frames": [
+      {
+        "source": "jummping.png",
+        "source_frame": 4,
+        "region": [
+          700,
+          276,
+          149,
+          227
+        ],
+        "destination": [
+          16,
+          276
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "jummping.png",
+        "source_frame": 5,
+        "region": [
+          921,
+          259,
+          144,
+          213
+        ],
+        "destination": [
+          18,
+          289
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "jummping.png",
+        "source_frame": 6,
+        "region": [
+          1132,
+          247,
+          142,
+          203
+        ],
+        "destination": [
+          20,
+          297
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "jummping.png",
+        "source_frame": 7,
+        "region": [
+          1329,
+          258,
+          152,
+          220
+        ],
+        "destination": [
+          14,
+          283
+        ],
+        "duration": 1.0
+      }
+    ]
+  },
+  "fall": {
+    "fps": 12,
+    "loop": false,
+    "frames": [
+      {
+        "source": "falling.png",
+        "source_frame": 1,
+        "region": [
+          51,
+          257,
+          121,
+          234
+        ],
+        "destination": [
+          30,
+          271
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "falling.png",
+        "source_frame": 2,
+        "region": [
+          235,
+          258,
+          118,
+          233
+        ],
+        "destination": [
+          32,
+          272
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "falling.png",
+        "source_frame": 3,
+        "region": [
+          410,
+          290,
+          122,
+          204
+        ],
+        "destination": [
+          30,
+          301
+        ],
+        "duration": 1.0
+      }
+    ]
+  },
+  "land": {
+    "fps": 20,
+    "loop": false,
+    "frames": [
+      {
+        "source": "jummping.png",
+        "source_frame": 9,
+        "region": [
+          1753,
+          313,
+          137,
+          191
+        ],
+        "destination": [
+          22,
+          314
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "jummping.png",
+        "source_frame": 2,
+        "region": [
+          294,
+          297,
+          127,
+          206
+        ],
+        "destination": [
+          27,
+          299
+        ],
+        "duration": 1.0
+      },
+      {
+        "source": "jummping.png",
+        "source_frame": 1,
+        "region": [
+          88,
+          277,
+          129,
+          226
+        ],
+        "destination": [
+          26,
+          279
+        ],
+        "duration": 1.0
+      }
+    ]
+  }
+}

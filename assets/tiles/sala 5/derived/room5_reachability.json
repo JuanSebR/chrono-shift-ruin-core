@@ -1,0 +1,157 @@
+{
+  "gravity_asc": 1470.0,
+  "gravity_desc": 2205.0,
+  "jump_velocity": -514.3928459844674,
+  "height_continuous": 90,
+  "apex_seconds": 0.3499271061118826,
+  "equal_height_air_seconds": 0.6356413918261683,
+  "max_run_reach": 152.5539340382804,
+  "from_rest_reach": 134.5539340382804,
+  "collider": [
+    24,
+    40
+  ],
+  "not_a_runtime_test": true,
+  "original_edges": [
+    {
+      "from": "P4",
+      "to": "T1",
+      "rise": 263,
+      "horizontal_overlap": 413,
+      "conclusion": "vertical rise >90; no direct ascent"
+    },
+    {
+      "from": "T1",
+      "to": "P1",
+      "rise": 276,
+      "horizontal_overlap": 413,
+      "conclusion": "vertical rise >90; no direct ascent"
+    },
+    {
+      "from": "P5",
+      "to": "T2",
+      "rise": 263,
+      "horizontal_overlap": 414,
+      "conclusion": "vertical rise >90; no direct ascent"
+    },
+    {
+      "from": "T2",
+      "to": "P2",
+      "rise": 276,
+      "horizontal_overlap": 414,
+      "conclusion": "vertical rise >90; no direct ascent"
+    },
+    {
+      "from": "P6",
+      "to": "T3",
+      "rise": 263,
+      "horizontal_overlap": 414,
+      "conclusion": "vertical rise >90; no direct ascent"
+    },
+    {
+      "from": "T3",
+      "to": "P3",
+      "rise": 276,
+      "horizontal_overlap": 414,
+      "conclusion": "vertical rise >90; no direct ascent"
+    }
+  ],
+  "candidate_edges": [
+    {
+      "from": "S0",
+      "to": "S1",
+      "gap": 40,
+      "rise": 60,
+      "launch_interval": [
+        224,
+        248
+      ],
+      "landing_interval": [
+        312,
+        348
+      ],
+      "theoretical_rest_distance": 105.57223821128329,
+      "status": "candidate only; actual Player and reverse route must be tested later"
+    },
+    {
+      "from": "S1",
+      "to": "P1",
+      "gap": 0,
+      "rise": 60,
+      "launch_interval": [
+        464,
+        488
+      ],
+      "landing_interval": [
+        392,
+        428
+      ],
+      "theoretical_rest_distance": 105.57223821128329,
+      "status": "candidate only; actual Player and reverse route must be tested later"
+    },
+    {
+      "from": "P1",
+      "to": "T1",
+      "gap": 60,
+      "rise": 0,
+      "launch_interval": [
+        544,
+        568
+      ],
+      "landing_interval": [
+        652,
+        688
+      ],
+      "theoretical_rest_distance": 134.5539340382804,
+      "status": "candidate only; actual Player and reverse route must be tested later"
+    },
+    {
+      "from": "S1",
+      "to": "S2",
+      "gap": 100,
+      "rise": 0,
+      "launch_interval": [
+        464,
+        488
+      ],
+      "landing_interval": [
+        612,
+        648
+      ],
+      "theoretical_rest_distance": 134.5539340382804,
+      "status": "candidate only; actual Player and reverse route must be tested later"
+    },
+    {
+      "from": "T1",
+      "to": "S2",
+      "gap": 0,
+      "rise": -60,
+      "launch_interval": [
+        804,
+        828
+      ],
+      "landing_interval": [
+        612,
+        648
+      ],
+      "theoretical_rest_distance": 154.50783909444993,
+      "status": "candidate only; actual Player and reverse route must be tested later"
+    },
+    {
+      "from": "S2",
+      "to": "S3",
+      "gap": 40,
+      "rise": -60,
+      "launch_interval": [
+        764,
+        788
+      ],
+      "landing_interval": [
+        852,
+        888
+      ],
+      "theoretical_rest_distance": 154.50783909444993,
+      "status": "candidate only; actual Player and reverse route must be tested later"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "diseño general s2.2.png": {
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "transparent_pixels": 0,
+    "partial_alpha_pixels": 0,
+    "useful_bounds": [
+      0,
+      0,
+      2172,
+      724
+    ],
+    "sha256": "8277b363b4274cf317ba6f94c08a762b511556b2500d1d72a6a6dda485e90784"
+  },
+  "fondo s2.2.png": {
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "transparent_pixels": 0,
+    "partial_alpha_pixels": 0,
+    "useful_bounds": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "sha256": "3f89c3764339892d2d9a0802fe10e428be03ef16f309f0e789e9e690bca49e17"
+  },
+  "midOverlay s2.2.png": {
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "transparent_pixels": 1278844,
+    "partial_alpha_pixels": 292576,
+    "useful_bounds": [
+      17,
+      19,
+      1655,
+      898
+    ],
+    "sha256": "7ba57d415a90a90eadf61b15417bd22cb4f67ae4199632a36f09c6b396867dc2"
+  },
+  "plataforma 2 s2.2.png": {
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "transparent_pixels": 1355573,
+    "partial_alpha_pixels": 217444,
+    "useful_bounds": [
+      0,
+      112,
+      1495,
+      900
+    ],
+    "sha256": "dfa869305e9ef855283d0d4a5e72a69a4dc48eb038bcf0fb1c10d824f76be23a"
+  },
+  "plataforma 3 s2.2.png": {
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "transparent_pixels": 1393788,
+    "partial_alpha_pixels": 178395,
+    "useful_bounds": [
+      333,
+      23,
+      1794,
+      681
+    ],
+    "sha256": "d19bf707ad0c4d43ae7bbf68e6123c87532fc56caa02eb8199af1c47de51f936"
+  },
+  "plataformas s2.2.png": {
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "transparent_pixels": 1061782,
+    "partial_alpha_pixels": 510026,
+    "useful_bounds": [
+      0,
+      4,
+      1672,
+      941
+    ],
+    "sha256": "6b41af9ce488bcc05a711061821d2c54017f4539ca9fdbfc41e2a3f001e07442"
+  },
+  "validation": {
+    "originals_unchanged": true,
+    "platform_crop": [
+      726,
+      204,
+      1431,
+      533
+    ],
+    "corrected_montage_created": false,
+    "reason": "Exact source-to-reference background transform and occluded pixels not established. Diagnostic previews retain and mark original platform."
+  }
+}

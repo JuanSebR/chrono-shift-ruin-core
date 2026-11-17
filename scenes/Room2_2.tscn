@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://bp3lfoem5t5vt"]
+
+[ext_resource type="Texture2D" uid="uid://dxyps6au4bma5" path="res://assets/tiles/sala 2.2/derived/room22_without_static_platform.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://cyureu6s8uj6x" path="res://assets/tiles/sala 2.2/derived/cyan_platform_B_150px.png" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/CombatHUD.tscn" id="4"]
+[ext_resource type="Script" uid="uid://djphrn0h3wk16" path="res://scripts/rooms/room2_2.gd" id="5"]
+[ext_resource type="Script" uid="uid://5elwfqmuve2l" path="res://scripts/rooms/cyan_transport.gd" id="6"]
+[ext_resource type="Script" uid="uid://c00gi20rq0ohn" path="res://LevelTransition.gd" id="7"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/Enemy1.tscn" id="8"]
+
+[sub_resource type="RectangleShape2D" id="deck"]
+size = Vector2(146, 12)
+
+[sub_resource type="RectangleShape2D" id="exit"]
+size = Vector2(20, 60)
+
+[sub_resource type="RectangleShape2D" id="room3_exit"]
+size = Vector2(36, 80)
+
+[node name="Room2_2" type="Node2D" unique_id=1645677046]
+script = ExtResource("5")
+
+[node name="BackgroundVisual" type="Sprite2D" parent="." unique_id=1653615851]
+editor_description = "Montaje derivado sin la plataforma cian fija."
+z_index = -20
+texture_filter = 1
+texture = ExtResource("1")
+centered = false
+
+[node name="WorldCollision" type="Node2D" parent="." unique_id=753199958]
+
+[node name="EntryLedge" type="StaticBody2D" parent="WorldCollision" unique_id=1001007361]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/EntryLedge" unique_id=850725803]
+polygon = PackedVector2Array(55, 402, 190, 402, 190, 426, 55, 426)
+
+[node name="MainFloor" type="StaticBody2D" parent="WorldCollision" unique_id=859307075]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/MainFloor" unique_id=663314340]
+polygon = PackedVector2Array(452, 500, 2130, 500, 2130, 550, 452, 550)
+
+[node name="LeftBoundary" type="StaticBody2D" parent="WorldCollision" unique_id=1348172817]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/LeftBoundary" unique_id=330871316]
+polygon = PackedVector2Array(40, 0, 55, 0, 55, 724, 40, 724)
+
+[node name="RightBoundary" type="StaticBody2D" parent="WorldCollision" unique_id=18821732]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/RightBoundary" unique_id=2063814722]
+polygon = PackedVector2Array(2125, 0, 2172, 0, 2172, 724, 2125, 724)
+
+[node name="MovingPlatforms" type="Node2D" parent="." unique_id=1546996894]
+
+[node name="CyanTransportPlatform" type="AnimatableBody2D" parent="MovingPlatforms" unique_id=1575681294]
+position = Vector2(260, 440)
+collision_mask = 0
+script = ExtResource("6")
+
+[node name="Sprite2D" type="Sprite2D" parent="MovingPlatforms/CyanTransportPlatform" unique_id=94897851]
+texture_filter = 1
+position = Vector2(-75, 0)
+texture = ExtResource("2")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MovingPlatforms/CyanTransportPlatform" unique_id=1943755493]
+position = Vector2(0, 6)
+shape = SubResource("deck")
+
+[node name="EntryMarkers" type="Node2D" parent="." unique_id=1541154806]
+
+[node name="FromRoom2" type="Marker2D" parent="EntryMarkers" unique_id=738473971]
+position = Vector2(125, 382)
+
+[node name="FromRoom3" type="Marker2D" parent="EntryMarkers" unique_id=1733280434]
+position = Vector2(1760, 480)
+
+[node name="FutureRoom3Door" type="Marker2D" parent="EntryMarkers" unique_id=1363803533]
+position = Vector2(1960, 480)
+
+[node name="RoomTransitions" type="Node2D" parent="." unique_id=1367803617]
+
+[node name="ToRoom2" type="Area2D" parent="RoomTransitions" unique_id=869153815]
+position = Vector2(70, 372)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("7")
+next_scene_path = "res://scenes/Room2.tscn"
+arrival_marker = &"EntryMarkers/FromRoom2_2"
+
+[node name="Shape" type="CollisionShape2D" parent="RoomTransitions/ToRoom2" unique_id=612055576]
+shape = SubResource("exit")
+
+[node name="ToRoom3" type="Area2D" parent="RoomTransitions" unique_id=873377731]
+position = Vector2(1960, 470)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("7")
+next_scene_path = "res://scenes/Room3.tscn"
+arrival_marker = &"EntryMarkers/FromRoom2_2"
+
+[node name="Shape" type="CollisionShape2D" parent="RoomTransitions/ToRoom3"]
+shape = SubResource("room3_exit")
+
+[node name="Player" parent="." unique_id=1859563852 instance=ExtResource("3")]
+position = Vector2(125, 382)
+
+[node name="Camera2D" parent="Player" index="2"]
+limit_right = 2172
+limit_bottom = 724
+
+[node name="FootstepAudio" parent="Player" index="4"]
+bus = &"SFX"
+
+[node name="LandingAudio" parent="Player" index="5"]
+bus = &"SFX"
+
+[node name="SwordAudio" parent="Player" index="6"]
+bus = &"SFX"
+
+[node name="Guard22_A" parent="." unique_id=1810311467 instance=ExtResource("8")]
+position = Vector2(800, 480)
+patrol_left = 720.0
+patrol_right = 880.0
+
+[node name="Guard22_B" parent="." unique_id=1680586474 instance=ExtResource("8")]
+position = Vector2(1250, 480)
+patrol_left = 1170.0
+patrol_right = 1330.0
+
+[node name="Guard22_C" parent="." unique_id=1954538113 instance=ExtResource("8")]
+position = Vector2(1670, 480)
+patrol_left = 1590.0
+patrol_right = 1750.0
+
+[node name="CombatHUD" parent="." unique_id=920187863 instance=ExtResource("4")]
+
+[editable path="Player"]

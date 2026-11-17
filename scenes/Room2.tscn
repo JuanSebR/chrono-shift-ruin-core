@@ -1,0 +1,276 @@
+[gd_scene format=3 uid="uid://b8l5pg1up30kx"]
+
+[ext_resource type="Texture2D" uid="uid://cxspo4uwgj037" path="res://assets/tiles/sala 2.1/diseño general s2.1.png" id="1_reference"]
+[ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="2_player"]
+[ext_resource type="Script" uid="uid://r3jki6vm53af" path="res://scripts/rooms/room2.gd" id="3_room2"]
+[ext_resource type="Script" uid="uid://c00gi20rq0ohn" path="res://LevelTransition.gd" id="4_transition"]
+[ext_resource type="PackedScene" path="res://scenes/ui/CombatHUD.tscn" id="5_combat_hud"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/Enemy1.tscn" id="6_enemy"]
+[ext_resource type="Texture2D" uid="uid://dx14fnieghwnj" path="res://assets/tiles/sala 2.1/derived/room2_stair_p2.png" id="7_stair_p2"]
+[ext_resource type="Texture2D" uid="uid://dp8wum2hbx5gi" path="res://assets/tiles/sala 2.1/derived/room2_stair_p3.png" id="8_stair_p3"]
+[ext_resource type="Texture2D" uid="uid://difd053g5tpr8" path="res://assets/tiles/sala 2.1/derived/room2_stair_p4.png" id="9_stair_p4"]
+[ext_resource type="Texture2D" uid="uid://bqivremv5fsqm" path="res://assets/tiles/sala 2.1/derived/room2_stair_p5.png" id="10_stair_p5"]
+[ext_resource type="Texture2D" uid="uid://dlh7k6r2o4mff" path="res://assets/tiles/sala 2.1/derived/room2_stair_p7.png" id="12_stair_p7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stair_p2"]
+size = Vector2(208, 26.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stair_p3"]
+size = Vector2(87, 26.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stair_p5"]
+size = Vector2(87, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stair_p7"]
+size = Vector2(105, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stair_p8"]
+size = Vector2(70.5, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_to_room15"]
+size = Vector2(40, 130)
+
+[node name="Room2" type="Node2D" unique_id=75417607]
+editor_description = "Núcleo de Enlace — Etapa B: composición visual 1672 × 941, escala 1:1."
+script = ExtResource("3_room2")
+
+[node name="BackgroundVisual" type="Node2D" parent="." unique_id=1339951120]
+z_index = -20
+
+[node name="ReferenceComposition" type="Sprite2D" parent="BackgroundVisual" unique_id=492416095]
+texture_filter = 1
+position = Vector2(0, 8)
+texture = ExtResource("1_reference")
+centered = false
+
+[node name="PresentRouteVisuals" type="Node2D" parent="." unique_id=1701558370]
+z_index = -10
+
+[node name="StairPlatforms" type="Node2D" parent="PresentRouteVisuals" unique_id=1495173676]
+
+[node name="P2" type="Sprite2D" parent="PresentRouteVisuals/StairPlatforms" unique_id=472384294]
+visible = false
+texture_filter = 1
+position = Vector2(1053.0001, 571)
+scale = Vector2(2.725, 1)
+texture = ExtResource("7_stair_p2")
+centered = false
+
+[node name="P3" type="Sprite2D" parent="PresentRouteVisuals/StairPlatforms" unique_id=1714768110]
+texture_filter = 1
+position = Vector2(1390, 153)
+texture = ExtResource("8_stair_p3")
+centered = false
+
+[node name="P4" type="Sprite2D" parent="PresentRouteVisuals/StairPlatforms" unique_id=992935863]
+texture_filter = 1
+position = Vector2(1128, 504)
+texture = ExtResource("9_stair_p4")
+centered = false
+
+[node name="P5" type="Sprite2D" parent="PresentRouteVisuals/StairPlatforms" unique_id=1089356184]
+texture_filter = 1
+position = Vector2(966, 383)
+texture = ExtResource("10_stair_p5")
+centered = false
+
+[node name="P7" type="Sprite2D" parent="PresentRouteVisuals/StairPlatforms" unique_id=1572473601]
+texture_filter = 1
+position = Vector2(1100, 260)
+texture = ExtResource("12_stair_p7")
+centered = false
+
+[node name="WorldCollision" type="Node2D" parent="." unique_id=1245843111]
+
+[node name="LowerFloor" type="Node2D" parent="WorldCollision" unique_id=1304276753]
+
+[node name="Left" type="StaticBody2D" parent="WorldCollision/LowerFloor" unique_id=513735345]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/LowerFloor/Left" unique_id=265382870]
+polygon = PackedVector2Array(0, 580, 355, 580, 355, 610, 0, 610)
+
+[node name="Right" type="StaticBody2D" parent="WorldCollision/LowerFloor" unique_id=1286054868]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/LowerFloor/Right" unique_id=684543588]
+polygon = PackedVector2Array(705, 580, 975, 580, 1100, 680, 1160, 715, 1215, 680, 1450, 680, 1550, 600, 1550, 735, 705, 735)
+
+[node name="CentralBridge" type="Node2D" parent="WorldCollision" unique_id=661961350]
+
+[node name="Deck" type="StaticBody2D" parent="WorldCollision/CentralBridge" unique_id=1652186494]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/CentralBridge/Deck" unique_id=325931348]
+polygon = PackedVector2Array(355, 580, 379, 598, 398, 600, 527, 601, 645, 600, 705, 580, 705, 615, 355, 615)
+
+[node name="SteppedPlatforms" type="Node2D" parent="WorldCollision" unique_id=1997862696]
+
+[node name="Step1" type="StaticBody2D" parent="WorldCollision/SteppedPlatforms" unique_id=940735835]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/SteppedPlatforms/Step1" unique_id=1293490263]
+position = Vector2(-6.1035156e-05, 0)
+polygon = PackedVector2Array(855, 440, 1090, 440, 1090, 460, 855, 460)
+
+[node name="Step2" type="StaticBody2D" parent="WorldCollision/SteppedPlatforms" unique_id=854182168]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/SteppedPlatforms/Step2" unique_id=1788644352]
+polygon = PackedVector2Array(1045, 325, 1310, 325, 1310, 345, 1045, 345)
+
+[node name="Step3" type="StaticBody2D" parent="WorldCollision/SteppedPlatforms" unique_id=1980769575]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/SteppedPlatforms/Step3" unique_id=345532073]
+polygon = PackedVector2Array(1218, 213, 1369, 211, 1433, 208, 1478, 209, 1473, 233, 1222, 236)
+
+[node name="Upper" type="StaticBody2D" parent="WorldCollision/SteppedPlatforms" unique_id=1716920356]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/SteppedPlatforms/Upper" unique_id=831599044]
+position = Vector2(170.5763, 0)
+scale = Vector2(0.8993056, 1)
+polygon = PackedVector2Array(1460, 98, 1640, 98, 1640, 118, 1460, 118)
+
+[node name="LeftLedge" type="StaticBody2D" parent="WorldCollision/SteppedPlatforms" unique_id=278156629]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/SteppedPlatforms/LeftLedge" unique_id=1660497012]
+polygon = PackedVector2Array(0, 378, 64, 378, 64, 395, 0, 395)
+
+[node name="RightShelf" type="StaticBody2D" parent="WorldCollision/SteppedPlatforms" unique_id=488941671]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/SteppedPlatforms/RightShelf" unique_id=623670229]
+polygon = PackedVector2Array(1258, 454, 1630, 454, 1630, 477, 1258, 477)
+
+[node name="Walls" type="Node2D" parent="WorldCollision" unique_id=941621773]
+
+[node name="LeftWall" type="StaticBody2D" parent="WorldCollision/Walls" unique_id=402070782]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/Walls/LeftWall" unique_id=689861679]
+polygon = PackedVector2Array(30, 130, 65, 130, 65, 378, 30, 378)
+
+[node name="LowerLeftBoundary" type="StaticBody2D" parent="WorldCollision/Walls" unique_id=2057435041]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/Walls/LowerLeftBoundary" unique_id=1322934115]
+polygon = PackedVector2Array(0, 395, 8, 395, 8, 610, 0, 610)
+
+[node name="LowerRightBoundary" type="StaticBody2D" parent="WorldCollision/Walls" unique_id=1857206005]
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="WorldCollision/Walls/LowerRightBoundary" unique_id=1627735315]
+polygon = PackedVector2Array(1550, 477, 1570, 477, 1570, 735, 1550, 735)
+
+[node name="FutureElevatedRoutes" type="Node2D" parent="WorldCollision" unique_id=1376928093]
+
+[node name="PresentStairRoute" type="Node2D" parent="WorldCollision/FutureElevatedRoutes" unique_id=1050769243]
+
+[node name="P2" type="StaticBody2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute" unique_id=1710698703]
+position = Vector2(1170, 540)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute/P2" unique_id=1267803032]
+position = Vector2(-3, 54.75)
+shape = SubResource("RectangleShape2D_stair_p2")
+one_way_collision = true
+
+[node name="P3" type="StaticBody2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute" unique_id=611790499]
+position = Vector2(1100, 480)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute/P3" unique_id=15733463]
+position = Vector2(70, 40)
+shape = SubResource("RectangleShape2D_stair_p3")
+one_way_collision = true
+
+[node name="P5" type="StaticBody2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute" unique_id=1470535184]
+position = Vector2(900, 325)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute/P5" unique_id=679899286]
+position = Vector2(98, 58)
+shape = SubResource("RectangleShape2D_stair_p5")
+one_way_collision = true
+
+[node name="P7" type="StaticBody2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute" unique_id=217538183]
+position = Vector2(1085, 205)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute/P7" unique_id=1956118234]
+position = Vector2(66.5, 58)
+shape = SubResource("RectangleShape2D_stair_p7")
+one_way_collision = true
+
+[node name="P8" type="StaticBody2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute" unique_id=1379345253]
+position = Vector2(1100, 145)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/FutureElevatedRoutes/PresentStairRoute/P8" unique_id=461823579]
+position = Vector2(347.25, 19.5)
+shape = SubResource("RectangleShape2D_stair_p8")
+one_way_collision = true
+
+[node name="ForegroundVisual" type="Node2D" parent="." unique_id=1133711721]
+z_index = 10
+
+[node name="EntryMarkers" type="Node2D" parent="." unique_id=956737439]
+
+[node name="Spawn" type="Marker2D" parent="EntryMarkers" unique_id=1796303536]
+position = Vector2(100, 560)
+
+[node name="FromRoom1_5" type="Marker2D" parent="EntryMarkers" unique_id=1104864812]
+position = Vector2(100, 560)
+
+[node name="FutureRoom3Access" type="Marker2D" parent="EntryMarkers" unique_id=1519788032]
+position = Vector2(1615, 78)
+
+[node name="FromRoom2_2" type="Marker2D" parent="EntryMarkers" unique_id=694940686]
+position = Vector2(1550, 78)
+
+[node name="RoomTransitions" type="Node2D" parent="." unique_id=2042334761]
+
+[node name="ToRoom2_2" type="Area2D" parent="RoomTransitions" unique_id=1739456513]
+position = Vector2(1630, 78)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("4_transition")
+next_scene_path = "res://scenes/Room2_2.tscn"
+arrival_marker = &"EntryMarkers/FromRoom2"
+
+[node name="Shape" type="CollisionPolygon2D" parent="RoomTransitions/ToRoom2_2" unique_id=1192503729]
+polygon = PackedVector2Array(-8, -30, 8, -30, 8, 20, -8, 20)
+
+[node name="ToRoom1_5" type="Area2D" parent="RoomTransitions" unique_id=1589222879]
+position = Vector2(28, 550)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("4_transition")
+arrival_marker = &"EntryFromRoom2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RoomTransitions/ToRoom1_5" unique_id=823904707]
+shape = SubResource("RectangleShape2D_to_room15")
+
+[node name="Player" parent="." unique_id=1164797100 instance=ExtResource("2_player")]
+position = Vector2(100, 560)
+
+[node name="Camera2D" parent="Player" index="2"]
+limit_right = 1672
+limit_bottom = 941
+
+[node name="GuardA" parent="." unique_id=1498153959 instance=ExtResource("6_enemy")]
+position = Vector2(859, 560)
+patrol_left = 735.0
+patrol_right = 945.0
+
+[node name="GuardB" parent="." unique_id=310209993 instance=ExtResource("6_enemy")]
+position = Vector2(1235, 305)
+patrol_left = 1180.0
+patrol_right = 1270.0
+
+[node name="CombatHUD" parent="." unique_id=1290873453 instance=ExtResource("5_combat_hud")]
+
+[editable path="Player"]

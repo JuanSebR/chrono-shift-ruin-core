@@ -1,0 +1,70 @@
+@startuml
+title Acceso a la sala final y regreso al menú
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 15
+skinparam sequence {
+  ArrowColor #333333
+  ActorBorderColor #222222
+  LifeLineBorderColor #555555
+  LifeLineBackgroundColor white
+  ParticipantBorderColor #222222
+  ParticipantBackgroundColor white
+  ParticipantFontColor #111111
+  GroupBorderColor #555555
+  GroupBackgroundColor white
+  GroupFontColor #111111
+}
+
+actor Jugador
+participant "Player" as Player
+control "Room5" as Room5
+control "GameProgress\n<<autoload>>" as Progress
+boundary "FinalAccessDoor\n(área invisible)" as Door
+control "SceneTree" as Tree
+boundary "FinalRoom" as Final
+boundary "MainMenu" as Menu
+
+Room5 -> Progress: record_core_guardian_victory()
+activate Progress
+Progress -> Progress: core_guardian_defeated = true\nsave_progress()
+Progress --> Room5: true / false
+deactivate Progress
+Room5 -> Room5: victory_persisted = true si guardó\nBOSS_DEFEATED y salida sin bloqueo
+Room5 -> Door: is_unlocked()
+activate Door
+Door -> Progress: leer core_guardian_defeated
+Progress --> Door: estado persistido
+
+alt acceso todavía bloqueado
+  Door --> Jugador: no mostrar interacción
+else victoria persistida y animación finalizada
+  Door --> Jugador: mostrar "E · SALIR" al solaparse
+  Jugador -> Door: pulsar E
+  Door -> Door: try_enter() y ocultar prompt
+  Door -> Progress: clear_room_arrival()
+  Door -> Tree: change_scene_to_file(FinalRoom.tscn)
+  deactivate Door
+  activate Tree
+  Tree -> Final: instanciar escena
+  activate Final
+  Final -> Progress: validar core_guardian_defeated
+  Progress --> Final: true
+  Final -> Final: presentar fondos, C.O.R.E.-9 y agradecimientos\n1,25–6,5 s; habilitar botón Regresar
+  Final --> Jugador: cierre del videojuego
+  Jugador -> Final: seleccionar Regresar al menú
+  Final -> Tree: change_scene_to_file(MainMenu.tscn)
+  Tree -> Menu: instanciar menú principal
+  activate Menu
+  Menu --> Jugador: Nueva Partida / Continuar / Opciones / Salir
+  deactivate Menu
+  deactivate Final
+  deactivate Tree
+end
+
+opt acceso directo inválido a FinalRoom
+  Final -> Tree: change_scene_to_file(Room5.tscn)
+end
+@enduml

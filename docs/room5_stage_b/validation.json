@@ -1,0 +1,93 @@
+{
+  "scope": "Stage B conceptual only; no gameplay implementation",
+  "before_manifest_external": "C:\\Users\\juans\\.codex\\visualizations\\2026\\11\\16\\01a1e570-850c-7a83-8965-7511f3d3ed84\\phase_b_work\\before_hashes.json",
+  "protected_existing_files": 1026,
+  "changed_existing_files": [],
+  "original_png_count": 28,
+  "originals_still_match_stage_A": true,
+  "stage_A_atlases_and_manifests_unchanged": true,
+  "conceptual_diagrams_unchanged": true,
+  "pngs": [
+    {
+      "path": "docs/room5_stage_b/01_world_scale.png",
+      "size": [
+        2120,
+        704
+      ],
+      "mode": "RGBA",
+      "sha256": "c993c9f25f88b9d1c08807ea72b113f0ee5ce9143b14a13c415fd6915daa9672"
+    },
+    {
+      "path": "docs/room5_stage_b/02_past_palette.png",
+      "size": [
+        2120,
+        704
+      ],
+      "mode": "RGBA",
+      "sha256": "6c0d246b44342d33f7be51cfdce31fcf5dca48423855a02fcd9bead2818fef03"
+    },
+    {
+      "path": "docs/room5_stage_b/03_geometry.png",
+      "size": [
+        2632,
+        852
+      ],
+      "mode": "RGBA",
+      "sha256": "8c74faff79e44d63c5c4921eabca62d98fe39147d2d98270e82114945f14e17d"
+    },
+    {
+      "path": "docs/room5_stage_b/04_guardian_scale.png",
+      "size": [
+        2120,
+        704
+      ],
+      "mode": "RGBA",
+      "sha256": "3b40606c2d4c6a2b37e3d3895796abb48715d30a778791c3b5dfebc5da9110a4"
+    },
+    {
+      "path": "docs/room5_stage_b/05_camera.png",
+      "size": [
+        2632,
+        2508
+      ],
+      "mode": "RGBA",
+      "sha256": "23fb0ef8f68feeb59e35411c9e7c7d30c6828ea6ec2ae97cdbe23dcfd1f9ff5a"
+    },
+    {
+      "path": "docs/room5_stage_b/06_sword_reach.png",
+      "size": [
+        1896,
+        782
+      ],
+      "mode": "RGBA",
+      "sha256": "23831b6740f1a0ee88bf1bdbeeb7bbcd62b73e3f780978f470105fedff60e080"
+    }
+  ],
+  "new_files": [
+    "docs/ROOM5_STAGE_B.md",
+    "docs/room5_stage_b/01_world_scale.png",
+    "docs/room5_stage_b/02_past_palette.png",
+    "docs/room5_stage_b/03_geometry.png",
+    "docs/room5_stage_b/04_guardian_scale.png",
+    "docs/room5_stage_b/05_camera.png",
+    "docs/room5_stage_b/06_sword_reach.png",
+    "docs/room5_stage_b/room5_stage_b_analysis.json",
+    "docs/room5_stage_b/validation.json"
+  ],
+  "missing_markdown_links": [],
+  "analytic_links_checked": 34,
+  "camera_cases": 6,
+  "physical_tests_run": false,
+  "Godot_validate_run": false,
+  "reason": "No GDScript modified; planning request only",
+  "room5_scene_exists": false,
+  "editor_final": {
+    "project_path": "c:/users/juans/chrono-shift-ruin-core",
+    "scene": "Room4",
+    "scene_id": "1654334234622",
+    "scene_revision": "10063650:0:1",
+    "playing": false,
+    "unsaved": false,
+    "protocol_version": 4
+  }
+}

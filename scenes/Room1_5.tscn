@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://bkkhwqv5u1asw"]
+
+[ext_resource type="Script" uid="uid://byjpbjq1dpetb" path="res://Room1_5.gd" id="1_room"]
+[ext_resource type="Texture2D" uid="uid://8trefbi2uwwy" path="res://assets/tiles/sala 1.5/fondo_1.5.png" id="2_background"]
+[ext_resource type="Texture2D" uid="uid://7y85ewbqnbb3" path="res://assets/tiles/sala 1.5/complemento_plataformas.png" id="3_interior"]
+[ext_resource type="Texture2D" uid="uid://cdf78g3fiw3hc" path="res://assets/tiles/sala 1.5/plataformas_sala_1.5.png" id="4_platforms"]
+[ext_resource type="Texture2D" uid="uid://400i4nx10n3h" path="res://assets/tiles/sala 1.5/puente_translucido-removebg-preview.png" id="5_bridge"]
+[ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="6_player_scene"]
+[ext_resource type="Shader" uid="uid://dsoy5f7o5a5mr" path="res://shaders/luma_key.gdshader" id="7_luma_key"]
+[ext_resource type="PackedScene" path="res://scenes/items/CronalSwordPickup.tscn" id="8_sword"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/Enemy1.tscn" id="9_enemy"]
+[ext_resource type="Script" uid="uid://c00gi20rq0ohn" path="res://LevelTransition.gd" id="10_transition"]
+[ext_resource type="PackedScene" path="res://scenes/ui/TutorialHints.tscn" id="11_tutorial_hints"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="12_dialogue"]
+[ext_resource type="Script" path="res://scripts/ui/narrative_events.gd" id="13_narrative"]
+[ext_resource type="PackedScene" path="res://scenes/ui/CombatHUD.tscn" id="14_combat_hud"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_interior"]
+shader = ExtResource("7_luma_key")
+shader_parameter/threshold = 0.036
+shader_parameter/softness = 0.002
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_platforms"]
+shader = ExtResource("7_luma_key")
+shader_parameter/threshold = 0.032
+shader_parameter/softness = 0.002
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fall"]
+size = Vector2(1224, 120)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_return"]
+size = Vector2(24, 1200)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_to_room2"]
+size = Vector2(34, 160)
+
+[node name="Room1_5" type="Node2D" unique_id=1235850512]
+script = ExtResource("1_room")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1909649398]
+layer = -1
+
+[node name="SkyLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=707744975]
+motion_scale = Vector2(0.15, 0.08)
+
+[node name="Background" type="Sprite2D" parent="ParallaxBackground/SkyLayer" unique_id=2015264177]
+texture = ExtResource("2_background")
+centered = false
+
+[node name="WorldArt" type="Node2D" parent="." unique_id=305474930]
+
+[node name="Interior" type="Sprite2D" parent="WorldArt" unique_id=697092038]
+z_index = -2
+material = SubResource("ShaderMaterial_interior")
+texture = ExtResource("3_interior")
+centered = false
+
+[node name="Platforms" type="Sprite2D" parent="WorldArt" unique_id=1591543285]
+z_index = -1
+material = SubResource("ShaderMaterial_platforms")
+texture = ExtResource("4_platforms")
+centered = false
+
+[node name="HologramBridge" type="Sprite2D" parent="." unique_id=1660892403]
+position = Vector2(137.1715, 308.79956)
+rotation = -0.015705515
+scale = Vector2(0.42544222, 0.42544222)
+texture = ExtResource("5_bridge")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=1371708435]
+
+[node name="LeftFloor" type="CollisionPolygon2D" parent="Terrain" unique_id=294137487]
+polygon = PackedVector2Array(0, 374, 185, 374, 185, 572, 0, 572)
+
+[node name="RightFloor" type="CollisionPolygon2D" parent="Terrain" unique_id=1087449964]
+polygon = PackedVector2Array(376, 371, 1024, 374, 1024, 572, 376, 572)
+
+[node name="LeftLedge" type="CollisionPolygon2D" parent="Terrain" unique_id=1667006180]
+polygon = PackedVector2Array(0, 216, 221, 216, 220, 252, 0, 258)
+
+[node name="RightBeam" type="CollisionPolygon2D" parent="Terrain" unique_id=2124641514]
+polygon = PackedVector2Array(326, 220, 511, 220, 511, 258, 328, 252)
+
+[node name="BridgeDeck" type="CollisionPolygon2D" parent="Terrain" unique_id=1663574380]
+polygon = PackedVector2Array(185, 374, 376, 371, 376, 387, 185, 390)
+
+[node name="Player" parent="." unique_id=529806090 instance=ExtResource("6_player_scene")]
+position = Vector2(60, 352)
+
+[node name="FallReset" type="Area2D" parent="." unique_id=1530569497]
+position = Vector2(512, 700)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallReset" unique_id=1910772301]
+shape = SubResource("RectangleShape2D_fall")
+
+[node name="CronalSwordPickup" parent="." unique_id=1012556038 instance=ExtResource("8_sword")]
+position = Vector2(120, 348)
+
+[node name="Enemy1" parent="." unique_id=1326475713 instance=ExtResource("9_enemy")]
+position = Vector2(700, 352.5)
+
+[node name="CombatHUD" parent="." unique_id=858469311 instance=ExtResource("14_combat_hud")]
+
+[node name="EntryFromTutorial" type="Marker2D" parent="." unique_id=1865559781]
+position = Vector2(60, 352)
+
+[node name="EntryFromRoom2" type="Marker2D" parent="."]
+position = Vector2(950, 351)
+
+[node name="LevelTransition_Room2" type="Area2D" parent="."]
+position = Vector2(1007, 351)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("10_transition")
+next_scene_path = "res://scenes/Room2.tscn"
+arrival_marker = &"EntryMarkers/FromRoom1_5"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelTransition_Room2"]
+shape = SubResource("RectangleShape2D_to_room2")
+
+[node name="LevelTransition_Tutorial" type="Area2D" parent="." unique_id=2135752148]
+position = Vector2(0, 350)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("10_transition")
+next_scene_path = "res://scenes/Room1_Tutorial.tscn"
+arrival_marker = &"EntryFromRoom1_5"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelTransition_Tutorial" unique_id=1655121395]
+shape = SubResource("RectangleShape2D_return")
+
+[node name="TutorialHints" parent="." instance=ExtResource("11_tutorial_hints")]
+
+[node name="DialoguePanel" parent="." instance=ExtResource("12_dialogue")]
+
+[node name="NarrativeEvents" type="Node" parent="."]
+script = ExtResource("13_narrative")
+room_kind = "room15"

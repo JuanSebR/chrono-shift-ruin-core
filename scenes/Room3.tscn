@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://54wmwvtgs4tt"]
+
+[ext_resource type="Script" uid="uid://cfcsmu7lvdyix" path="res://scripts/rooms/room3.gd" id="1_room"]
+[ext_resource type="Texture2D" uid="uid://bg7g7v71rrgnv" path="res://assets/tiles/sala 3/fondo s3.png" id="2_background"]
+[ext_resource type="Texture2D" uid="uid://c3q6mhs086xg8" path="res://assets/tiles/sala 3/entorno s3.png" id="3_architecture"]
+[ext_resource type="Texture2D" path="res://assets/tiles/sala 3/derived/platforms_without_pedestal_corrected.png" id="4_platforms"]
+[ext_resource type="Texture2D" path="res://assets/tiles/sala 3/derived/pedestal_85_edge_corrected.png" id="5_pedestal"]
+[ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="6_player"]
+[ext_resource type="PackedScene" path="res://scenes/ui/CombatHUD.tscn" id="7_hud"]
+[ext_resource type="Script" uid="uid://c00gi20rq0ohn" path="res://LevelTransition.gd" id="8_transition"]
+
+[sub_resource type="RectangleShape2D" id="floor"]
+size = Vector2(1623, 42)
+
+[sub_resource type="RectangleShape2D" id="left_wall"]
+size = Vector2(24, 940)
+
+[sub_resource type="RectangleShape2D" id="right_wall"]
+size = Vector2(24, 940)
+
+[sub_resource type="RectangleShape2D" id="pedestal"]
+size = Vector2(112, 80)
+
+[sub_resource type="RectangleShape2D" id="interaction"]
+size = Vector2(180, 130)
+
+[sub_resource type="RectangleShape2D" id="return"]
+size = Vector2(32, 110)
+
+[node name="Room3" type="Node2D" unique_id=287735629]
+script = ExtResource("1_room")
+
+[node name="BackgroundVisual" type="Node2D" parent="." unique_id=2138938616]
+z_index = -20
+
+[node name="FarBackground" type="Sprite2D" parent="BackgroundVisual" unique_id=642575456]
+texture_filter = 1
+texture = ExtResource("2_background")
+centered = false
+
+[node name="Architecture" type="Sprite2D" parent="BackgroundVisual" unique_id=1251968212]
+texture_filter = 1
+texture = ExtResource("3_architecture")
+centered = false
+
+[node name="Platforms" type="Sprite2D" parent="BackgroundVisual" unique_id=939021805]
+texture_filter = 1
+texture = ExtResource("4_platforms")
+centered = false
+
+[node name="WorldCollision" type="Node2D" parent="." unique_id=374935921]
+
+[node name="MainFloor" type="StaticBody2D" parent="WorldCollision" unique_id=1945820791]
+position = Vector2(836, 740)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/MainFloor" unique_id=2130458231]
+position = Vector2(-1.5, 4)
+shape = SubResource("floor")
+
+[node name="LeftBoundary" type="StaticBody2D" parent="WorldCollision" unique_id=1490124490]
+position = Vector2(14, 470)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/LeftBoundary" unique_id=1604989044]
+shape = SubResource("left_wall")
+
+[node name="RightBoundary" type="StaticBody2D" parent="WorldCollision" unique_id=905654292]
+position = Vector2(1658, 470)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/RightBoundary" unique_id=1732014182]
+shape = SubResource("right_wall")
+
+[node name="TemporalModule" type="Node2D" parent="." unique_id=557556079]
+
+[node name="Pedestal" type="Sprite2D" parent="TemporalModule" unique_id=560268189]
+texture_filter = 1
+position = Vector2(1206, 634)
+texture = ExtResource("5_pedestal")
+centered = false
+
+[node name="PedestalBody" type="StaticBody2D" parent="TemporalModule" unique_id=1059940828]
+position = Vector2(1269, 675)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="TemporalModule/PedestalBody" unique_id=574961732]
+shape = SubResource("pedestal")
+
+[node name="ModuleVisual" type="AnimatedSprite2D" parent="TemporalModule" unique_id=947697085]
+texture_filter = 1
+position = Vector2(1269, 558)
+
+[node name="InteractionArea" type="Area2D" parent="TemporalModule" unique_id=247933153]
+position = Vector2(1160, 650)
+collision_layer = 0
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape2D" parent="TemporalModule/InteractionArea" unique_id=3952014]
+shape = SubResource("interaction")
+
+[node name="InteractionPrompt" type="Label" parent="TemporalModule" unique_id=1049724517]
+offset_left = 1050.0
+offset_top = 560.0
+offset_right = 1270.0
+offset_bottom = 594.0
+theme_override_colors/font_color = Color(0.4, 0.95, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "E — RECOGER MÓDULO"
+horizontal_alignment = 1
+
+[node name="EntryMarkers" type="Node2D" parent="." unique_id=848072018]
+
+[node name="FromRoom2_2" type="Marker2D" parent="EntryMarkers" unique_id=1573865870]
+position = Vector2(130, 695)
+
+[node name="FromRoom4" type="Marker2D" parent="EntryMarkers"]
+position = Vector2(1570, 703)
+
+[node name="RoomTransitions" type="Node2D" parent="." unique_id=1230592620]
+
+[node name="ToRoom2_2" type="Area2D" parent="RoomTransitions" unique_id=341019857]
+position = Vector2(60, 660)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("8_transition")
+next_scene_path = "res://scenes/Room2_2.tscn"
+arrival_marker = &"EntryMarkers/FromRoom3"
+
+[node name="Shape" type="CollisionShape2D" parent="RoomTransitions/ToRoom2_2" unique_id=4467981]
+shape = SubResource("return")
+
+[node name="ToRoom4" type="Area2D" parent="RoomTransitions"]
+position = Vector2(1630, 680)
+collision_layer = 0
+collision_mask = 2
+monitoring = false
+script = ExtResource("8_transition")
+next_scene_path = "res://scenes/Room4.tscn"
+arrival_marker = &"EntryMarkers/FromRoom3"
+
+[node name="Shape" type="CollisionShape2D" parent="RoomTransitions/ToRoom4"]
+shape = SubResource("return")
+
+[node name="Player" parent="." unique_id=838806500 instance=ExtResource("6_player")]
+position = Vector2(130, 695)
+
+[node name="Camera2D" parent="Player" index="2"]
+limit_right = 1672
+limit_bottom = 941
+
+[node name="CombatHUD" parent="." unique_id=226354762 instance=ExtResource("7_hud")]
+
+[editable path="Player"]

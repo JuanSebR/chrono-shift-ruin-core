@@ -1,0 +1,1054 @@
+{
+  "starting GuardianNucleo.png": [
+    {
+      "candidate_rect": [
+        0,
+        0,
+        272,
+        724
+      ],
+      "alpha128_bbox_local": [
+        16,
+        289,
+        266,
+        529
+      ],
+      "center_base_local": [
+        141.0,
+        529
+      ],
+      "crop_sha256": "060bfc0b6840aa8268b924d0c4eb053e3dfa5d1b139c0a23ec67c0b17b052709"
+    },
+    {
+      "candidate_rect": [
+        272,
+        0,
+        543,
+        724
+      ],
+      "alpha128_bbox_local": [
+        11,
+        284,
+        262,
+        525
+      ],
+      "center_base_local": [
+        136.5,
+        525
+      ],
+      "crop_sha256": "b390c274578154d0b53829b122b2d113ec87b619ee180c06bcf35799800e5be2"
+    },
+    {
+      "candidate_rect": [
+        543,
+        0,
+        814,
+        724
+      ],
+      "alpha128_bbox_local": [
+        3,
+        278,
+        271,
+        527
+      ],
+      "center_base_local": [
+        137.0,
+        527
+      ],
+      "crop_sha256": "978b6aff7831b2d3da5a831d48f1cd736fe5c96e982cced3edaedb032424ccef"
+    },
+    {
+      "candidate_rect": [
+        814,
+        0,
+        1086,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        262,
+        272,
+        527
+      ],
+      "center_base_local": [
+        136.0,
+        527
+      ],
+      "crop_sha256": "6a0b03350f22783534535d91ad63a8a56de37f6ad992654c2363f65bcc7e8b3c"
+    },
+    {
+      "candidate_rect": [
+        1086,
+        0,
+        1358,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        247,
+        272,
+        527
+      ],
+      "center_base_local": [
+        136.0,
+        527
+      ],
+      "crop_sha256": "8e6f11b0f80072ffe64bd268455964a627f607a227394aab599d9c8dc3c3f188"
+    },
+    {
+      "candidate_rect": [
+        1358,
+        0,
+        1629,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        234,
+        271,
+        527
+      ],
+      "center_base_local": [
+        135.5,
+        527
+      ],
+      "crop_sha256": "c48f90772a7979d2dcb0978a66ea540a85d3d6d4b507061a83ba698af7c3c696"
+    },
+    {
+      "candidate_rect": [
+        1629,
+        0,
+        1900,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        223,
+        271,
+        527
+      ],
+      "center_base_local": [
+        135.5,
+        527
+      ],
+      "crop_sha256": "3593b8c4b88345c27e37b88f60daec30729c5047a0bfeb72c4d30ee9c9383d25"
+    },
+    {
+      "candidate_rect": [
+        1900,
+        0,
+        2172,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        220,
+        272,
+        527
+      ],
+      "center_base_local": [
+        136.0,
+        527
+      ],
+      "crop_sha256": "aafe3c8348d93f76257dcff0582a217386822249f16272e3b2ce8554077e13cf"
+    }
+  ],
+  "repose GuadianNucleo.png": [
+    {
+      "candidate_rect": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "alpha128_bbox_local": [
+        22,
+        98,
+        529,
+        616
+      ],
+      "center_base_local": [
+        275.5,
+        616
+      ],
+      "crop_sha256": "db90648a3a58f0f2e22b6f6f5c055787fadd89d28825476c0945c48a610c151c"
+    },
+    {
+      "candidate_rect": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "alpha128_bbox_local": [
+        24,
+        114,
+        533,
+        616
+      ],
+      "center_base_local": [
+        278.5,
+        616
+      ],
+      "crop_sha256": "a10e85af0a57aa54f22e86474d8d71a6ee9517e24ad16718df159aaaa2117335"
+    },
+    {
+      "candidate_rect": [
+        1086,
+        0,
+        1629,
+        724
+      ],
+      "alpha128_bbox_local": [
+        24,
+        120,
+        534,
+        616
+      ],
+      "center_base_local": [
+        279.0,
+        616
+      ],
+      "crop_sha256": "1d88b966bfc9413177945315b8e44d89a59e1a8e56d45c2153486b8be7c9e1f8"
+    },
+    {
+      "candidate_rect": [
+        1629,
+        0,
+        2172,
+        724
+      ],
+      "alpha128_bbox_local": [
+        24,
+        99,
+        531,
+        616
+      ],
+      "center_base_local": [
+        277.5,
+        616
+      ],
+      "crop_sha256": "6a74e0110c184f0a6fa002fce622919fe5f4e0c39f58e0a302fe898ae344a471"
+    }
+  ],
+  "exit GuardianNucleo.png": [
+    {
+      "candidate_rect": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "alpha128_bbox_local": [
+        15,
+        257,
+        543,
+        650
+      ],
+      "center_base_local": [
+        279.0,
+        650
+      ],
+      "crop_sha256": "44b81729b69b67fbd715cb371448a115a8511b82f3eeb4432b96683b1f711b53"
+    },
+    {
+      "candidate_rect": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        158,
+        537,
+        642
+      ],
+      "center_base_local": [
+        268.5,
+        642
+      ],
+      "crop_sha256": "89a649e4b59b9072aec43aadd59fc71b7e067e0f9b48b819d6347b0886a56fd2"
+    },
+    {
+      "candidate_rect": [
+        1086,
+        0,
+        1629,
+        724
+      ],
+      "alpha128_bbox_local": [
+        41,
+        104,
+        530,
+        610
+      ],
+      "center_base_local": [
+        285.5,
+        610
+      ],
+      "crop_sha256": "83e3daa333a4bdb4ed7773b4f4766630bcaad36149ab03ba89fa426bb66c74b4"
+    },
+    {
+      "candidate_rect": [
+        1629,
+        0,
+        2172,
+        724
+      ],
+      "alpha128_bbox_local": [
+        48,
+        20,
+        529,
+        556
+      ],
+      "center_base_local": [
+        288.5,
+        556
+      ],
+      "crop_sha256": "87c4b16995dd364cd0a79e2823887b5f09f196aae202241920a643813adcb21a"
+    }
+  ],
+  "retorn GuardianNucleo.png": [
+    {
+      "candidate_rect": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "alpha128_bbox_local": [
+        49,
+        39,
+        531,
+        527
+      ],
+      "center_base_local": [
+        290.0,
+        527
+      ],
+      "crop_sha256": "9a8d8d573d5c7fd36496cc9ec15c115cc87a723d30e9d1a4dadcf84e5b670d6e"
+    },
+    {
+      "candidate_rect": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        258,
+        524,
+        658
+      ],
+      "center_base_local": [
+        262.0,
+        658
+      ],
+      "crop_sha256": "339aea3fcab28a7dc0be11eb73307c9acfc726789cf282491ced12c362bc84e1"
+    },
+    {
+      "candidate_rect": [
+        1086,
+        0,
+        1629,
+        724
+      ],
+      "alpha128_bbox_local": [
+        13,
+        210,
+        514,
+        657
+      ],
+      "center_base_local": [
+        263.5,
+        657
+      ],
+      "crop_sha256": "5d10d00630df9a326872f02dec01156289da7421ed67e73466414808c4d293a8"
+    },
+    {
+      "candidate_rect": [
+        1629,
+        0,
+        2172,
+        724
+      ],
+      "alpha128_bbox_local": [
+        12,
+        137,
+        534,
+        658
+      ],
+      "center_base_local": [
+        273.0,
+        658
+      ],
+      "crop_sha256": "ff20d4f789214577f416a06cb64d750394a28f7c8edfb2184f5149c5e57cf13b"
+    }
+  ],
+  "attacking 3 GuardianNucleo.png": [
+    {
+      "candidate_rect": [
+        0,
+        0,
+        362,
+        724
+      ],
+      "alpha128_bbox_local": [
+        26,
+        193,
+        362,
+        532
+      ],
+      "center_base_local": [
+        194.0,
+        532
+      ],
+      "crop_sha256": "b3b57498870edf023f6c3ada32dbb55cfb0ea7e08d5793ce1b6c5c72b1f926b1"
+    },
+    {
+      "candidate_rect": [
+        362,
+        0,
+        724,
+        724
+      ],
+      "alpha128_bbox_local": [
+        11,
+        211,
+        362,
+        532
+      ],
+      "center_base_local": [
+        186.5,
+        532
+      ],
+      "crop_sha256": "79f372c2ab2ee110f6b732eb2c564e2a8606d4d9140a15d4531a1d9406052812"
+    },
+    {
+      "candidate_rect": [
+        724,
+        0,
+        1086,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        217,
+        362,
+        532
+      ],
+      "center_base_local": [
+        181.0,
+        532
+      ],
+      "crop_sha256": "aa77bbeda54b29cceaa34273a580c61c01fd633dcbf60c4c90b47e6aea76e5ea"
+    },
+    {
+      "candidate_rect": [
+        1086,
+        0,
+        1448,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        211,
+        362,
+        532
+      ],
+      "center_base_local": [
+        181.0,
+        532
+      ],
+      "crop_sha256": "ab79615bfae702489c2c1ec9588631cab155e157527c1420b10a7ff3d4a52c24"
+    },
+    {
+      "candidate_rect": [
+        1448,
+        0,
+        1810,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        208,
+        362,
+        532
+      ],
+      "center_base_local": [
+        181.0,
+        532
+      ],
+      "crop_sha256": "48469f4bbcb8f4f9992477bbaa8ef5971744ba68cee51a4136ea877fa8a3126c"
+    },
+    {
+      "candidate_rect": [
+        1810,
+        0,
+        2172,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        196,
+        330,
+        532
+      ],
+      "center_base_local": [
+        165.0,
+        532
+      ],
+      "crop_sha256": "71e50eaebb124ca1605c5167e5e4a3f78af60e3b2fdf8aea8bf0122aa50b046d"
+    }
+  ],
+  "vulnerable GuardianNucleo.png": [
+    {
+      "candidate_rect": [
+        0,
+        0,
+        362,
+        724
+      ],
+      "alpha128_bbox_local": [
+        17,
+        172,
+        362,
+        550
+      ],
+      "center_base_local": [
+        189.5,
+        550
+      ],
+      "crop_sha256": "682fbb68bdc03db9fe603d6981d8ceaca25912ff4a8d220e7ed8458f4b8c8039"
+    },
+    {
+      "candidate_rect": [
+        362,
+        0,
+        724,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        214,
+        359,
+        550
+      ],
+      "center_base_local": [
+        179.5,
+        550
+      ],
+      "crop_sha256": "caeb211290da556e78ecea397daf50c5c8c27689933ee4c562e91ae74b0ac1e4"
+    },
+    {
+      "candidate_rect": [
+        724,
+        0,
+        1086,
+        724
+      ],
+      "alpha128_bbox_local": [
+        1,
+        281,
+        347,
+        554
+      ],
+      "center_base_local": [
+        174.0,
+        554
+      ],
+      "crop_sha256": "bf3bef85c0e285681303152859b9ea7bd414885833f7f792300330faf37f4817"
+    },
+    {
+      "candidate_rect": [
+        1086,
+        0,
+        1448,
+        724
+      ],
+      "alpha128_bbox_local": [
+        3,
+        305,
+        342,
+        556
+      ],
+      "center_base_local": [
+        172.5,
+        556
+      ],
+      "crop_sha256": "f3e36c235e63f540963582854ec5f3b79f1358de132dac59aa0a4fe9dceaa2de"
+    },
+    {
+      "candidate_rect": [
+        1448,
+        0,
+        1810,
+        724
+      ],
+      "alpha128_bbox_local": [
+        12,
+        281,
+        343,
+        556
+      ],
+      "center_base_local": [
+        177.5,
+        556
+      ],
+      "crop_sha256": "f67b3dd9b074dfd5cc8d6e0b4b187f3b1453fa77310f709c54118843bac54a66"
+    },
+    {
+      "candidate_rect": [
+        1810,
+        0,
+        2172,
+        724
+      ],
+      "alpha128_bbox_local": [
+        4,
+        294,
+        347,
+        554
+      ],
+      "center_base_local": [
+        175.5,
+        554
+      ],
+      "crop_sha256": "501dd827f3f6efed330373c0c1bd8949eff7bf49299a99bdf82cf51202b832ea"
+    }
+  ],
+  "defeated GuardianNucleo.png": [
+    {
+      "candidate_rect": [
+        0,
+        0,
+        272,
+        724
+      ],
+      "alpha128_bbox_local": [
+        16,
+        311,
+        272,
+        513
+      ],
+      "center_base_local": [
+        144.0,
+        513
+      ],
+      "crop_sha256": "1cf6a498c0f1e48e19bf215a3e1c2c2e6850b2c774b6c24f894ececc7ffe3a97"
+    },
+    {
+      "candidate_rect": [
+        272,
+        0,
+        543,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        278,
+        271,
+        513
+      ],
+      "center_base_local": [
+        135.5,
+        513
+      ],
+      "crop_sha256": "7817a89d98c4df79747917e2a477ba9fa8316c1198b3c7f75c66f3517a14f94b"
+    },
+    {
+      "candidate_rect": [
+        543,
+        0,
+        814,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        277,
+        267,
+        513
+      ],
+      "center_base_local": [
+        133.5,
+        513
+      ],
+      "crop_sha256": "59e5e0f5dbe4e21b9e7c41808e95ea8ea9c8e95f0dbf214bb4d412a92bc717a4"
+    },
+    {
+      "candidate_rect": [
+        814,
+        0,
+        1086,
+        724
+      ],
+      "alpha128_bbox_local": [
+        17,
+        242,
+        272,
+        510
+      ],
+      "center_base_local": [
+        144.5,
+        510
+      ],
+      "crop_sha256": "66d257af0d9d989ca2c38568fc64dca13e6ac3a092261d4a74f7ef5272cd8e52"
+    },
+    {
+      "candidate_rect": [
+        1086,
+        0,
+        1358,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        257,
+        272,
+        502
+      ],
+      "center_base_local": [
+        136.0,
+        502
+      ],
+      "crop_sha256": "9d792b812d46333a40b68ca67ca8e75f0a424b0741899f6301731c16c8cd7286"
+    },
+    {
+      "candidate_rect": [
+        1358,
+        0,
+        1629,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        282,
+        271,
+        485
+      ],
+      "center_base_local": [
+        135.5,
+        485
+      ],
+      "crop_sha256": "140b12dd434bdebb8309675e0a034a74ea274cab9dd784e422fbdee3ac764cd4"
+    },
+    {
+      "candidate_rect": [
+        1629,
+        0,
+        1900,
+        724
+      ],
+      "alpha128_bbox_local": [
+        0,
+        358,
+        250,
+        488
+      ],
+      "center_base_local": [
+        125.0,
+        488
+      ],
+      "crop_sha256": "f87ac67288a480f748776c24903c820864143ebbb04888db901eee719fe5cffc"
+    },
+    {
+      "candidate_rect": [
+        1900,
+        0,
+        2172,
+        724
+      ],
+      "alpha128_bbox_local": null,
+      "center_base_local": null,
+      "crop_sha256": "372d3b57bc09d4607f36edc31d006aa50edffbf5fb1e0b37179cd9ab40204399"
+    }
+  ],
+  "starting atack 1 GuardianNucleo.png": [
+    {
+      "candidate_rect": [
+        0,
+        0,
+        362,
+        724
+      ],
+      "alpha128_bbox_local": [
+        13,
+        357,
+        351,
+        365
+      ],
+      "center_base_local": [
+        182.0,
+        365
+      ],
+      "crop_sha256": "c0ffb2a3ff3a178fab9a35a427eacaeb3c3666672701d382e5115890e1a5339f"
+    },
+    {
+      "candidate_rect": [
+        362,
+        0,
+        724,
+        724
+      ],
+      "alpha128_bbox_local": [
+        10,
+        350,
+        353,
+        373
+      ],
+      "center_base_local": [
+        181.5,
+        373
+      ],
+      "crop_sha256": "53230e80cfe08f5d58605a3e10b73a8ce6f0410e1328e87b6acb9bc98b3a25d9"
+    },
+    {
+      "candidate_rect": [
+        724,
+        0,
+        1086,
+        724
+      ],
+      "alpha128_bbox_local": [
+        12,
+        341,
+        352,
+        384
+      ],
+      "center_base_local": [
+        182.0,
+        384
+      ],
+      "crop_sha256": "62c0af75944051dd2e0d92b20669bd739823688ce7fef2efcf80ef251015e9bb"
+    },
+    {
+      "candidate_rect": [
+        1086,
+        0,
+        1448,
+        724
+      ],
+      "alpha128_bbox_local": [
+        11,
+        322,
+        352,
+        400
+      ],
+      "center_base_local": [
+        181.5,
+        400
+      ],
+      "crop_sha256": "b3727256b0029960317dca9ad304757ae8a78a12c9fb2f655cc3b06ef6a1e9d8"
+    },
+    {
+      "candidate_rect": [
+        1448,
+        0,
+        1810,
+        724
+      ],
+      "alpha128_bbox_local": [
+        11,
+        301,
+        352,
+        420
+      ],
+      "center_base_local": [
+        181.5,
+        420
+      ],
+      "crop_sha256": "7e0f4dc80653f1a3ec8a4675138f5ee920a80d0c56812958e64d6122c9f3fe56"
+    },
+    {
+      "candidate_rect": [
+        1810,
+        0,
+        2172,
+        724
+      ],
+      "alpha128_bbox_local": [
+        9,
+        286,
+        351,
+        436
+      ],
+      "center_base_local": [
+        180.0,
+        436
+      ],
+      "crop_sha256": "9087605ab55ea634784fdac270baf538a1f1cc9395e30ac8afe4c0af252c2784"
+    }
+  ],
+  "finishing atack 1 GuardianNucleo.png": [
+    {
+      "candidate_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha128_bbox_local": [
+        0,
+        16,
+        64,
+        48
+      ],
+      "center_base_local": [
+        32.0,
+        48
+      ],
+      "crop_sha256": "86e2fbcd3453a73d0dc4616841d7e34cc38ce11f539a9781aa096d9435cb5cb7"
+    },
+    {
+      "candidate_rect": [
+        64,
+        0,
+        128,
+        64
+      ],
+      "alpha128_bbox_local": [
+        0,
+        22,
+        64,
+        42
+      ],
+      "center_base_local": [
+        32.0,
+        42
+      ],
+      "crop_sha256": "f47cf97616864faedf1393f4e02579f616ae73c6f852bc9be0c039aab997d60d"
+    },
+    {
+      "candidate_rect": [
+        128,
+        0,
+        192,
+        64
+      ],
+      "alpha128_bbox_local": [
+        0,
+        28,
+        64,
+        36
+      ],
+      "center_base_local": [
+        32.0,
+        36
+      ],
+      "crop_sha256": "021e24a99852ad69464223db4e68b4d9890b9d08423fbb6c314a5118bbbf9dda"
+    },
+    {
+      "candidate_rect": [
+        192,
+        0,
+        256,
+        64
+      ],
+      "alpha128_bbox_local": [
+        0,
+        30,
+        64,
+        33
+      ],
+      "center_base_local": [
+        32.0,
+        33
+      ],
+      "crop_sha256": "268f8bd76da62a7a12653da35a8944efed9c2166ce7cdaca21fd72bd275175a4"
+    },
+    {
+      "candidate_rect": [
+        256,
+        0,
+        320,
+        64
+      ],
+      "alpha128_bbox_local": [
+        0,
+        31,
+        64,
+        32
+      ],
+      "center_base_local": [
+        32.0,
+        32
+      ],
+      "crop_sha256": "2428fa0def47d180a0329c9cbc1a7b1a870d8503c111a9a4a1c18bf1ce509436"
+    },
+    {
+      "candidate_rect": [
+        320,
+        0,
+        384,
+        64
+      ],
+      "alpha128_bbox_local": null,
+      "center_base_local": null,
+      "crop_sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe"
+    }
+  ],
+  "plataformasPresent.png": {
+    "bright_regions_not_collision": [
+      [
+        46,
+        144,
+        506,
+        268
+      ],
+      [
+        611,
+        144,
+        1060,
+        268
+      ],
+      [
+        1166,
+        144,
+        1627,
+        268
+      ],
+      [
+        46,
+        683,
+        506,
+        793
+      ],
+      [
+        612,
+        683,
+        1061,
+        793
+      ],
+      [
+        1167,
+        683,
+        1627,
+        793
+      ]
+    ]
+  },
+  "plataformasPast.png": {
+    "bright_regions_not_collision": [
+      [
+        62,
+        420,
+        475,
+        525
+      ],
+      [
+        629,
+        420,
+        1043,
+        525
+      ],
+      [
+        1196,
+        420,
+        1610,
+        525
+      ]
+    ]
+  }
+}

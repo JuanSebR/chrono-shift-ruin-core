@@ -1,0 +1,3503 @@
+{
+  "schema": "room5-stage-a-1",
+  "coordinates": "pixels; right/bottom exclusive",
+  "body_cell": [
+    640,
+    800
+  ],
+  "body_anchor": [
+    320,
+    720
+  ],
+  "normalization": "uniform scale per sequence only; alpha envelope removes remote low-alpha residue; no recolor of boss",
+  "animations": {
+    "starting": {
+      "original": "starting GuardianNucleo.png",
+      "poses": 8,
+      "order": "left-to-right (visual; timing not supplied)",
+      "status": "source-truncated:last cannon",
+      "reference": "core-first-visible:39px; poses1/2 dark",
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            274,
+            724
+          ],
+          "strong_bbox_local": [
+            16,
+            289,
+            266,
+            529
+          ],
+          "source_anchor_local": [
+            169.0,
+            527
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            0,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 1,
+          "removed_remote_pixels": 87,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            165,
+            428
+          ],
+          "core_atlas_estimate": [
+            315.077,
+            598.154
+          ],
+          "muzzle_source_estimate": null,
+          "muzzle_atlas_estimate": null,
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            274,
+            0,
+            540,
+            724
+          ],
+          "strong_bbox_local": [
+            9,
+            284,
+            260,
+            525
+          ],
+          "source_anchor_local": [
+            162.0,
+            527
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            640,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 1,
+          "removed_remote_pixels": 284,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            425,
+            426
+          ],
+          "core_atlas_estimate": [
+            306.462,
+            595.692
+          ],
+          "muzzle_source_estimate": null,
+          "muzzle_atlas_estimate": null,
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            540,
+            0,
+            796,
+            724
+          ],
+          "strong_bbox_local": [
+            6,
+            278,
+            247,
+            525
+          ],
+          "source_anchor_local": [
+            152.5,
+            527
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            1280,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 1,
+          "removed_remote_pixels": 183,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            698,
+            393.5
+          ],
+          "core_atlas_estimate": [
+            326.769,
+            555.692
+          ],
+          "muzzle_source_estimate": [
+            757,
+            476
+          ],
+          "muzzle_atlas_estimate": [
+            399.385,
+            657.231
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            796,
+            0,
+            1073,
+            724
+          ],
+          "strong_bbox_local": [
+            10,
+            262,
+            270,
+            527
+          ],
+          "source_anchor_local": [
+            159.5,
+            527
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            1920,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 1,
+          "removed_remote_pixels": 93,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            962.5,
+            379.5
+          ],
+          "core_atlas_estimate": [
+            328.615,
+            538.462
+          ],
+          "muzzle_source_estimate": [
+            1040,
+            453
+          ],
+          "muzzle_atlas_estimate": [
+            424.0,
+            628.923
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 4,
+          "source_rect": [
+            1073,
+            0,
+            1343,
+            724
+          ],
+          "strong_bbox_local": [
+            7,
+            247,
+            268,
+            527
+          ],
+          "source_anchor_local": [
+            152.5,
+            527
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            2560,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 6,
+          "removed_remote_pixels": 167,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1226,
+            362
+          ],
+          "core_atlas_estimate": [
+            320.615,
+            516.923
+          ],
+          "muzzle_source_estimate": [
+            1316,
+            412
+          ],
+          "muzzle_atlas_estimate": [
+            431.385,
+            578.462
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 5,
+          "source_rect": [
+            1343,
+            0,
+            1607,
+            724
+          ],
+          "strong_bbox_local": [
+            2,
+            234,
+            261,
+            527
+          ],
+          "source_anchor_local": [
+            149.0,
+            527
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            3200,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 7,
+          "removed_remote_pixels": 82,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1490,
+            348.5
+          ],
+          "core_atlas_estimate": [
+            317.538,
+            500.308
+          ],
+          "muzzle_source_estimate": [
+            1580,
+            404
+          ],
+          "muzzle_atlas_estimate": [
+            428.308,
+            568.615
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 6,
+          "source_rect": [
+            1607,
+            0,
+            1884,
+            724
+          ],
+          "strong_bbox_local": [
+            3,
+            223,
+            270,
+            527
+          ],
+          "source_anchor_local": [
+            162.5,
+            527
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            3840,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 4,
+          "removed_remote_pixels": 154,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1757.5,
+            333.5
+          ],
+          "core_atlas_estimate": [
+            305.231,
+            481.846
+          ],
+          "muzzle_source_estimate": [
+            1853.5,
+            346
+          ],
+          "muzzle_atlas_estimate": [
+            423.385,
+            497.231
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 7,
+          "source_rect": [
+            1884,
+            0,
+            2172,
+            724
+          ],
+          "strong_bbox_local": [
+            7,
+            220,
+            288,
+            527
+          ],
+          "source_anchor_local": [
+            174.5,
+            527
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            4480,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 1,
+          "removed_remote_pixels": 147,
+          "source_edge_high_alpha": true,
+          "core_source_estimate": [
+            2045.5,
+            330.5
+          ],
+          "core_atlas_estimate": [
+            304.0,
+            478.154
+          ],
+          "muzzle_source_estimate": [
+            2147.5,
+            358
+          ],
+          "muzzle_atlas_estimate": [
+            429.538,
+            512.0
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        }
+      ],
+      "spriteframes": "AtlasTexture per cell640x800; Sprite2D centered=false offset(-320,-720), or centered=true offset(0,-320); no .tres created"
+    },
+    "repose": {
+      "original": "repose GuadianNucleo.png",
+      "poses": 4,
+      "order": "left-to-right (visual; timing not supplied)",
+      "status": "usable",
+      "reference": "reference core49x48",
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            548,
+            724
+          ],
+          "strong_bbox_local": [
+            22,
+            98,
+            529,
+            616
+          ],
+          "source_anchor_local": [
+            270.5,
+            616
+          ],
+          "scale_to_atlas": 1.0,
+          "atlas_rect": [
+            0,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 603,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            305.5,
+            283
+          ],
+          "core_atlas_estimate": [
+            355.0,
+            387.0
+          ],
+          "muzzle_source_estimate": [
+            510.5,
+            328
+          ],
+          "muzzle_atlas_estimate": [
+            560.0,
+            432.0
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            548,
+            0,
+            1092,
+            724
+          ],
+          "strong_bbox_local": [
+            19,
+            114,
+            528,
+            616
+          ],
+          "source_anchor_local": [
+            266.5,
+            616
+          ],
+          "scale_to_atlas": 1.0,
+          "atlas_rect": [
+            640,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 640,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            850,
+            299.5
+          ],
+          "core_atlas_estimate": [
+            355.5,
+            403.5
+          ],
+          "muzzle_source_estimate": [
+            1055.5,
+            349
+          ],
+          "muzzle_atlas_estimate": [
+            561.0,
+            453.0
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            1092,
+            0,
+            1636,
+            724
+          ],
+          "strong_bbox_local": [
+            18,
+            120,
+            528,
+            616
+          ],
+          "source_anchor_local": [
+            265.5,
+            616
+          ],
+          "scale_to_atlas": 1.0,
+          "atlas_rect": [
+            1280,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 401,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1390.5,
+            308
+          ],
+          "core_atlas_estimate": [
+            353.0,
+            412.0
+          ],
+          "muzzle_source_estimate": [
+            1599,
+            351.5
+          ],
+          "muzzle_atlas_estimate": [
+            561.5,
+            455.5
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            1636,
+            0,
+            2172,
+            724
+          ],
+          "strong_bbox_local": [
+            17,
+            99,
+            524,
+            616
+          ],
+          "source_anchor_local": [
+            264.0,
+            616
+          ],
+          "scale_to_atlas": 1.0,
+          "atlas_rect": [
+            1920,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 459,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1934.5,
+            282.5
+          ],
+          "core_atlas_estimate": [
+            354.5,
+            386.5
+          ],
+          "muzzle_source_estimate": [
+            2142,
+            328
+          ],
+          "muzzle_atlas_estimate": [
+            562.0,
+            432.0
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        }
+      ],
+      "spriteframes": "AtlasTexture per cell640x800; Sprite2D centered=false offset(-320,-720), or centered=true offset(0,-320); no .tres created"
+    },
+    "attack3": {
+      "original": "attacking 3 GuardianNucleo.png",
+      "poses": 6,
+      "order": "left-to-right (visual; timing not supplied)",
+      "status": "usable; projectile absent",
+      "reference": "core48x46",
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            367,
+            724
+          ],
+          "strong_bbox_local": [
+            26,
+            193,
+            362,
+            532
+          ],
+          "source_anchor_local": [
+            184.0,
+            532
+          ],
+          "scale_to_atlas": 1.0212765957446808,
+          "atlas_rect": [
+            0,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 548,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            206,
+            319
+          ],
+          "core_atlas_estimate": [
+            342.468,
+            502.468
+          ],
+          "muzzle_source_estimate": [
+            339,
+            313
+          ],
+          "muzzle_atlas_estimate": [
+            478.298,
+            496.34
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            367,
+            0,
+            711,
+            724
+          ],
+          "strong_bbox_local": [
+            6,
+            211,
+            336,
+            532
+          ],
+          "source_anchor_local": [
+            163.5,
+            532
+          ],
+          "scale_to_atlas": 1.0212765957446808,
+          "atlas_rect": [
+            640,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 869,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            553,
+            335
+          ],
+          "core_atlas_estimate": [
+            342.979,
+            518.809
+          ],
+          "muzzle_source_estimate": [
+            677,
+            322.5
+          ],
+          "muzzle_atlas_estimate": [
+            469.617,
+            506.043
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            711,
+            0,
+            1059,
+            724
+          ],
+          "strong_bbox_local": [
+            8,
+            217,
+            333,
+            532
+          ],
+          "source_anchor_local": [
+            168.5,
+            532
+          ],
+          "scale_to_atlas": 1.0212765957446808,
+          "atlas_rect": [
+            1280,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 4,
+          "removed_remote_pixels": 780,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            900,
+            327.5
+          ],
+          "core_atlas_estimate": [
+            340.936,
+            511.149
+          ],
+          "muzzle_source_estimate": [
+            1015,
+            316
+          ],
+          "muzzle_atlas_estimate": [
+            458.383,
+            499.404
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            1059,
+            0,
+            1410,
+            724
+          ],
+          "strong_bbox_local": [
+            15,
+            211,
+            327,
+            532
+          ],
+          "source_anchor_local": [
+            187.5,
+            532
+          ],
+          "scale_to_atlas": 1.0212765957446808,
+          "atlas_rect": [
+            1920,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 767,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1244.5,
+            315.5
+          ],
+          "core_atlas_estimate": [
+            317.957,
+            498.894
+          ],
+          "muzzle_source_estimate": [
+            1357.5,
+            319.5
+          ],
+          "muzzle_atlas_estimate": [
+            433.362,
+            502.979
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 4,
+          "source_rect": [
+            1410,
+            0,
+            1781,
+            724
+          ],
+          "strong_bbox_local": [
+            24,
+            208,
+            351,
+            532
+          ],
+          "source_anchor_local": [
+            185.5,
+            532
+          ],
+          "scale_to_atlas": 1.0212765957446808,
+          "atlas_rect": [
+            2560,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 950,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1614.5,
+            331.5
+          ],
+          "core_atlas_estimate": [
+            339.404,
+            515.234
+          ],
+          "muzzle_source_estimate": [
+            1736,
+            331
+          ],
+          "muzzle_atlas_estimate": [
+            463.489,
+            514.723
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 5,
+          "source_rect": [
+            1781,
+            0,
+            2172,
+            724
+          ],
+          "strong_bbox_local": [
+            20,
+            196,
+            359,
+            532
+          ],
+          "source_anchor_local": [
+            179.5,
+            532
+          ],
+          "scale_to_atlas": 1.0212765957446808,
+          "atlas_rect": [
+            3200,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 4,
+          "removed_remote_pixels": 417,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1985,
+            319
+          ],
+          "core_atlas_estimate": [
+            345.021,
+            502.468
+          ],
+          "muzzle_source_estimate": [
+            2115,
+            313
+          ],
+          "muzzle_atlas_estimate": [
+            477.787,
+            496.34
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        }
+      ],
+      "spriteframes": "AtlasTexture per cell640x800; Sprite2D centered=false offset(-320,-720), or centered=true offset(0,-320); no .tres created"
+    },
+    "vulnerable": {
+      "original": "vulnerable GuardianNucleo.png",
+      "poses": 6,
+      "order": "left-to-right (visual; timing not supplied)",
+      "status": "usable; core not equally lit in all poses",
+      "reference": "core44x42",
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            386,
+            724
+          ],
+          "strong_bbox_local": [
+            17,
+            172,
+            377,
+            550
+          ],
+          "source_anchor_local": [
+            221.5,
+            554
+          ],
+          "scale_to_atlas": 1.1162790697674418,
+          "atlas_rect": [
+            0,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 123,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            221,
+            294
+          ],
+          "core_atlas_estimate": [
+            319.442,
+            429.767
+          ],
+          "muzzle_source_estimate": [
+            348.5,
+            387
+          ],
+          "muzzle_atlas_estimate": [
+            461.767,
+            533.581
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            386,
+            0,
+            723,
+            724
+          ],
+          "strong_bbox_local": [
+            10,
+            214,
+            335,
+            550
+          ],
+          "source_anchor_local": [
+            192.5,
+            554
+          ],
+          "scale_to_atlas": 1.1162790697674418,
+          "atlas_rect": [
+            640,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 312,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            568,
+            355.5
+          ],
+          "core_atlas_estimate": [
+            308.279,
+            498.419
+          ],
+          "muzzle_source_estimate": [
+            691,
+            446
+          ],
+          "muzzle_atlas_estimate": [
+            445.581,
+            599.442
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            723,
+            0,
+            1080,
+            724
+          ],
+          "strong_bbox_local": [
+            2,
+            281,
+            348,
+            554
+          ],
+          "source_anchor_local": [
+            225.0,
+            554
+          ],
+          "scale_to_atlas": 1.1162790697674418,
+          "atlas_rect": [
+            1280,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 186,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            930,
+            418
+          ],
+          "core_atlas_estimate": [
+            299.907,
+            568.186
+          ],
+          "muzzle_source_estimate": [
+            1004,
+            481
+          ],
+          "muzzle_atlas_estimate": [
+            382.512,
+            638.512
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            1080,
+            0,
+            1444,
+            724
+          ],
+          "strong_bbox_local": [
+            9,
+            305,
+            348,
+            556
+          ],
+          "source_anchor_local": [
+            228.5,
+            554
+          ],
+          "scale_to_atlas": 1.1162790697674418,
+          "atlas_rect": [
+            1920,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 1,
+          "removed_remote_pixels": 197,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1289.5,
+            441
+          ],
+          "core_atlas_estimate": [
+            298.791,
+            593.86
+          ],
+          "muzzle_source_estimate": [
+            1362.5,
+            493.5
+          ],
+          "muzzle_atlas_estimate": [
+            380.279,
+            652.465
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 4,
+          "source_rect": [
+            1444,
+            0,
+            1803,
+            724
+          ],
+          "strong_bbox_local": [
+            16,
+            281,
+            347,
+            556
+          ],
+          "source_anchor_local": [
+            228.5,
+            554
+          ],
+          "scale_to_atlas": 1.1162790697674418,
+          "atlas_rect": [
+            2560,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 1,
+          "removed_remote_pixels": 325,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1648.5,
+            420
+          ],
+          "core_atlas_estimate": [
+            293.209,
+            570.419
+          ],
+          "muzzle_source_estimate": [
+            1725,
+            482
+          ],
+          "muzzle_atlas_estimate": [
+            378.605,
+            639.628
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 5,
+          "source_rect": [
+            1803,
+            0,
+            2172,
+            724
+          ],
+          "strong_bbox_local": [
+            11,
+            294,
+            354,
+            554
+          ],
+          "source_anchor_local": [
+            233.5,
+            554
+          ],
+          "scale_to_atlas": 1.1162790697674418,
+          "atlas_rect": [
+            3200,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 299,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            2010,
+            425
+          ],
+          "core_atlas_estimate": [
+            290.419,
+            576.0
+          ],
+          "muzzle_source_estimate": [
+            2088.5,
+            485.5
+          ],
+          "muzzle_atlas_estimate": [
+            378.047,
+            643.535
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        }
+      ],
+      "spriteframes": "AtlasTexture per cell640x800; Sprite2D centered=false offset(-320,-720), or centered=true offset(0,-320); no .tres created"
+    },
+    "retorn": {
+      "original": "retorn GuardianNucleo.png",
+      "poses": 4,
+      "order": "left-to-right (visual; timing not supplied)",
+      "status": "air offset preserved",
+      "reference": "core59x65",
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            537,
+            724
+          ],
+          "strong_bbox_local": [
+            49,
+            39,
+            531,
+            527
+          ],
+          "source_anchor_local": [
+            203.5,
+            658
+          ],
+          "scale_to_atlas": 0.7741935483870968,
+          "atlas_rect": [
+            0,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 1715,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            322.5,
+            211.5
+          ],
+          "core_atlas_estimate": [
+            412.129,
+            374.323
+          ],
+          "muzzle_source_estimate": [
+            505,
+            290
+          ],
+          "muzzle_atlas_estimate": [
+            553.419,
+            435.097
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            537,
+            0,
+            1083,
+            724
+          ],
+          "strong_bbox_local": [
+            6,
+            258,
+            530,
+            658
+          ],
+          "source_anchor_local": [
+            249.5,
+            658
+          ],
+          "scale_to_atlas": 0.7741935483870968,
+          "atlas_rect": [
+            640,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 4,
+          "removed_remote_pixels": 1222,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            841,
+            448
+          ],
+          "core_atlas_estimate": [
+            362.194,
+            557.419
+          ],
+          "muzzle_source_estimate": [
+            1040,
+            491
+          ],
+          "muzzle_atlas_estimate": [
+            516.258,
+            590.71
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            1083,
+            0,
+            1620,
+            724
+          ],
+          "strong_bbox_local": [
+            16,
+            210,
+            517,
+            657
+          ],
+          "source_anchor_local": [
+            244.5,
+            658
+          ],
+          "scale_to_atlas": 0.7741935483870968,
+          "atlas_rect": [
+            1280,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 1283,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1385,
+            390.5
+          ],
+          "core_atlas_estimate": [
+            364.516,
+            512.903
+          ],
+          "muzzle_source_estimate": [
+            1574,
+            443
+          ],
+          "muzzle_atlas_estimate": [
+            510.839,
+            553.548
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            1620,
+            0,
+            2172,
+            724
+          ],
+          "strong_bbox_local": [
+            21,
+            137,
+            543,
+            658
+          ],
+          "source_anchor_local": [
+            269.0,
+            658
+          ],
+          "scale_to_atlas": 0.7741935483870968,
+          "atlas_rect": [
+            1920,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 943,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1934.5,
+            320.5
+          ],
+          "core_atlas_estimate": [
+            355.226,
+            458.71
+          ],
+          "muzzle_source_estimate": [
+            2136.5,
+            373
+          ],
+          "muzzle_atlas_estimate": [
+            511.613,
+            499.355
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        }
+      ],
+      "spriteframes": "AtlasTexture per cell640x800; Sprite2D centered=false offset(-320,-720), or centered=true offset(0,-320); no .tres created"
+    },
+    "exit": {
+      "original": "exit GuardianNucleo.png",
+      "poses": 4,
+      "order": "left-to-right (visual; timing not supplied)",
+      "status": "air offset preserved",
+      "reference": "core67x59",
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            565,
+            724
+          ],
+          "strong_bbox_local": [
+            15,
+            257,
+            544,
+            650
+          ],
+          "source_anchor_local": [
+            242.0,
+            650
+          ],
+          "scale_to_atlas": 0.7619047619047619,
+          "atlas_rect": [
+            0,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 1395,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            328.5,
+            440.5
+          ],
+          "core_atlas_estimate": [
+            385.905,
+            560.381
+          ],
+          "muzzle_source_estimate": [
+            519,
+            444.5
+          ],
+          "muzzle_atlas_estimate": [
+            531.048,
+            563.429
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            565,
+            0,
+            1104,
+            724
+          ],
+          "strong_bbox_local": [
+            21,
+            158,
+            515,
+            642
+          ],
+          "source_anchor_local": [
+            131.5,
+            650
+          ],
+          "scale_to_atlas": 0.7619047619047619,
+          "atlas_rect": [
+            640,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 1653,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            883,
+            329.5
+          ],
+          "core_atlas_estimate": [
+            462.095,
+            475.81
+          ],
+          "muzzle_source_estimate": [
+            1058,
+            372.5
+          ],
+          "muzzle_atlas_estimate": [
+            595.429,
+            508.571
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            1104,
+            0,
+            1646,
+            724
+          ],
+          "strong_bbox_local": [
+            23,
+            104,
+            512,
+            610
+          ],
+          "source_anchor_local": [
+            130.0,
+            650
+          ],
+          "scale_to_atlas": 0.7619047619047619,
+          "atlas_rect": [
+            1280,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 2069,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1418.5,
+            266
+          ],
+          "core_atlas_estimate": [
+            460.571,
+            427.429
+          ],
+          "muzzle_source_estimate": [
+            1594,
+            297
+          ],
+          "muzzle_atlas_estimate": [
+            594.286,
+            451.048
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            1646,
+            0,
+            2172,
+            724
+          ],
+          "strong_bbox_local": [
+            31,
+            20,
+            512,
+            556
+          ],
+          "source_anchor_local": [
+            151.0,
+            650
+          ],
+          "scale_to_atlas": 0.7619047619047619,
+          "atlas_rect": [
+            1920,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 1342,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            1953,
+            185
+          ],
+          "core_atlas_estimate": [
+            438.857,
+            365.714
+          ],
+          "muzzle_source_estimate": [
+            2135,
+            216.5
+          ],
+          "muzzle_atlas_estimate": [
+            577.524,
+            389.714
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        }
+      ],
+      "spriteframes": "AtlasTexture per cell640x800; Sprite2D centered=false offset(-320,-720), or centered=true offset(0,-320); no .tres created"
+    },
+    "retorn_repose": {
+      "original": "retorn Repose GuardianNucleo.png",
+      "poses": 1,
+      "order": "left-to-right (visual; timing not supplied)",
+      "status": "air pose; baseline658-69 registered from first retorn",
+      "reference": "core55x60",
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            478,
+            561
+          ],
+          "strong_bbox_local": [
+            12,
+            6,
+            467,
+            466
+          ],
+          "source_anchor_local": [
+            159.5,
+            589
+          ],
+          "scale_to_atlas": 0.8347826086956521,
+          "atlas_rect": [
+            0,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 60,
+          "removed_remote_pixels": 1571,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            270.5,
+            169
+          ],
+          "core_atlas_estimate": [
+            412.661,
+            369.391
+          ],
+          "muzzle_source_estimate": [
+            442,
+            242
+          ],
+          "muzzle_atlas_estimate": [
+            555.826,
+            430.33
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        }
+      ],
+      "spriteframes": "AtlasTexture per cell640x800; Sprite2D centered=false offset(-320,-720), or centered=true offset(0,-320); no .tres created"
+    },
+    "exit_repose": {
+      "original": "exit Repose GuardianNucleo.png",
+      "poses": 1,
+      "order": "left-to-right (visual; timing not supplied)",
+      "status": "air pose; baseline proposed against exit last",
+      "reference": "core61x63",
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            493,
+            619
+          ],
+          "strong_bbox_local": [
+            27,
+            13,
+            480,
+            518
+          ],
+          "source_anchor_local": [
+            139.5,
+            612
+          ],
+          "scale_to_atlas": 0.7741935483870968,
+          "atlas_rect": [
+            0,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 868,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            286.5,
+            168.5
+          ],
+          "core_atlas_estimate": [
+            433.806,
+            376.645
+          ],
+          "muzzle_source_estimate": [
+            458.5,
+            198.5
+          ],
+          "muzzle_atlas_estimate": [
+            566.968,
+            399.871
+          ],
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        }
+      ],
+      "spriteframes": "AtlasTexture per cell640x800; Sprite2D centered=false offset(-320,-720), or centered=true offset(0,-320); no .tres created"
+    },
+    "defeated": {
+      "original": "defeated GuardianNucleo.png",
+      "poses": 7,
+      "order": "left-to-right (visual; timing not supplied)",
+      "status": "7 meaningful poses; tail1900+ unassigned",
+      "reference": "scale from starting kneel; no stable core in explosion",
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            288,
+            724
+          ],
+          "strong_bbox_local": [
+            16,
+            311,
+            282,
+            513
+          ],
+          "source_anchor_local": [
+            144.0,
+            513
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            0,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 1,
+          "removed_remote_pixels": 86,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            164,
+            425
+          ],
+          "core_atlas_estimate": [
+            344.615,
+            611.692
+          ],
+          "muzzle_source_estimate": null,
+          "muzzle_atlas_estimate": null,
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            288,
+            0,
+            554,
+            724
+          ],
+          "strong_bbox_local": [
+            5,
+            278,
+            258,
+            513
+          ],
+          "source_anchor_local": [
+            133.0,
+            513
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            640,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 272,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            433,
+            382
+          ],
+          "core_atlas_estimate": [
+            334.769,
+            558.769
+          ],
+          "muzzle_source_estimate": null,
+          "muzzle_atlas_estimate": null,
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            554,
+            0,
+            823,
+            724
+          ],
+          "strong_bbox_local": [
+            9,
+            277,
+            256,
+            513
+          ],
+          "source_anchor_local": [
+            134.5,
+            513
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            1280,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 3,
+          "removed_remote_pixels": 643,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": [
+            699,
+            398
+          ],
+          "core_atlas_estimate": [
+            332.923,
+            578.462
+          ],
+          "muzzle_source_estimate": null,
+          "muzzle_atlas_estimate": null,
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            823,
+            0,
+            1098,
+            724
+          ],
+          "strong_bbox_local": [
+            8,
+            242,
+            267,
+            510
+          ],
+          "source_anchor_local": [
+            137.5,
+            513
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            1920,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 4,
+          "removed_remote_pixels": 833,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": null,
+          "core_atlas_estimate": null,
+          "muzzle_source_estimate": null,
+          "muzzle_atlas_estimate": null,
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 4,
+          "source_rect": [
+            1098,
+            0,
+            1378,
+            724
+          ],
+          "strong_bbox_local": [
+            8,
+            257,
+            263,
+            502
+          ],
+          "source_anchor_local": [
+            140.0,
+            513
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            2560,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 6,
+          "removed_remote_pixels": 1059,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": null,
+          "core_atlas_estimate": null,
+          "muzzle_source_estimate": null,
+          "muzzle_atlas_estimate": null,
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 5,
+          "source_rect": [
+            1378,
+            0,
+            1668,
+            724
+          ],
+          "strong_bbox_local": [
+            18,
+            282,
+            253,
+            485
+          ],
+          "source_anchor_local": [
+            145.0,
+            513
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            3200,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 884,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": null,
+          "core_atlas_estimate": null,
+          "muzzle_source_estimate": null,
+          "muzzle_atlas_estimate": null,
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        },
+        {
+          "index": 6,
+          "source_rect": [
+            1668,
+            0,
+            1900,
+            724
+          ],
+          "strong_bbox_local": [
+            22,
+            358,
+            211,
+            488
+          ],
+          "source_anchor_local": [
+            116.0,
+            513
+          ],
+          "scale_to_atlas": 1.2307692307692308,
+          "atlas_rect": [
+            3840,
+            0,
+            640,
+            800
+          ],
+          "anchor": [
+            320,
+            720
+          ],
+          "removed_alpha_max": 2,
+          "removed_remote_pixels": 242,
+          "source_edge_high_alpha": false,
+          "core_source_estimate": null,
+          "core_atlas_estimate": null,
+          "muzzle_source_estimate": null,
+          "muzzle_atlas_estimate": null,
+          "landmark_status": "visual center estimate, not a hitbox; dark core/recoil ambiguous; verify in future animation integration"
+        }
+      ],
+      "spriteframes": "AtlasTexture per cell640x800; Sprite2D centered=false offset(-320,-720), or centered=true offset(0,-320); no .tres created"
+    },
+    "beam_start": {
+      "original": "starting atack 1 GuardianNucleo.png",
+      "poses": 6,
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            265,
+            362,
+            457
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            384,
+            192
+          ],
+          "axis": [
+            192.0,
+            96
+          ],
+          "empty": false
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            362,
+            265,
+            724,
+            457
+          ],
+          "atlas_rect": [
+            384,
+            0,
+            384,
+            192
+          ],
+          "axis": [
+            192.0,
+            96
+          ],
+          "empty": false
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            724,
+            265,
+            1086,
+            457
+          ],
+          "atlas_rect": [
+            768,
+            0,
+            384,
+            192
+          ],
+          "axis": [
+            192.0,
+            96
+          ],
+          "empty": false
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            1086,
+            265,
+            1448,
+            457
+          ],
+          "atlas_rect": [
+            1152,
+            0,
+            384,
+            192
+          ],
+          "axis": [
+            192.0,
+            96
+          ],
+          "empty": false
+        },
+        {
+          "index": 4,
+          "source_rect": [
+            1448,
+            265,
+            1810,
+            457
+          ],
+          "atlas_rect": [
+            1536,
+            0,
+            384,
+            192
+          ],
+          "axis": [
+            192.0,
+            96
+          ],
+          "empty": false
+        },
+        {
+          "index": 5,
+          "source_rect": [
+            1810,
+            265,
+            2172,
+            457
+          ],
+          "atlas_rect": [
+            1920,
+            0,
+            384,
+            192
+          ],
+          "axis": [
+            192.0,
+            96
+          ],
+          "empty": false
+        }
+      ],
+      "status": "visual effect only; no damage or timing",
+      "order": "left-to-right"
+    },
+    "beam_hold": {
+      "original": "attacking 1 haz GuardianNucleo.png",
+      "poses": 1,
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "axis": [
+            32.0,
+            32
+          ],
+          "empty": false
+        }
+      ],
+      "status": "visual effect only; no damage or timing",
+      "order": "left-to-right"
+    },
+    "beam_finish": {
+      "original": "finishing atack 1 GuardianNucleo.png",
+      "poses": 6,
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "axis": [
+            32.0,
+            32
+          ],
+          "empty": false
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            64,
+            0,
+            128,
+            64
+          ],
+          "atlas_rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "axis": [
+            32.0,
+            32
+          ],
+          "empty": false
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            128,
+            0,
+            192,
+            64
+          ],
+          "atlas_rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "axis": [
+            32.0,
+            32
+          ],
+          "empty": false
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            192,
+            0,
+            256,
+            64
+          ],
+          "atlas_rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "axis": [
+            32.0,
+            32
+          ],
+          "empty": false
+        },
+        {
+          "index": 4,
+          "source_rect": [
+            256,
+            0,
+            320,
+            64
+          ],
+          "atlas_rect": [
+            256,
+            0,
+            64,
+            64
+          ],
+          "axis": [
+            32.0,
+            32
+          ],
+          "empty": false
+        },
+        {
+          "index": 5,
+          "source_rect": [
+            320,
+            0,
+            384,
+            64
+          ],
+          "atlas_rect": [
+            320,
+            0,
+            64,
+            64
+          ],
+          "axis": [
+            32.0,
+            32
+          ],
+          "empty": true
+        }
+      ],
+      "status": "visual effect only; no damage or timing",
+      "order": "left-to-right"
+    },
+    "hud_health": {
+      "original": "barra de vida GuardianNucleo.png",
+      "poses": 4,
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            52,
+            0,
+            1192,
+            366
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            320,
+            128
+          ],
+          "scale": 0.25385312783318226,
+          "anchor": [
+            160,
+            64
+          ],
+          "meaning": "3 segments"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            52,
+            366,
+            1192,
+            644
+          ],
+          "atlas_rect": [
+            320,
+            0,
+            320,
+            128
+          ],
+          "scale": 0.25385312783318226,
+          "anchor": [
+            160,
+            64
+          ],
+          "meaning": "2 segments"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            52,
+            644,
+            1192,
+            918
+          ],
+          "atlas_rect": [
+            640,
+            0,
+            320,
+            128
+          ],
+          "scale": 0.25385312783318226,
+          "anchor": [
+            160,
+            64
+          ],
+          "meaning": "1 segment"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            52,
+            918,
+            1192,
+            1261
+          ],
+          "atlas_rect": [
+            960,
+            0,
+            320,
+            128
+          ],
+          "scale": 0.25385312783318226,
+          "anchor": [
+            160,
+            64
+          ],
+          "meaning": "0 segments"
+        }
+      ],
+      "order": "top-to-bottom",
+      "status": "UI-only; health undecided"
+    },
+    "hud_defeated": {
+      "original": "defeated barraDeVida GuardianNucleo.png",
+      "poses": 5,
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            52,
+            0,
+            1130,
+            267
+          ],
+          "atlas_rect": [
+            0,
+            0,
+            320,
+            128
+          ],
+          "scale": 0.2689721421709894,
+          "anchor": [
+            160,
+            64
+          ],
+          "meaning": "cracks"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            52,
+            267,
+            1130,
+            505
+          ],
+          "atlas_rect": [
+            320,
+            0,
+            320,
+            128
+          ],
+          "scale": 0.2689721421709894,
+          "anchor": [
+            160,
+            64
+          ],
+          "meaning": "fracture"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            52,
+            505,
+            1130,
+            736
+          ],
+          "atlas_rect": [
+            640,
+            0,
+            320,
+            128
+          ],
+          "scale": 0.2689721421709894,
+          "anchor": [
+            160,
+            64
+          ],
+          "meaning": "separated panels"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            52,
+            736,
+            1130,
+            950
+          ],
+          "atlas_rect": [
+            960,
+            0,
+            320,
+            128
+          ],
+          "scale": 0.2689721421709894,
+          "anchor": [
+            160,
+            64
+          ],
+          "meaning": "debris"
+        },
+        {
+          "index": 4,
+          "source_rect": [
+            52,
+            950,
+            1130,
+            1100
+          ],
+          "atlas_rect": [
+            1280,
+            0,
+            320,
+            128
+          ],
+          "scale": 0.2689721421709894,
+          "anchor": [
+            160,
+            64
+          ],
+          "meaning": "last particles"
+        }
+      ],
+      "order": "top-to-bottom",
+      "status": "UI-only; health undecided"
+    }
+  },
+  "platform_pairs": {
+    "plataforma_presente.png": {
+      "atlas_rect": [
+        0,
+        0,
+        512,
+        288
+      ],
+      "translation": [
+        0,
+        23
+      ],
+      "source_anchor": [
+        256,
+        73
+      ],
+      "atlas_anchor": [
+        256,
+        96
+      ],
+      "source_pixels": "RGBA copied losslessly; no black threshold"
+    },
+    "plataforma_pasado.png": {
+      "atlas_rect": [
+        512,
+        0,
+        512,
+        288
+      ],
+      "translation": [
+        0,
+        20
+      ],
+      "source_anchor": [
+        256,
+        76
+      ],
+      "atlas_anchor": [
+        256,
+        96
+      ],
+      "source_pixels": "RGBA copied losslessly; no black threshold"
+    },
+    "plataforma_presente_translucida.png": {
+      "atlas_rect": [
+        1024,
+        0,
+        512,
+        288
+      ],
+      "translation": [
+        0,
+        23
+      ],
+      "source_anchor": [
+        256,
+        73
+      ],
+      "atlas_anchor": [
+        256,
+        96
+      ],
+      "source_pixels": "RGBA copied losslessly; no black threshold"
+    },
+    "plataforma_pasado_translucida.png": {
+      "atlas_rect": [
+        1536,
+        0,
+        512,
+        288
+      ],
+      "translation": [
+        0,
+        6
+      ],
+      "source_anchor": [
+        256,
+        90
+      ],
+      "atlas_anchor": [
+        256,
+        96
+      ],
+      "source_pixels": "RGBA copied losslessly; no black threshold"
+    }
+  },
+  "originals": {
+    "assets/tiles/sala 5/contorno s5.png": "0e75fd0f252be656ac3aa0e47fc19c11ba9b592fc0a5bbc7913205fb8f59cbb7",
+    "assets/tiles/sala 5/contornoPast correcion s5.png": "c0cf9c5ac1c2df683f1800a5ecc380079b1684dcedd904a101f8547fd6116160",
+    "assets/tiles/sala 5/diseño s5.png": "de581cf4e65fe8de56b9e25210aaa40e682c5cdd4ab7a6d2d67102c591d320a3",
+    "assets/tiles/sala 5/fondo s5.png": "bab90f737671adaa0611aaaec96abf37f46ca5c25e1c90b5ad8a87cd58fe819a",
+    "assets/tiles/sala 5/fondoPast s5.png": "2be01e0393cae4c5558ed21524bc0764bd99c187355c3b60028ad870d6ceb1c5",
+    "assets/tiles/sala 5/plataformasPast.png": "2ac270c47f9aa613665288fe1f38256910aabef440b8ea718fb5aed2201c63f8",
+    "assets/tiles/sala 5/plataformasPastTransLucid.png": "4e87a56c2e6b1fbc1a9ea0f9def858a34b35d9a72b6a6140029292e333989c78",
+    "assets/tiles/sala 5/plataformasPresent.png": "697a103ced604a07770d32b590a8b523f41ac3705b1fe50426ec3b63fb9e14d2",
+    "assets/tiles/sala 5/plataformasPresentTransLucid.png": "151d9c739d57b6de2c8202c6ede629b07170bc3f70d42b9974682bc8108bc08a",
+    "assets/tiles/sala 5/plataforma_pasado.png": "168122b8148d433b58a233ec9eb018f13d5f456822e1fe3c2e932a7b63876d9a",
+    "assets/tiles/sala 5/plataforma_pasado_translucida.png": "b002514e3d5ffad6c4409dfa68a6f62d897e9cff22a7138f2b6af60f8ee34c65",
+    "assets/tiles/sala 5/plataforma_presente.png": "a82e0e7d06d70cbba6fff4b1f3cbb684b67c6ea9c1286d10d40396af3d190725",
+    "assets/tiles/sala 5/plataforma_presente_translucida.png": "71d5579aa3176f7ff488f9e24277b4bd7fbf7c8b623be6bdebc54a260ee05660",
+    "assets/sprites/jefe/attacking 1 haz GuardianNucleo.png": "7ccee1d21cd6a7109e6a371e24bf7c1ee3c8176527170ba4427a5a4b2000950e",
+    "assets/sprites/jefe/attacking 3 GuardianNucleo.png": "549a9d3075ae769a09cae581aea6042cab44120287b296501151eaa4e4576257",
+    "assets/sprites/jefe/barra de vida GuardianNucleo.png": "e7b2cbb91255ec62a936614d299b9fdbc90854599db42317b10e27cc5e80d592",
+    "assets/sprites/jefe/defeated barraDeVida GuardianNucleo.png": "7aa7de6a6c3e249e1b1eca8374bb71d84410445edbd74275c180ec3d2d706b24",
+    "assets/sprites/jefe/defeated GuardianNucleo.png": "2d361763e8f758b6fc61ca86e7bd181343131baa88db4f2ce25e706c222962ab",
+    "assets/sprites/jefe/Diseño GuardianDelNucleo.png": "f91dd5fe2b0a93a5891fd1f948a3307c38b72ecbde278ef63a38afa14f2fe447",
+    "assets/sprites/jefe/exit GuardianNucleo.png": "ff01306845211ca45dd1f580893223c0be598e06f03c257211193d4056757268",
+    "assets/sprites/jefe/exit Repose GuardianNucleo.png": "f885b6734a66ac1b90cecacb6b14e12d40958c3a78f2bc20b5abfe6fee48da31",
+    "assets/sprites/jefe/finishing atack 1 GuardianNucleo.png": "661f387f0731399f6aaca699b624e9cdc909f98c0f83904580c9f84ceaf9541d",
+    "assets/sprites/jefe/repose GuadianNucleo.png": "a3585706b85f7cb6d1ad3ba1acb867c1a5a6683645dade22c21fd6bcd44a0d62",
+    "assets/sprites/jefe/retorn GuardianNucleo.png": "7a4d7c5ee3ec50c0fa9d82ae1c387bc2fb38fe2b3c41707b892f46364ba207b4",
+    "assets/sprites/jefe/retorn Repose GuardianNucleo.png": "7bfa8a1a924555b286863902bf48ac4d3ccc52f41c248a546fc65b40a4ad7d0f",
+    "assets/sprites/jefe/starting atack 1 GuardianNucleo.png": "d637289fac3f61cbc94b2d1843755d7ed1e755114916275bba110362d82cb4ad",
+    "assets/sprites/jefe/starting GuardianNucleo.png": "51ac2a52f50cf5a4a4b2df9437db6f63dbe4b76a521a2e1521d413ea590306b2",
+    "assets/sprites/jefe/vulnerable GuardianNucleo.png": "3e1203f64a18aebdb1fc9ced982a485db45edc0ac578adfdf792c3a475c6b38c"
+  },
+  "surfaces_original": [
+    {
+      "id": "P1",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        46,
+        506
+      ],
+      "visible_width": 460,
+      "upper_y_approx": 144,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P2",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        611,
+        1060
+      ],
+      "visible_width": 449,
+      "upper_y_approx": 144,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P3",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        1166,
+        1627
+      ],
+      "visible_width": 461,
+      "upper_y_approx": 144,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P4",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        46,
+        506
+      ],
+      "visible_width": 460,
+      "upper_y_approx": 683,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P5",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        612,
+        1061
+      ],
+      "visible_width": 449,
+      "upper_y_approx": 683,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P6",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        1167,
+        1627
+      ],
+      "visible_width": 460,
+      "upper_y_approx": 683,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "T1",
+      "dimension": "Past",
+      "source": "plataformasPast.png",
+      "x": [
+        62,
+        475
+      ],
+      "visible_width": 413,
+      "upper_y_approx": 420,
+      "category": "C",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_pasado_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "T2",
+      "dimension": "Past",
+      "source": "plataformasPast.png",
+      "x": [
+        629,
+        1043
+      ],
+      "visible_width": 414,
+      "upper_y_approx": 420,
+      "category": "C",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_pasado_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "T3",
+      "dimension": "Past",
+      "source": "plataformasPast.png",
+      "x": [
+        1196,
+        1610
+      ],
+      "visible_width": 414,
+      "upper_y_approx": 420,
+      "category": "C",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_pasado_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    }
+  ],
+  "surface_candidates": [
+    {
+      "id": "S0",
+      "category": "A-proposed",
+      "dimension": "Shared",
+      "x": [
+        60,
+        260
+      ],
+      "y": 620,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "S1",
+      "category": "A-proposed",
+      "dimension": "Shared",
+      "x": [
+        300,
+        500
+      ],
+      "y": 560,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "P1",
+      "category": "B",
+      "dimension": "Present",
+      "x": [
+        380,
+        580
+      ],
+      "y": 500,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "T1",
+      "category": "C",
+      "dimension": "Past",
+      "x": [
+        640,
+        840
+      ],
+      "y": 500,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "S2",
+      "category": "A-proposed",
+      "dimension": "Shared",
+      "x": [
+        600,
+        800
+      ],
+      "y": 560,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "S3",
+      "category": "A-proposed",
+      "dimension": "Shared",
+      "x": [
+        840,
+        1220
+      ],
+      "y": 620,
+      "support": "reused individual art; no physical collider"
+    }
+  ],
+  "player_reference": {
+    "original": "assets/sprites/sprites movimiento/repose v3.png",
+    "region": [
+      42,
+      264,
+      130,
+      226
+    ],
+    "margin": [
+      26,
+      279,
+      51,
+      498
+    ],
+    "scale": 0.33,
+    "visual_world_size": [
+      42.9,
+      74.58
+    ],
+    "collider": [
+      24,
+      40
+    ],
+    "camera_zoom": 1.14
+  },
+  "warnings": [
+    "starting last pose cannon touches source right border; cannot reconstruct missing pixels",
+    "seven meaningful defeated poses; tail after1900 is not certified frame8",
+    "HUD destruction has5 poses, not4",
+    "blue past is derivative color proposal, source is amber/cyan",
+    "anatomical proportions vary in originals; registration by core does not manufacture consistent body design",
+    "order interpreted visually; source has no FPS/event metadata"
+  ],
+  "asset_metrics": [
+    {
+      "path": "assets/tiles/sala 5/contorno s5.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 80.5319,
+      "partial_percent": 19.3995,
+      "sha256": "0e75fd0f252be656ac3aa0e47fc19c11ba9b592fc0a5bbc7913205fb8f59cbb7"
+    },
+    {
+      "path": "assets/tiles/sala 5/contornoPast correcion s5.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 79.1468,
+      "partial_percent": 20.7974,
+      "sha256": "c0cf9c5ac1c2df683f1800a5ecc380079b1684dcedd904a101f8547fd6116160"
+    },
+    {
+      "path": "assets/tiles/sala 5/diseño s5.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "source_mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "transparent_percent": 0.0,
+      "partial_percent": 0.0,
+      "sha256": "de581cf4e65fe8de56b9e25210aaa40e682c5cdd4ab7a6d2d67102c591d320a3"
+    },
+    {
+      "path": "assets/tiles/sala 5/fondo s5.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "source_mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "transparent_percent": 0.0,
+      "partial_percent": 0.0,
+      "sha256": "bab90f737671adaa0611aaaec96abf37f46ca5c25e1c90b5ad8a87cd58fe819a"
+    },
+    {
+      "path": "assets/tiles/sala 5/fondoPast s5.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "source_mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "transparent_percent": 0.0,
+      "partial_percent": 0.0,
+      "sha256": "2be01e0393cae4c5558ed21524bc0764bd99c187355c3b60028ad870d6ceb1c5"
+    },
+    {
+      "path": "assets/tiles/sala 5/plataformasPast.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "source_mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "transparent_percent": 0.0,
+      "partial_percent": 0.0,
+      "sha256": "2ac270c47f9aa613665288fe1f38256910aabef440b8ea718fb5aed2201c63f8"
+    },
+    {
+      "path": "assets/tiles/sala 5/plataformasPastTransLucid.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 77.2871,
+      "partial_percent": 22.7123,
+      "sha256": "4e87a56c2e6b1fbc1a9ea0f9def858a34b35d9a72b6a6140029292e333989c78"
+    },
+    {
+      "path": "assets/tiles/sala 5/plataformasPresent.png",
+      "width": 1671,
+      "height": 941,
+      "format": "PNG",
+      "source_mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "transparent_percent": 0.0,
+      "partial_percent": 0.0,
+      "sha256": "697a103ced604a07770d32b590a8b523f41ac3705b1fe50426ec3b63fb9e14d2"
+    },
+    {
+      "path": "assets/tiles/sala 5/plataformasPresentTransLucid.png",
+      "width": 1672,
+      "height": 941,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_percent": 70.2427,
+      "partial_percent": 29.7573,
+      "sha256": "151d9c739d57b6de2c8202c6ede629b07170bc3f70d42b9974682bc8108bc08a"
+    },
+    {
+      "path": "assets/tiles/sala 5/plataforma_pasado.png",
+      "width": 512,
+      "height": 256,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 73.9456,
+      "partial_percent": 1.9608,
+      "sha256": "168122b8148d433b58a233ec9eb018f13d5f456822e1fe3c2e932a7b63876d9a"
+    },
+    {
+      "path": "assets/tiles/sala 5/plataforma_pasado_translucida.png",
+      "width": 512,
+      "height": 256,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 50.721,
+      "partial_percent": 49.276,
+      "sha256": "b002514e3d5ffad6c4409dfa68a6f62d897e9cff22a7138f2b6af60f8ee34c65"
+    },
+    {
+      "path": "assets/tiles/sala 5/plataforma_presente.png",
+      "width": 512,
+      "height": 256,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 71.5683,
+      "partial_percent": 2.9373,
+      "sha256": "a82e0e7d06d70cbba6fff4b1f3cbb684b67c6ea9c1286d10d40396af3d190725"
+    },
+    {
+      "path": "assets/tiles/sala 5/plataforma_presente_translucida.png",
+      "width": 512,
+      "height": 256,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_percent": 50.2045,
+      "partial_percent": 49.7955,
+      "sha256": "71d5579aa3176f7ff488f9e24277b4bd7fbf7c8b623be6bdebc54a260ee05660"
+    },
+    {
+      "path": "assets/sprites/jefe/attacking 1 haz GuardianNucleo.png",
+      "width": 64,
+      "height": 64,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 50.0,
+      "partial_percent": 0.0,
+      "sha256": "7ccee1d21cd6a7109e6a371e24bf7c1ee3c8176527170ba4427a5a4b2000950e"
+    },
+    {
+      "path": "assets/sprites/jefe/attacking 3 GuardianNucleo.png",
+      "width": 2172,
+      "height": 724,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 70.8633,
+      "partial_percent": 29.0319,
+      "sha256": "549a9d3075ae769a09cae581aea6042cab44120287b296501151eaa4e4576257"
+    },
+    {
+      "path": "assets/sprites/jefe/barra de vida GuardianNucleo.png",
+      "width": 1247,
+      "height": 1261,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 41.2175,
+      "partial_percent": 58.5722,
+      "sha256": "e7b2cbb91255ec62a936614d299b9fdbc90854599db42317b10e27cc5e80d592"
+    },
+    {
+      "path": "assets/sprites/jefe/defeated barraDeVida GuardianNucleo.png",
+      "width": 1182,
+      "height": 1330,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 59.5583,
+      "partial_percent": 40.3809,
+      "sha256": "7aa7de6a6c3e249e1b1eca8374bb71d84410445edbd74275c180ec3d2d706b24"
+    },
+    {
+      "path": "assets/sprites/jefe/defeated GuardianNucleo.png",
+      "width": 2172,
+      "height": 724,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 82.1748,
+      "partial_percent": 17.7878,
+      "sha256": "2d361763e8f758b6fc61ca86e7bd181343131baa88db4f2ce25e706c222962ab"
+    },
+    {
+      "path": "assets/sprites/jefe/Diseño GuardianDelNucleo.png",
+      "width": 1262,
+      "height": 1246,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 48.351,
+      "partial_percent": 51.4947,
+      "sha256": "f91dd5fe2b0a93a5891fd1f948a3307c38b72ecbde278ef63a38afa14f2fe447"
+    },
+    {
+      "path": "assets/sprites/jefe/exit GuardianNucleo.png",
+      "width": 2172,
+      "height": 724,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 63.2359,
+      "partial_percent": 36.6998,
+      "sha256": "ff01306845211ca45dd1f580893223c0be598e06f03c257211193d4056757268"
+    },
+    {
+      "path": "assets/sprites/jefe/exit Repose GuardianNucleo.png",
+      "width": 493,
+      "height": 619,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_percent": 59.1804,
+      "partial_percent": 40.8196,
+      "sha256": "f885b6734a66ac1b90cecacb6b14e12d40958c3a78f2bc20b5abfe6fee48da31"
+    },
+    {
+      "path": "assets/sprites/jefe/finishing atack 1 GuardianNucleo.png",
+      "width": 384,
+      "height": 64,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 83.3333,
+      "partial_percent": 0.0,
+      "sha256": "661f387f0731399f6aaca699b624e9cdc909f98c0f83904580c9f84ceaf9541d"
+    },
+    {
+      "path": "assets/sprites/jefe/repose GuadianNucleo.png",
+      "width": 2172,
+      "height": 724,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 56.2667,
+      "partial_percent": 43.5589,
+      "sha256": "a3585706b85f7cb6d1ad3ba1acb867c1a5a6683645dade22c21fd6bcd44a0d62"
+    },
+    {
+      "path": "assets/sprites/jefe/retorn GuardianNucleo.png",
+      "width": 2172,
+      "height": 724,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 60.3638,
+      "partial_percent": 39.5064,
+      "sha256": "7a4d7c5ee3ec50c0fa9d82ae1c387bc2fb38fe2b3c41707b892f46364ba207b4"
+    },
+    {
+      "path": "assets/sprites/jefe/retorn Repose GuardianNucleo.png",
+      "width": 478,
+      "height": 561,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 53.4797,
+      "partial_percent": 46.5188,
+      "sha256": "7bfa8a1a924555b286863902bf48ac4d3ccc52f41c248a546fc65b40a4ad7d0f"
+    },
+    {
+      "path": "assets/sprites/jefe/starting atack 1 GuardianNucleo.png",
+      "width": 2172,
+      "height": 724,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 89.6387,
+      "partial_percent": 10.3071,
+      "sha256": "d637289fac3f61cbc94b2d1843755d7ed1e755114916275bba110362d82cb4ad"
+    },
+    {
+      "path": "assets/sprites/jefe/starting GuardianNucleo.png",
+      "width": 2172,
+      "height": 724,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 72.7881,
+      "partial_percent": 27.1547,
+      "sha256": "51ac2a52f50cf5a4a4b2df9437db6f63dbe4b76a521a2e1521d413ea590306b2"
+    },
+    {
+      "path": "assets/sprites/jefe/vulnerable GuardianNucleo.png",
+      "width": 2172,
+      "height": 724,
+      "format": "PNG",
+      "source_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_percent": 70.9485,
+      "partial_percent": 29.0012,
+      "sha256": "3e1203f64a18aebdb1fc9ced982a485db45edc0ac578adfdf792c3a475c6b38c"
+    }
+  ],
+  "background_comparison": {
+    "design_vs_background_plus_contour_mae_0_255": 4.719708410239201,
+    "exact_pixel_percent": 0.0024152255820693654,
+    "transform_backgrounds_and_contours": {
+      "scale": [
+        1,
+        1
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    "present_solid_montage_size": [
+      1671,
+      941
+    ],
+    "blue_grade": "RGBout=.22 RGBin+.78 luminance*(.62,.92,1.35); alpha unchanged; candidate only"
+  },
+  "reachability": {
+    "gravity_asc": 1470.0,
+    "gravity_desc": 2205.0,
+    "jump_velocity": -514.3928459844674,
+    "height_continuous": 90,
+    "apex_seconds": 0.3499271061118826,
+    "equal_height_air_seconds": 0.6356413918261683,
+    "max_run_reach": 152.5539340382804,
+    "from_rest_reach": 134.5539340382804,
+    "collider": [
+      24,
+      40
+    ],
+    "not_a_runtime_test": true,
+    "original_edges": [
+      {
+        "from": "P4",
+        "to": "T1",
+        "rise": 263,
+        "horizontal_overlap": 413,
+        "conclusion": "vertical rise >90; no direct ascent"
+      },
+      {
+        "from": "T1",
+        "to": "P1",
+        "rise": 276,
+        "horizontal_overlap": 413,
+        "conclusion": "vertical rise >90; no direct ascent"
+      },
+      {
+        "from": "P5",
+        "to": "T2",
+        "rise": 263,
+        "horizontal_overlap": 414,
+        "conclusion": "vertical rise >90; no direct ascent"
+      },
+      {
+        "from": "T2",
+        "to": "P2",
+        "rise": 276,
+        "horizontal_overlap": 414,
+        "conclusion": "vertical rise >90; no direct ascent"
+      },
+      {
+        "from": "P6",
+        "to": "T3",
+        "rise": 263,
+        "horizontal_overlap": 414,
+        "conclusion": "vertical rise >90; no direct ascent"
+      },
+      {
+        "from": "T3",
+        "to": "P3",
+        "rise": 276,
+        "horizontal_overlap": 414,
+        "conclusion": "vertical rise >90; no direct ascent"
+      }
+    ],
+    "candidate_edges": [
+      {
+        "from": "S0",
+        "to": "S1",
+        "gap": 40,
+        "rise": 60,
+        "launch_interval": [
+          224,
+          248
+        ],
+        "landing_interval": [
+          312,
+          348
+        ],
+        "theoretical_rest_distance": 105.57223821128329,
+        "status": "candidate only; actual Player and reverse route must be tested later"
+      },
+      {
+        "from": "S1",
+        "to": "P1",
+        "gap": 0,
+        "rise": 60,
+        "launch_interval": [
+          464,
+          488
+        ],
+        "landing_interval": [
+          392,
+          428
+        ],
+        "theoretical_rest_distance": 105.57223821128329,
+        "status": "candidate only; actual Player and reverse route must be tested later"
+      },
+      {
+        "from": "P1",
+        "to": "T1",
+        "gap": 60,
+        "rise": 0,
+        "launch_interval": [
+          544,
+          568
+        ],
+        "landing_interval": [
+          652,
+          688
+        ],
+        "theoretical_rest_distance": 134.5539340382804,
+        "status": "candidate only; actual Player and reverse route must be tested later"
+      },
+      {
+        "from": "S1",
+        "to": "S2",
+        "gap": 100,
+        "rise": 0,
+        "launch_interval": [
+          464,
+          488
+        ],
+        "landing_interval": [
+          612,
+          648
+        ],
+        "theoretical_rest_distance": 134.5539340382804,
+        "status": "candidate only; actual Player and reverse route must be tested later"
+      },
+      {
+        "from": "T1",
+        "to": "S2",
+        "gap": 0,
+        "rise": -60,
+        "launch_interval": [
+          804,
+          828
+        ],
+        "landing_interval": [
+          612,
+          648
+        ],
+        "theoretical_rest_distance": 154.50783909444993,
+        "status": "candidate only; actual Player and reverse route must be tested later"
+      },
+      {
+        "from": "S2",
+        "to": "S3",
+        "gap": 40,
+        "rise": -60,
+        "launch_interval": [
+          764,
+          788
+        ],
+        "landing_interval": [
+          852,
+          888
+        ],
+        "theoretical_rest_distance": 154.50783909444993,
+        "status": "candidate only; actual Player and reverse route must be tested later"
+      }
+    ]
+  }
+}

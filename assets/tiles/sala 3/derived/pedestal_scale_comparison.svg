@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390">
+<rect width="1200" height="390" fill="#16101f"/>
+<defs><image id="scene" href="../plataformas s3.png" width="1672" height="941"/><image id="module" href="module_levitation/01.png" width="176" height="152"/><image id="hero" href="pickup_interacting/01.png" width="232" height="270"/></defs>
+<g font-family="Arial" font-size="17" fill="#fff">
+<text x="15" y="28">100 %</text><text x="315" y="28">90 %</text><text x="615" y="28">85 %</text><text x="915" y="28">80 %</text>
+</g>
+<g id="a" transform="translate(0 30)"><rect width="300" height="330" fill="#5e123b"/><use href="#scene" x="-1110" y="-470"/><use href="#module" x="97" y="30" width="124" height="107"/><use href="#hero" x="70" y="180" width="77" height="89"/></g>
+<use href="#a" x="300"/><use href="#a" x="600"/><use href="#a" x="900"/>
+<path d="M300 30V360 M600 30V360 M900 30V360" stroke="#ffffff" stroke-opacity=".3"/>
+</svg>

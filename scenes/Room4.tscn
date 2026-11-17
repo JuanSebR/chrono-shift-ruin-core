@@ -1,0 +1,219 @@
+[gd_scene format=3 uid="uid://cvjm3oudm4t21"]
+
+[ext_resource type="Script" uid="uid://dgbdd14lruynv" path="res://DimensionManager.gd" id="dimension"]
+[ext_resource type="PackedScene" path="res://scenes/ui/TutorialHints.tscn" id="hints"]
+[ext_resource type="PackedScene" path="res://scenes/ui/CombatHUD.tscn" id="hud"]
+[ext_resource type="Texture2D" uid="uid://dnu5j8ub0wo2n" path="res://assets/tiles/sala 4/derived/room4_past_background.png" id="past_background"]
+[ext_resource type="Texture2D" uid="uid://dmb1i8a4d8i2s" path="res://assets/tiles/sala 4/derived/room4_past_solid.png" id="past_solid"]
+[ext_resource type="Texture2D" uid="uid://coftrutxnugqi" path="res://assets/tiles/sala 4/derived/room4_past_translucid.png" id="past_translucid"]
+[ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="player"]
+[ext_resource type="Texture2D" uid="uid://dycyrj5tfoaxq" path="res://assets/tiles/sala 4/derived/room4_present_background.png" id="present_background"]
+[ext_resource type="Texture2D" uid="uid://bl0ioo210c1jg" path="res://assets/tiles/sala 4/derived/room4_present_solid.png" id="present_solid"]
+[ext_resource type="Texture2D" uid="uid://b68e6wawy68hq" path="res://assets/tiles/sala 4/derived/room4_present_translucid.png" id="present_translucid"]
+[ext_resource type="Script" uid="uid://bq22olvlsrp1n" path="res://scripts/rooms/room4.gd" id="room"]
+[ext_resource type="Script" uid="uid://c00gi20rq0ohn" path="res://LevelTransition.gd" id="transition"]
+[ext_resource type="Script" uid="uid://pmfmiohp7f8s" path="res://scripts/rooms/room4_tutorial.gd" id="tutorial"]
+
+[sub_resource type="RectangleShape2D" id="EntryLedge"]
+size = Vector2(54, 8)
+
+[sub_resource type="RectangleShape2D" id="CentralRest"]
+size = Vector2(144, 8)
+
+[sub_resource type="RectangleShape2D" id="ExitLedge"]
+size = Vector2(104, 8)
+
+[sub_resource type="RectangleShape2D" id="MetalLeft"]
+size = Vector2(120, 8)
+
+[sub_resource type="RectangleShape2D" id="MetalRight"]
+size = Vector2(84, 8)
+
+[sub_resource type="RectangleShape2D" id="PastLeft"]
+size = Vector2(94, 8)
+
+[sub_resource type="RectangleShape2D" id="PastRight"]
+size = Vector2(122, 8)
+
+[sub_resource type="RectangleShape2D" id="return"]
+size = Vector2(8, 40)
+
+[sub_resource type="RectangleShape2D" id="reactor_exit"]
+size = Vector2(8, 40)
+
+[node name="Room4" type="Node2D" unique_id=1309604589]
+process_physics_priority = -20
+texture_filter = 1
+script = ExtResource("room")
+
+[node name="Visuals" type="Node2D" parent="." unique_id=498447017]
+z_index = -10
+
+[node name="Present" type="Node2D" parent="Visuals" unique_id=1372556025]
+
+[node name="Background" type="Sprite2D" parent="Visuals/Present" unique_id=341794260]
+texture = ExtResource("present_background")
+centered = false
+
+[node name="Ghosts" type="Sprite2D" parent="Visuals/Present" unique_id=1596126967]
+scale = Vector2(2, 2)
+texture = ExtResource("past_translucid")
+centered = false
+
+[node name="Solid" type="Sprite2D" parent="Visuals/Present" unique_id=772310887]
+scale = Vector2(2, 2)
+texture = ExtResource("present_solid")
+centered = false
+
+[node name="Past" type="Node2D" parent="Visuals" unique_id=339061681]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="Visuals/Past" unique_id=263227737]
+texture = ExtResource("past_background")
+centered = false
+
+[node name="Ghosts" type="Sprite2D" parent="Visuals/Past" unique_id=2089560381]
+scale = Vector2(2, 2)
+texture = ExtResource("present_translucid")
+centered = false
+
+[node name="Solid" type="Sprite2D" parent="Visuals/Past" unique_id=1662546352]
+scale = Vector2(2, 2)
+texture = ExtResource("past_solid")
+centered = false
+
+[node name="WorldCollision" type="Node2D" parent="." unique_id=2036421009]
+
+[node name="SharedCollision" type="Node2D" parent="WorldCollision" unique_id=1169838329]
+
+[node name="EntryLedge" type="StaticBody2D" parent="WorldCollision/SharedCollision" unique_id=203728207]
+position = Vector2(65, 420)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/SharedCollision/EntryLedge" unique_id=1895262264]
+shape = SubResource("EntryLedge")
+one_way_collision = true
+
+[node name="CentralRest" type="StaticBody2D" parent="WorldCollision/SharedCollision" unique_id=840850183]
+position = Vector2(646, 466)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/SharedCollision/CentralRest" unique_id=1887257600]
+shape = SubResource("CentralRest")
+one_way_collision = true
+
+[node name="ExitLedge" type="StaticBody2D" parent="WorldCollision/SharedCollision" unique_id=936513026]
+position = Vector2(1188, 288)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/SharedCollision/ExitLedge" unique_id=782402268]
+shape = SubResource("ExitLedge")
+one_way_collision = true
+
+[node name="PresentCollision" type="Node2D" parent="WorldCollision" unique_id=1208720044]
+
+[node name="MetalLeft" type="StaticBody2D" parent="WorldCollision/PresentCollision" unique_id=2133526128]
+position = Vector2(238, 432)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/PresentCollision/MetalLeft" unique_id=1569875163]
+shape = SubResource("MetalLeft")
+one_way_collision = true
+
+[node name="MetalRight" type="StaticBody2D" parent="WorldCollision/PresentCollision" unique_id=1877375166]
+position = Vector2(830, 414)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/PresentCollision/MetalRight" unique_id=1210830237]
+shape = SubResource("MetalRight")
+one_way_collision = true
+
+[node name="PastCollision" type="Node2D" parent="WorldCollision" unique_id=846407974]
+
+[node name="PastLeft" type="StaticBody2D" parent="WorldCollision/PastCollision" unique_id=1391652698]
+position = Vector2(459, 408)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/PastCollision/PastLeft" unique_id=132894002]
+shape = SubResource("PastLeft")
+disabled = true
+one_way_collision = true
+
+[node name="PastRight" type="StaticBody2D" parent="WorldCollision/PastCollision" unique_id=113673042]
+position = Vector2(1015, 348)
+collision_mask = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WorldCollision/PastCollision/PastRight" unique_id=1668152125]
+shape = SubResource("PastRight")
+disabled = true
+one_way_collision = true
+
+[node name="EntryMarkers" type="Node2D" parent="." unique_id=2086174732]
+
+[node name="CentralCheckpoint" type="Marker2D" parent="EntryMarkers" unique_id=2008030455]
+position = Vector2(646, 442)
+
+[node name="Spawn" type="Marker2D" parent="EntryMarkers" unique_id=591331420]
+position = Vector2(64, 396)
+
+[node name="FromRoom3" type="Marker2D" parent="EntryMarkers" unique_id=919486059]
+position = Vector2(64, 396)
+
+[node name="FutureRoom5Access" type="Marker2D" parent="EntryMarkers" unique_id=482168449]
+position = Vector2(1188, 264)
+
+[node name="FromRoom5" type="Marker2D" parent="EntryMarkers"]
+position = Vector2(1160, 264)
+
+[node name="RoomTransitions" type="Node2D" parent="." unique_id=261166028]
+
+[node name="ToRoom3" type="Area2D" parent="RoomTransitions" unique_id=202946439]
+position = Vector2(38, 396)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("transition")
+next_scene_path = "res://scenes/Room3.tscn"
+arrival_marker = &"EntryMarkers/FromRoom4"
+
+[node name="Shape" type="CollisionShape2D" parent="RoomTransitions/ToRoom3" unique_id=1651446669]
+shape = SubResource("return")
+
+[node name="Player" parent="." unique_id=454221069 instance=ExtResource("player")]
+position = Vector2(64, 396)
+
+[node name="Camera2D" parent="Player" index="2"]
+limit_right = 1280
+limit_bottom = 720
+
+[node name="CombatHUD" parent="." unique_id=1431924890 instance=ExtResource("hud")]
+
+[node name="DimensionManager" type="Node" parent="." unique_id=210231243 node_paths=PackedStringArray("present_visuals", "past_visuals", "present_shapes", "past_shapes", "controlled_player", "player_collider")]
+process_physics_priority = -10
+script = ExtResource("dimension")
+present_visuals = NodePath("../Visuals/Present")
+past_visuals = NodePath("../Visuals/Past")
+present_shapes = [NodePath("../WorldCollision/PresentCollision/MetalLeft/Shape"), NodePath("../WorldCollision/PresentCollision/MetalRight/Shape")]
+past_shapes = [NodePath("../WorldCollision/PastCollision/PastLeft/Shape"), NodePath("../WorldCollision/PastCollision/PastRight/Shape")]
+controlled_player = NodePath("../Player")
+player_collider = NodePath("../Player/CollisionShape2D")
+
+[node name="TutorialHints" parent="." unique_id=938643251 instance=ExtResource("hints")]
+
+[node name="TemporalTutorial" type="Node" parent="." unique_id=1973961356]
+script = ExtResource("tutorial")
+
+[node name="ReactorNotice" parent="." instance=ExtResource("hints")]
+
+[node name="ToRoom5" type="Area2D" parent="RoomTransitions"]
+position = Vector2(1253, 264)
+collision_layer = 0
+collision_mask = 2
+monitoring = false
+script = ExtResource("transition")
+next_scene_path = "res://scenes/Room5.tscn"
+arrival_marker = &"EntryMarkers/FutureFromRoom4"
+
+[node name="Shape" type="CollisionShape2D" parent="RoomTransitions/ToRoom5"]
+shape = SubResource("reactor_exit")
+
+[editable path="Player"]

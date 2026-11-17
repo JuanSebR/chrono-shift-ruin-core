@@ -1,0 +1,99 @@
+@startuml
+title Nueva partida, continuar y guardado automático
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 15
+skinparam sequence {
+  ArrowColor #333333
+  ActorBorderColor #222222
+  LifeLineBorderColor #555555
+  LifeLineBackgroundColor white
+  ParticipantBorderColor #222222
+  ParticipantBackgroundColor white
+  ParticipantFontColor #111111
+  GroupBorderColor #555555
+  GroupBackgroundColor white
+  GroupFontColor #111111
+  DividerBackgroundColor #F2F2F2
+}
+
+actor Jugador
+boundary "MainMenu" as Menu
+control "GameProgress\n<<autoload>>" as Progress
+database "FileAccess / DirAccess\n(guardado Godot)" as Storage
+control "SceneTree /\nLevelTransition" as Transition
+entity "Sala cargada" as Room
+
+Menu -> Progress: load_progress()
+activate Progress
+Progress -> Storage: abrir progress_v1.json o .bak
+activate Storage
+Storage --> Progress: datos v1 válidos / sin guardado
+deactivate Storage
+Progress --> Menu: habilitar o deshabilitar Continuar
+deactivate Progress
+
+alt Nueva Partida
+  Jugador -> Menu: seleccionar "Nueva Partida"
+  activate Menu
+  Menu -> Progress: new_game()
+  activate Progress
+  Progress -> Progress: reiniciar checkpoint, objetos,\ntutoriales, diálogos y victoria
+  Progress -> Storage: save_progress()\n(escribir .tmp, rotar .bak, renombrar)
+  activate Storage
+  Storage --> Progress: true / false
+  deactivate Storage
+  Progress --> Menu: resultado
+  deactivate Progress
+  Menu -> Transition: change_scene_to_file(Room1_Tutorial)
+  deactivate Menu
+else Continuar
+  Jugador -> Menu: seleccionar "Continuar"
+  activate Menu
+  Menu -> Progress: load_progress()
+  activate Progress
+  Progress -> Storage: leer guardado v1 o respaldo
+  Storage --> Progress: progreso validado
+  Progress --> Menu: true
+  Menu -> Progress: prepare_continue_arrival()
+  Progress -> Progress: elegir checkpoint y preparar\nPlayer con 3 HP
+  Progress --> Menu: destination
+  deactivate Progress
+  Menu -> Transition: change_scene_to_file(destination)
+  deactivate Menu
+end
+
+Transition -> Room: instanciar escena
+activate Room
+Room -> Progress: apply_room_arrival(self, Player)
+activate Progress
+Progress -> Room: posicionar Player y restaurar estado de llegada
+deactivate Progress
+Room --> Jugador: sala jugable
+deactivate Room
+
+== Al cruzar hacia otra sala ==
+Jugador -> Transition: entrar en LevelTransition
+activate Transition
+Transition -> Progress: prepare_room_arrival(next_scene, marker, Player, self)
+activate Progress
+Progress --> Transition: handoff efímero preparado
+deactivate Progress
+Transition -> Transition: change_scene_to_file(next_scene)
+Transition -> Room: cargar sala destino
+activate Room
+Room -> Progress: apply_room_arrival(self, Player)
+activate Progress
+Progress -> Progress: _confirm_room_checkpoint() diferido\nsolo si la transición es válida
+Progress -> Storage: save_progress() con last_room_checkpoint
+activate Storage
+Storage --> Progress: checkpoint persistido / error y rollback
+deactivate Storage
+Progress --> Room: llegada confirmada
+deactivate Progress
+Room --> Jugador: Player cargado en marcador seguro
+deactivate Room
+deactivate Transition
+@enduml

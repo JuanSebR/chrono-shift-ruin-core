@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/enemy_projectile.gd" id="1_u45cs"]
+[ext_resource type="Texture2D" path="res://assets/Enemigos/enemy_1 proyectil_flying v1.png" id="2_opu46"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uxfu4"]
+size = Vector2(10, 8)
+
+[node name="EnemyProjectile" type="Area2D" unique_id=811381184]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_u45cs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=158312304]
+shape = SubResource("RectangleShape2D_uxfu4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=563233196]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_opu46")

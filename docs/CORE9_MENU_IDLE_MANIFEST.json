@@ -1,0 +1,524 @@
+{
+  "reference": 7,
+  "contact_roi": [
+    365,
+    540,
+    395,
+    590
+  ],
+  "reference_contact_y": 569.0,
+  "frames": [
+    {
+      "frame": 7,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-007.png",
+      "original_sha256": "a8e6c79a33c481afbc32b41abc01dabbddd048598ee194bc102bd4e102891167",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_007.png",
+      "derived_sha256": "7c4b0779ebba60c1e8e65337a490dea9138e941d76f821f919ceae991e7ec45f",
+      "translation_px": [
+        0,
+        0
+      ],
+      "original_contact_y": 569.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        282,
+        279,
+        745,
+        763
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 8,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-008.png",
+      "original_sha256": "90ff5411da4e76a4e2fd9c796f02ce5fa4d9d71f3673e41c1897880ebe17914d",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_008.png",
+      "derived_sha256": "b36c2c6d4ca2f879ec0ff25a282ab37d7bc8eaa57599fc7878f8d7a292d66716",
+      "translation_px": [
+        0,
+        -2
+      ],
+      "original_contact_y": 571.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        282,
+        280,
+        744,
+        762
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 9,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-009.png",
+      "original_sha256": "8c2d3b242790b9073457474dd876b0c8f19f9ef6047fbc7118de563a21401215",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_009.png",
+      "derived_sha256": "651521f2e90ec4bd02d427d436c1fba1cc5068452b31a894e20f8ca46962a9e7",
+      "translation_px": [
+        -1,
+        -3
+      ],
+      "original_contact_y": 572.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        283,
+        281,
+        746,
+        760
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 10,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-010.png",
+      "original_sha256": "64e7e9479674052cd0373fa5d0da864e54f18593c11030e0b2ec120e1a69c0bd",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_010.png",
+      "derived_sha256": "3f69923467875afa8866a79d6835593a42769a4c77a0d3e34709edd0d2adf7b4",
+      "translation_px": [
+        -2,
+        -5
+      ],
+      "original_contact_y": 574.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        285,
+        281,
+        746,
+        757
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 11,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-011.png",
+      "original_sha256": "40274e8022d7608cc0971a0624739e04a39cc0625f0039fc38cf7805f882b8b6",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_011.png",
+      "derived_sha256": "9804af27d3dc7c3e838ce6e74707d41f304d2fb98524e02ac26b5d4a04c3cd83",
+      "translation_px": [
+        -2,
+        -6
+      ],
+      "original_contact_y": 575.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        286,
+        282,
+        746,
+        755
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 12,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-012.png",
+      "original_sha256": "e21e69ddd6dfee392e2871dd804688e192d7d41b926e49af55879f1455e449e9",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_012.png",
+      "derived_sha256": "8352e79ddff12b4863b9dadc6e57adbd67770a379a17756b858f5df33a61df59",
+      "translation_px": [
+        -2,
+        -7
+      ],
+      "original_contact_y": 576.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        288,
+        282,
+        746,
+        756
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 13,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-013.png",
+      "original_sha256": "d62aba0fa008351fdc55f2eda251c927995ce51c449cd7b5a17f14c30da9f844",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_013.png",
+      "derived_sha256": "0d2f290bea10ecd74883c759d43a6518d6b502bdb7c948be77adb79c20f498e3",
+      "translation_px": [
+        -2,
+        -7
+      ],
+      "original_contact_y": 576.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        290,
+        283,
+        746,
+        758
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 14,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-014.png",
+      "original_sha256": "d6c0a9e48075c9704a7e1a78cca6d15f46559c329eb70cbe38e8dd6afb183f06",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_014.png",
+      "derived_sha256": "512ae944469cbdf15b0e059b2cedd72c0eb73ab9a829b338f55cde46b5956ba1",
+      "translation_px": [
+        -2,
+        -7
+      ],
+      "original_contact_y": 576.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        288,
+        284,
+        746,
+        759
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 15,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-015.png",
+      "original_sha256": "2aea85579a24b8f786b3eb29612029ae163512665307db434b236bbadf463ca0",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_015.png",
+      "derived_sha256": "f2378bc9e459b1fd70676c4709f3678b7248f232acfefe3092f04044a1859008",
+      "translation_px": [
+        -2,
+        -5
+      ],
+      "original_contact_y": 574.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        290,
+        286,
+        747,
+        760
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 16,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-016.png",
+      "original_sha256": "9d5f63e52446f0867be097a9a88a749cf8ddcfdca73651930d0f7aba91903c6d",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_016.png",
+      "derived_sha256": "0234d0f8f09c1287b3789b8acaaa6a4ca3e62c1e3b8fffbec18b19760fc4c6f2",
+      "translation_px": [
+        -1,
+        -4
+      ],
+      "original_contact_y": 573.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        290,
+        287,
+        747,
+        761
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 17,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-017.png",
+      "original_sha256": "852030aa082c629fcf5b69bd4af9cf270957f437ace018d8880b4bf585ca557a",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_017.png",
+      "derived_sha256": "9a3a9a5abd77644b8caa6f6dda18c87e7693d98e9038150475fd627efc5b0d4a",
+      "translation_px": [
+        -1,
+        -3
+      ],
+      "original_contact_y": 572.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        289,
+        288,
+        747,
+        760
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 18,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-018.png",
+      "original_sha256": "c0d9bab190141d30d7f4880635dbfecfd84e24e024a3a6eada5fee1696f5b525",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_018.png",
+      "derived_sha256": "8f73ea0bb641eae6a577fd40e07d4ac392f2a3f50f62e103f542f2435cac3f58",
+      "translation_px": [
+        0,
+        -2
+      ],
+      "original_contact_y": 571.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        288,
+        288,
+        747,
+        758
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 19,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-019.png",
+      "original_sha256": "e065415bb12e16dea3d28d1e6a93f622856b74d8d89ed74504d4244f9085abcd",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_019.png",
+      "derived_sha256": "2687ea666708877c94fae7b345a868684a86d7315adbbaf81ea84e0dc5dd35aa",
+      "translation_px": [
+        1,
+        0
+      ],
+      "original_contact_y": 569.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        287,
+        288,
+        746,
+        755
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 20,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-020.png",
+      "original_sha256": "3269837c3a1b9790dfa79b4c91ef93cc2249da4b44c0052c247903f2cfd7b436",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_020.png",
+      "derived_sha256": "36ef3d39b0c41f6f483985f105968d27abc5516e286ccb1f86689023fa6a78fe",
+      "translation_px": [
+        1,
+        2
+      ],
+      "original_contact_y": 567.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        285,
+        290,
+        745,
+        754
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 21,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-021.png",
+      "original_sha256": "c48513bd8b0f95cd42e074be228ede0c0e37e2aaf06b217494a5221b0f7daa75",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_021.png",
+      "derived_sha256": "c18f56b56663649a19e5875b42a1b2f6f741956373143156c018069e8232b22b",
+      "translation_px": [
+        2,
+        4
+      ],
+      "original_contact_y": 565.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        284,
+        289,
+        745,
+        753
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        2
+      ]
+    },
+    {
+      "frame": 22,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-022.png",
+      "original_sha256": "398609426cdf4a645b8c44ed2010a1c8043901758f58b015e372ea05715047d9",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_022.png",
+      "derived_sha256": "8c8829031f566b9fdd1269399f81a5465852834cb5c39d41a9745159819c31e7",
+      "translation_px": [
+        2,
+        5
+      ],
+      "original_contact_y": 564.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        282,
+        283,
+        744,
+        755
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 23,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-023.png",
+      "original_sha256": "a10a49400b5a84f38a9d08c2ca33fdd734825a40aeec3448db71b43c2747932b",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_023.png",
+      "derived_sha256": "375918aa9ff79f16713b2496d18b3ecba1f45b7284285d15329d23a23e8bdb94",
+      "translation_px": [
+        2,
+        6
+      ],
+      "original_contact_y": 563.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        282,
+        277,
+        743,
+        756
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        1
+      ]
+    },
+    {
+      "frame": 24,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-024.png",
+      "original_sha256": "f49a919580a8b65835a997b7e2548a23bf57cd90fece87f93a9123b4900cb8ef",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_024.png",
+      "derived_sha256": "ec398c04740865bc800fc0415a935b8663ded8024c931529aad37061d17972f7",
+      "translation_px": [
+        2,
+        6
+      ],
+      "original_contact_y": 563.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        281,
+        273,
+        742,
+        760
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 25,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-025.png",
+      "original_sha256": "6de2644abe395af006b6c313a9ddaff4341afd6727e9d5742f3213a0aed14bd3",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_025.png",
+      "derived_sha256": "ecc0a09dfd4dbf762c87795ecdeba1a126fb2505514e35c2ef5468caebb389f9",
+      "translation_px": [
+        2,
+        6
+      ],
+      "original_contact_y": 562.5,
+      "stabilized_contact_y": 568.5,
+      "anchor_residual_y": -0.5,
+      "alpha_bbox": [
+        281,
+        271,
+        742,
+        761
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 26,
+      "source": "assets\\inicio\\personaje_sin_fondo\\pro-frame-83511d46-260e-80af-9c16-f1d446b85ff7-pre32-026.png",
+      "original_sha256": "9865b501a88aea1bbdfb756eec3652e4df98dba31181330453e292e6bf1149ab",
+      "derived": "assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_026.png",
+      "derived_sha256": "6329688cacad51b027ca73cd30f664c5b3aeb2ca603183d7a9928e92094d6280",
+      "translation_px": [
+        2,
+        6
+      ],
+      "original_contact_y": 563.0,
+      "stabilized_contact_y": 569.0,
+      "anchor_residual_y": 0.0,
+      "alpha_bbox": [
+        281,
+        268,
+        742,
+        762
+      ],
+      "pixel_exact": true,
+      "residual_template_translation_px": [
+        0,
+        0
+      ]
+    }
+  ],
+  "verification": {
+    "existing_files_changed": [
+      "scenes/MainMenu.tscn"
+    ],
+    "originals_unchanged": true,
+    "only_scene_path_substitutions": true,
+    "alpha_and_pixels_preserved": true,
+    "max_vertical_contact_residual_px": 0.5,
+    "max_horizontal_registration_residual_px": 1,
+    "interactive_visual": "PENDING: Windows capture timed out twice",
+    "rendered_frames": 20
+  }
+}

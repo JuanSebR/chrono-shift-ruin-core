@@ -1,0 +1,45 @@
+@startuml
+title Casos de uso — Jugabilidad
+
+top to bottom direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 16
+skinparam ArrowFontSize 13
+skinparam ArrowColor #333333
+skinparam ActorBorderColor #222222
+skinparam ActorFontColor #111111
+skinparam UsecaseBorderColor #333333
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor #111111
+skinparam RectangleBorderColor #222222
+skinparam RectangleFontColor #111111
+skinparam linetype ortho
+skinparam nodesep 56
+skinparam ranksep 72
+
+actor Jugador
+
+rectangle " " {
+  usecase "Moverse y saltar" as UC_Move
+  usecase "Atacar con la\nespada cronal" as UC_Attack
+  usecase "Cambiar entre\nPresente y Pasado" as UC_Shift
+  usecase "Interactuar con\nobjetos" as UC_Interact
+  usecase "Adquirir habilidades" as UC_Ability
+  usecase "Superar salas y\nobstáculos" as UC_Rooms
+
+  UC_Move -[hidden]right-> UC_Attack
+  UC_Attack -[hidden]right-> UC_Shift
+  UC_Move -[hidden]down-> UC_Interact
+  UC_Interact -[hidden]right-> UC_Ability
+  UC_Ability -[hidden]right-> UC_Rooms
+}
+
+Jugador -- UC_Move
+Jugador -- UC_Attack
+Jugador -- UC_Shift
+Jugador -- UC_Interact
+Jugador -- UC_Rooms
+Jugador -- UC_Ability
+@enduml

@@ -1,0 +1,75 @@
+{
+  "walking": {
+    "file": "enemy_1 walking v1.png",
+    "cuts": [
+      0,
+      290,
+      554,
+      820,
+      1088,
+      1352,
+      1618,
+      1884,
+      2172
+    ],
+    "top": 200,
+    "feet": 470,
+    "fps": 10,
+    "loop": true
+  },
+  "attacking": {
+    "file": "enemy_1 attacking v1.png",
+    "cuts": [
+      0,
+      218,
+      434,
+      650,
+      870,
+      1086,
+      1304,
+      1520,
+      1736,
+      1954,
+      2172
+    ],
+    "top": 205,
+    "feet": 464,
+    "fps": 10,
+    "loop": false
+  },
+  "damaged": {
+    "file": "enemy_1 damaged v1.png",
+    "cuts": [
+      0,
+      434,
+      868,
+      1302,
+      1736,
+      2172
+    ],
+    "top": 170,
+    "feet": 562,
+    "fps": 15,
+    "loop": false
+  },
+  "ka-boom": {
+    "file": "enemy_1 ka-boom v1.png",
+    "cuts": [
+      0,
+      218,
+      434,
+      650,
+      865,
+      1080,
+      1300,
+      1522,
+      1746,
+      1962,
+      2172
+    ],
+    "top": 200,
+    "feet": 500,
+    "fps": 12,
+    "loop": false
+  }
+}

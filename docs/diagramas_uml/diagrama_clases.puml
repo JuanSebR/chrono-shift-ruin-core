@@ -1,0 +1,204 @@
+@startuml
+title Chrono-Shift: Ruin Core — Arquitectura principal implementada
+
+top to bottom direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam classAttributeIconSize 0
+skinparam ClassBorderColor #222222
+skinparam ClassBackgroundColor white
+skinparam ClassFontColor #111111
+skinparam PackageBorderColor #555555
+skinparam PackageBackgroundColor white
+skinparam ArrowColor #333333
+skinparam linetype ortho
+hide empty members
+
+package "Núcleo y navegación" {
+  class GameProgress <<autoload Node>> {
+    - SAVE_PATH: String = "user://progress_v1.json"
+    + last_room_checkpoint: String
+    + has_cronal_sword: bool
+    + has_temporal_lens: bool
+    + has_reactor_key: bool
+    + core_guardian_defeated: bool
+    + new_game(): bool
+    + save_progress(): bool
+    + load_progress(): bool
+    + prepare_room_arrival(scene_path: String, marker: StringName, player: CharacterBody2D, transition: Area2D): void
+    + apply_room_arrival(scene: Node, player: CharacterBody2D): void
+    + record_core_guardian_victory(): bool
+  }
+
+  class MainMenu <<Control>> {
+    - _transitioning: bool
+    + _on_new_game_pressed(): void
+    + _on_continue_pressed(): void
+    + _on_options_pressed(): void
+  }
+
+  class LevelTransition <<Area2D>> {
+    + next_scene_path: String
+    + arrival_marker: StringName
+    + transition_pending: bool
+    - _on_body_entered(body: Node2D): void
+    - _change_room(): void
+  }
+}
+
+package "Jugador y salas" {
+  class Player <<CharacterBody2D>> {
+    + SPEED: float = 240.0
+    + MAX_HEALTH: int = 3
+    + ATTACK_COOLDOWN: float = 0.35
+    + health: int
+    + health_changed(current_health: int)
+    + defeated()
+    + use_energy_slash(): void
+    + take_damage(amount: int): void
+    + begin_temporal_protection(): void
+  }
+
+  class DimensionManager <<Node>> {
+    + SWITCH_COOLDOWN: float = 0.2
+    + active_dimension: int
+    + dimension_changed(is_present: bool)
+    + toggle_dimension(player: CharacterBody2D): void
+    + restore_present_at_checkpoint(): void
+  }
+
+  class GameManager <<Node>> {
+    + player: CharacterBody2D
+    + dimension_manager: Node
+    + hud: CanvasLayer
+    - _on_player_defeated(): void
+    - _on_dimension_changed(is_present: bool): void
+  }
+
+  class Room2 <<Node2D>> {
+    + player: CharacterBody2D
+    + hud: CanvasLayer
+    + restart_pending: bool
+    + _on_player_defeated(): void
+  }
+
+  class Room3 <<Node2D>> {
+    - acquisition_running: bool
+    - _begin_acquisition(): void
+  }
+
+  class Room4 <<Node2D>> {
+    + fall_recovered()
+    - checkpoint: Marker2D
+    - _recover(): void
+    - _update_reactor_access(delta: float): void
+  }
+
+  class Room5 <<Node2D>> {
+    + encounter_state: EncounterState
+    + victory_persisted: bool
+    + encounter_state_changed(current: EncounterState)
+    - _on_encounter_entered(body: Node2D): void
+    - _on_encounter_boss_defeated(): void
+    - _try_persist_victory(): void
+  }
+}
+
+package "Combate y presentación" {
+  class CoreGuardian <<Node2D>> {
+    + OFFENSIVE_SECONDS: float = 45.0
+    + OVERHEAT_SECONDS: float = 6.0
+    + max_health: int = 3
+    + health: int = 3
+    + state: State
+    + health_changed(current: int, maximum: int)
+    + defeated()
+    + start_combat_cycle(): bool
+    + take_damage(amount: int): void
+    + can_receive_damage(): bool
+  }
+
+  class GuardianVerticalBurst <<Node2D>> {
+    + WARNING_TIME: float = 1.4
+    + ACTIVE_TIME: float = 0.75
+    - _begin_burst(): void
+  }
+
+  class GuardianHorizontalLaser <<Node2D>> {
+    + WARNING_TIME: float = 0.75
+    + ACTIVE_TIME: float = 0.5
+    + is_dangerous(): bool
+  }
+
+  class GuardianDirectProjectile <<Node2D>> {
+    + PREPARE_TIME: float = 0.6
+    + SPEED: float = 900.0
+    + MAX_FLIGHT: float = 1.8
+    - _emit(): void
+  }
+
+  class CombatHUD <<CanvasLayer>> {
+    + update_health(current_health: int): void
+    + on_damage_taken(current_health: int): void
+    + update_dimension_theme(present: bool): void
+    + show_game_over_log(): void
+  }
+
+  class BossHUD <<CanvasLayer>> {
+    - guardian: Node2D
+    + bind_guardian(target: Node2D): void
+    + health_fraction(): float
+  }
+}
+
+package "Cierre" {
+  class FinalAccessDoor <<Area2D>> {
+    + unlocked: bool
+    + is_unlocked(): bool
+    + try_enter(): bool
+  }
+
+  class FinalRoom <<Control>> {
+    - elapsed: float
+    - ready_to_return: bool
+    - _reject_access(): void
+    - _return_to_menu(): void
+  }
+}
+
+Room3 --|> Room2
+Room4 --|> Room2
+Room5 --|> Room2
+
+MainMenu ..> GameProgress : usa autoload
+LevelTransition ..> GameProgress : prepara llegada
+GameManager --> "1" Player : coordina
+GameManager --> "1" DimensionManager : coordina
+GameManager ..> GameProgress : aplica llegada
+Room2 *-- "1" Player : nodo de escena
+Room2 *-- "1" CombatHUD : nodo de escena
+Room4 *-- "1" DimensionManager : nodo de escena
+DimensionManager --> "1" Player : controlled_player
+Room5 *-- "1" CoreGuardian : nodo de escena
+Room5 *-- "1" BossHUD : instancia en ejecución
+Room5 *-- "1" FinalAccessDoor : instancia en ejecución
+CoreGuardian *-- "1" GuardianVerticalBurst : nodo hijo
+CoreGuardian *-- "1" GuardianHorizontalLaser : nodo hijo
+CoreGuardian *-- "1" GuardianDirectProjectile : nodo hijo
+BossHUD --> "1" CoreGuardian : observa señales
+Room5 ..> GameProgress : persiste victoria
+FinalAccessDoor --> "1" Room5 : valida estado
+FinalAccessDoor ..> GameProgress : valida victoria
+FinalRoom ..> GameProgress : controla acceso
+FinalRoom ..> MainMenu : cambia de escena
+
+legend bottom
+  |= Símbolo |= Relación usada |
+  | <|-- | Herencia entre controladores de sala |
+  | *-- | Composición: nodo hijo o instancia propiedad de la escena |
+  | --> | Asociación con referencia estable |
+  | ..> | Dependencia por autoload, llamada o cambio de escena |
+endlegend
+@enduml

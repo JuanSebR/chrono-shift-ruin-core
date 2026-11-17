@@ -1,0 +1,416 @@
+{
+  "pngs": [
+    {
+      "path": "assets/tiles/sala 5/derived/room5_background_alignment.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "sha256": "b874a5a405d3cce5e1bfa08e3316092b1c8c0a580040f8e9bdeb0bb9ef507b95"
+    },
+    {
+      "path": "assets/tiles/sala 5/derived/room5_past_preview.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "3553fc096a32d8a2f5d9217ca43114c64b84114dc4eca8a64fc61882bf579c22"
+    },
+    {
+      "path": "assets/tiles/sala 5/derived/room5_past_scale_preview.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "f643497b27d64771f1d60ab23b7b142c78b0ea42a7bf616372aaf892e73acd18"
+    },
+    {
+      "path": "assets/tiles/sala 5/derived/room5_past_source_preview.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "9d12294ba2c84e614f9c00921018d13627da43beeeb1fbe0eb69a6e4c3195885"
+    },
+    {
+      "path": "assets/tiles/sala 5/derived/room5_platforms_reference.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "2d3270d9ee6d022a5677ee314a41fa95c4e4252893d7e051e7186951af6c0e97"
+    },
+    {
+      "path": "assets/tiles/sala 5/derived/room5_platform_pairs_atlas.png",
+      "size": [
+        2048,
+        288
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "a3cfad2e212b9ea8cb84cfa4fe2f6d8cf567db81e041c062d2eb0e9ac678a1f5"
+    },
+    {
+      "path": "assets/tiles/sala 5/derived/room5_platform_pairs_review.png",
+      "size": [
+        1100,
+        660
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "a843cddc342c3c6977308bccf3039688acbf3e52142c0754c17904d99fc0b39e"
+    },
+    {
+      "path": "assets/tiles/sala 5/derived/room5_present_preview.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "84941540ff5304c3cb6f88855b3834a923588b79ce5eae82f12a1a9562150848"
+    },
+    {
+      "path": "assets/tiles/sala 5/derived/room5_present_scale_preview.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "3eb0630e0df8cac8a9e9e8d0f026f7d9bc1b8b9504a486ca4bf6328bc50bb8dd"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/boss_anchor_overlay.png",
+      "size": [
+        640,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "484e06e9685d58307a52a28be803a8147f333f39e1e4f27ccebaedbdf57ff46e"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/boss_anchor_reference.png",
+      "size": [
+        1440,
+        950
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "3aa173338d6d71408e21bf31a469a02272bcb01a0ad6f9cb4ba7911dff76eb04"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/boss_animation_contact_sheet.png",
+      "size": [
+        1600,
+        3080
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "d4820bf36e554f32cbaa5a2e4828fc955d30d11bc66b4ec38d81460908203966"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/boss_hud_comparison.png",
+      "size": [
+        1280,
+        660
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "2e38f37d3830f87bc81b5f009c985ad6817a029b8ba5a4cfa82fb745d4c57595"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/boss_scale_comparison.png",
+      "size": [
+        1024,
+        1950
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        232,
+        255
+      ],
+      "sha256": "886766b5aad25f25ead09c19b7600698ae527a5c8dc89ebb55d01c873e823a96"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/attack3_atlas.png",
+      "size": [
+        3840,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "3c01716499cfa234768227288d3f34b76cf32fa70bb154c3fe1b770be3878a36"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/beam_finish_atlas.png",
+      "size": [
+        384,
+        64
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "d087be0045094e700c8eded4732cc4bfdd1cf8c5006793689b6980db90c664a1"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/beam_hold_atlas.png",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "a05f1e86335152905ce661ad14b2c0877e1b5f5084c72b74bc206a64cab395a3"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/beam_start_atlas.png",
+      "size": [
+        2304,
+        192
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "97d9e673bb19e9c47b4aae8ab23a14a26d92747cf71b43da723bf032018182bf"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/defeated_atlas.png",
+      "size": [
+        4480,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "7f6705ffdbcc733e14c2eaff66eebc93b2d119a8854a7cef58317503a3e1b0db"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/exit_atlas.png",
+      "size": [
+        2560,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "71fa8fe13cb12d149b86c6fd85db3ad9df282b18e30cba4c182bd534a8133dfb"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/exit_repose_atlas.png",
+      "size": [
+        640,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "sha256": "c271b8ce0cd2b09da210c27bec955ed615e79c77bbdeeceb7eb7db645de5df65"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/hud_defeated_atlas.png",
+      "size": [
+        1600,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1e55d7085ebff713a40e44262484ade5c8fccaef462d85382ea7c5db5fcd22d8"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/hud_health_atlas.png",
+      "size": [
+        1280,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "2ab5bdd5e5f7068dc848d335aece50b3167b8ccee707a820ae2d8d1a8e671ccd"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/repose_atlas.png",
+      "size": [
+        2560,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "2d12d1ebc0eb0eeb8eea9735457026fc1c0ad4f57d8f6357e83ec6ee18eb87b9"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/retorn_atlas.png",
+      "size": [
+        2560,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "151401747b388ca8c963a56aedaca58bed83bcf0b4c819a320875dcc4d4f631f"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/retorn_repose_atlas.png",
+      "size": [
+        640,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "67f1621b21a078aad6b30058cef7c5a0c69d76c84b780ed80dc0af0e1e6dc2f0"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/starting_atlas.png",
+      "size": [
+        5120,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "c3e11308e38b6108c718de768536774c3bcbc3c88d976f21a63543819803f442"
+    },
+    {
+      "path": "assets/sprites/jefe/derived/atlases/vulnerable_atlas.png",
+      "size": [
+        3840,
+        800
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "df55ad6de1aaf42d4a3a4f871af39e4ce21dbd62101852ce5014fad42d67327f"
+    }
+  ],
+  "original_pngs_unchanged": true,
+  "protected_before_count": 944,
+  "changed_existing_files": [
+    "docs/ROOM5_ASSET_INVENTORY.md"
+  ],
+  "platform_RGBA_identical": {
+    "plataforma_presente.png": true,
+    "plataforma_pasado.png": true,
+    "plataforma_presente_translucida.png": true,
+    "plataforma_pasado_translucida.png": true
+  },
+  "counts": {
+    "starting": 8,
+    "repose": 4,
+    "attack3": 6,
+    "vulnerable": 6,
+    "retorn": 4,
+    "exit": 4,
+    "retorn_repose": 1,
+    "exit_repose": 1,
+    "defeated": 7,
+    "beam_start": 6,
+    "beam_hold": 1,
+    "beam_finish": 6,
+    "hud_health": 4,
+    "hud_defeated": 5
+  },
+  "expected_cell_count": 63,
+  "body_cleaning_all_removed_alpha_below_128": true,
+  "godot_runtime_tested": false,
+  "room5_scene_exists": false,
+  "unexpected_existing_changes": [],
+  "backup_path": "C:\\Users\\juans\\chrono-shift-backups\\room5_stage_a_20261116",
+  "meaningful_cell_count": 62,
+  "document_links_missing": [],
+  "backup_zip_matches_all_originals": true,
+  "backup_zip_sha256": "183bce0d49ca8a13fe6fa05e17b1057a4ae3c989756df994988bbf8da1089705",
+  "atlas_rects_in_bounds": true,
+  "body_cells_no_canvas_clipping": true,
+  "editor_final": {
+    "scene": "Room4",
+    "scene_id": "1654334234622",
+    "scene_revision": "10063650:0:1",
+    "playing": false,
+    "unsaved": false,
+    "project_path": "c:/users/juans/chrono-shift-ruin-core",
+    "observed_via": "editor_get_state"
+  }
+}

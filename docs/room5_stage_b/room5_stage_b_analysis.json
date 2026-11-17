@@ -1,0 +1,1144 @@
+{
+  "scope": "conceptual only; not Godot screenshots; no physics test",
+  "world_candidates": {
+    "native": {
+      "size": [
+        1672,
+        941
+      ],
+      "camera": {
+        "resolution": [
+          1024,
+          572
+        ],
+        "zoom": 0.6124401913875598,
+        "center_clamped": [
+          836.0,
+          470.5
+        ],
+        "world_field": [
+          1672.0,
+          933.96875
+        ],
+        "world_rect": [
+          0,
+          4,
+          1672,
+          937
+        ]
+      },
+      "player_world_height": 74.58,
+      "boss_world_height": 194.25,
+      "world_spatial_factor": 1.30625
+    },
+    "compact": {
+      "size": [
+        1280,
+        720
+      ],
+      "camera": {
+        "resolution": [
+          1024,
+          572
+        ],
+        "zoom": 0.8,
+        "center_clamped": [
+          640.0,
+          360.0
+        ],
+        "world_field": [
+          1280.0,
+          715.0
+        ],
+        "world_rect": [
+          0,
+          2,
+          1280,
+          718
+        ]
+      },
+      "player_world_height": 74.58,
+      "boss_world_height": 194.25,
+      "world_spatial_factor": 1
+    }
+  },
+  "cameras": [
+    {
+      "resolution": [
+        1024,
+        572
+      ],
+      "zoom": 1.14,
+      "center_clamped": [
+        480,
+        469.12280701754383
+      ],
+      "world_field": [
+        898.2456140350878,
+        501.75438596491233
+      ],
+      "world_rect": [
+        31,
+        218,
+        929,
+        720
+      ],
+      "mode": "follow"
+    },
+    {
+      "resolution": [
+        1280,
+        720
+      ],
+      "zoom": 1.14,
+      "center_clamped": [
+        561.4035087719299,
+        404.2105263157894
+      ],
+      "world_field": [
+        1122.8070175438597,
+        631.5789473684212
+      ],
+      "world_rect": [
+        0,
+        88,
+        1123,
+        720
+      ],
+      "mode": "follow"
+    },
+    {
+      "resolution": [
+        1024,
+        572
+      ],
+      "zoom": 0.9,
+      "center_clamped": [
+        711.1111111111111,
+        400
+      ],
+      "world_field": [
+        1137.7777777777778,
+        635.5555555555555
+      ],
+      "world_rect": [
+        142,
+        82,
+        1280,
+        718
+      ],
+      "mode": "local_crop"
+    },
+    {
+      "resolution": [
+        1280,
+        720
+      ],
+      "zoom": 1.125,
+      "center_clamped": [
+        711.1111111111111,
+        400
+      ],
+      "world_field": [
+        1137.7777777777778,
+        640.0
+      ],
+      "world_rect": [
+        142,
+        80,
+        1280,
+        720
+      ],
+      "mode": "local_crop"
+    },
+    {
+      "resolution": [
+        1024,
+        572
+      ],
+      "zoom": 0.8,
+      "center_clamped": [
+        640.0,
+        360
+      ],
+      "world_field": [
+        1280.0,
+        715.0
+      ],
+      "world_rect": [
+        0,
+        2,
+        1280,
+        718
+      ],
+      "mode": "local_full"
+    },
+    {
+      "resolution": [
+        1280,
+        720
+      ],
+      "zoom": 1.0,
+      "center_clamped": [
+        640.0,
+        360.0
+      ],
+      "world_field": [
+        1280.0,
+        720.0
+      ],
+      "world_rect": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "mode": "local_full"
+    }
+  ],
+  "surfaces_old": [
+    [
+      "S0",
+      "Shared",
+      60,
+      260,
+      620
+    ],
+    [
+      "S1",
+      "Shared",
+      300,
+      500,
+      560
+    ],
+    [
+      "P1",
+      "Present",
+      380,
+      580,
+      500
+    ],
+    [
+      "T1",
+      "Past",
+      640,
+      840,
+      500
+    ],
+    [
+      "S2",
+      "Shared",
+      600,
+      800,
+      560
+    ],
+    [
+      "S3",
+      "Shared",
+      840,
+      1220,
+      620
+    ]
+  ],
+  "surfaces_recommended": [
+    [
+      "F0",
+      "Shared",
+      80,
+      1200,
+      620
+    ],
+    [
+      "R1",
+      "Shared",
+      300,
+      460,
+      560
+    ],
+    [
+      "P1",
+      "Present",
+      500,
+      660,
+      500
+    ],
+    [
+      "T1",
+      "Past",
+      700,
+      860,
+      500
+    ],
+    [
+      "R2",
+      "Shared",
+      780,
+      940,
+      560
+    ]
+  ],
+  "source_manifest_sha256": "395f8da975ccf19bdabb8bef5aeed87f936238f47dc6ad8e07bf51028f503470",
+  "sword_snapshots": [
+    {
+      "frame": 0,
+      "jump_height_snapshot": 0,
+      "player_center_x": 1038.2092499999999,
+      "player_feet_y": 620,
+      "core_world": [
+        1070.2092499999999,
+        511.162625
+      ],
+      "sword_rect": [
+        1048.2092499999999,
+        582,
+        1084.2092499999999,
+        610
+      ],
+      "point_overlap": false
+    },
+    {
+      "frame": 2,
+      "jump_height_snapshot": 0,
+      "player_center_x": 1045.534875,
+      "player_feet_y": 620,
+      "core_world": [
+        1077.534875,
+        563.06975
+      ],
+      "sword_rect": [
+        1055.534875,
+        582,
+        1091.534875,
+        610
+      ],
+      "point_overlap": false
+    },
+    {
+      "frame": 2,
+      "jump_height_snapshot": 30,
+      "player_center_x": 1045.534875,
+      "player_feet_y": 590,
+      "core_world": [
+        1077.534875,
+        563.06975
+      ],
+      "sword_rect": [
+        1055.534875,
+        552,
+        1091.534875,
+        580
+      ],
+      "point_overlap": true
+    }
+  ],
+  "links_old": [
+    {
+      "from": "S0",
+      "to": "S1",
+      "rise": 60,
+      "gap": 40,
+      "overlap": -40,
+      "required_center_travel": 80,
+      "from_rest_distance": 105.57223821128329,
+      "run_distance": 123.57223821128329,
+      "rest_margin": 25.57223821128329,
+      "run_margin": 43.57223821128329,
+      "launch_safe_interval": [
+        80,
+        240
+      ],
+      "landing_safe_interval": [
+        320,
+        480
+      ],
+      "nominal_under_support_clearance": 12,
+      "analytic_only": true
+    },
+    {
+      "from": "S1",
+      "to": "S0",
+      "rise": -60,
+      "gap": 40,
+      "overlap": -40,
+      "required_center_travel": 80,
+      "from_rest_distance": 154.50783909444993,
+      "run_distance": 172.50783909444993,
+      "rest_margin": 74.50783909444993,
+      "run_margin": 92.50783909444993,
+      "launch_safe_interval": [
+        320,
+        480
+      ],
+      "landing_safe_interval": [
+        80,
+        240
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S1",
+      "to": "P1",
+      "rise": 60,
+      "gap": 0,
+      "overlap": 120,
+      "required_center_travel": 0,
+      "from_rest_distance": 105.57223821128329,
+      "run_distance": 123.57223821128329,
+      "rest_margin": 105.57223821128329,
+      "run_margin": 123.57223821128329,
+      "launch_safe_interval": [
+        320,
+        480
+      ],
+      "landing_safe_interval": [
+        400,
+        560
+      ],
+      "nominal_under_support_clearance": 12,
+      "analytic_only": true
+    },
+    {
+      "from": "P1",
+      "to": "S1",
+      "rise": -60,
+      "gap": 0,
+      "overlap": 120,
+      "required_center_travel": 0,
+      "from_rest_distance": 154.50783909444993,
+      "run_distance": 172.50783909444993,
+      "rest_margin": 154.50783909444993,
+      "run_margin": 172.50783909444993,
+      "launch_safe_interval": [
+        400,
+        560
+      ],
+      "landing_safe_interval": [
+        320,
+        480
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "P1",
+      "to": "T1",
+      "rise": 0,
+      "gap": 60,
+      "overlap": -60,
+      "required_center_travel": 100,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": 34.5539340382804,
+      "run_margin": 52.5539340382804,
+      "launch_safe_interval": [
+        400,
+        560
+      ],
+      "landing_safe_interval": [
+        660,
+        820
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "T1",
+      "to": "P1",
+      "rise": 0,
+      "gap": 60,
+      "overlap": -60,
+      "required_center_travel": 100,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": 34.5539340382804,
+      "run_margin": 52.5539340382804,
+      "launch_safe_interval": [
+        660,
+        820
+      ],
+      "landing_safe_interval": [
+        400,
+        560
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S1",
+      "to": "S2",
+      "rise": 0,
+      "gap": 100,
+      "overlap": -100,
+      "required_center_travel": 140,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": -5.446065961719597,
+      "run_margin": 12.553934038280403,
+      "launch_safe_interval": [
+        320,
+        480
+      ],
+      "landing_safe_interval": [
+        620,
+        780
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S2",
+      "to": "S1",
+      "rise": 0,
+      "gap": 100,
+      "overlap": -100,
+      "required_center_travel": 140,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": -5.446065961719597,
+      "run_margin": 12.553934038280403,
+      "launch_safe_interval": [
+        620,
+        780
+      ],
+      "landing_safe_interval": [
+        320,
+        480
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "T1",
+      "to": "S2",
+      "rise": -60,
+      "gap": 0,
+      "overlap": 160,
+      "required_center_travel": 0,
+      "from_rest_distance": 154.50783909444993,
+      "run_distance": 172.50783909444993,
+      "rest_margin": 154.50783909444993,
+      "run_margin": 172.50783909444993,
+      "launch_safe_interval": [
+        660,
+        820
+      ],
+      "landing_safe_interval": [
+        620,
+        780
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S2",
+      "to": "T1",
+      "rise": 60,
+      "gap": 0,
+      "overlap": 160,
+      "required_center_travel": 0,
+      "from_rest_distance": 105.57223821128329,
+      "run_distance": 123.57223821128329,
+      "rest_margin": 105.57223821128329,
+      "run_margin": 123.57223821128329,
+      "launch_safe_interval": [
+        620,
+        780
+      ],
+      "landing_safe_interval": [
+        660,
+        820
+      ],
+      "nominal_under_support_clearance": 12,
+      "analytic_only": true
+    },
+    {
+      "from": "S2",
+      "to": "S3",
+      "rise": -60,
+      "gap": 40,
+      "overlap": -40,
+      "required_center_travel": 80,
+      "from_rest_distance": 154.50783909444993,
+      "run_distance": 172.50783909444993,
+      "rest_margin": 74.50783909444993,
+      "run_margin": 92.50783909444993,
+      "launch_safe_interval": [
+        620,
+        780
+      ],
+      "landing_safe_interval": [
+        860,
+        1200
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S3",
+      "to": "S2",
+      "rise": 60,
+      "gap": 40,
+      "overlap": -40,
+      "required_center_travel": 80,
+      "from_rest_distance": 105.57223821128329,
+      "run_distance": 123.57223821128329,
+      "rest_margin": 25.57223821128329,
+      "run_margin": 43.57223821128329,
+      "launch_safe_interval": [
+        860,
+        1200
+      ],
+      "landing_safe_interval": [
+        620,
+        780
+      ],
+      "nominal_under_support_clearance": 12,
+      "analytic_only": true
+    }
+  ],
+  "links_new": [
+    {
+      "from": "F0",
+      "to": "R1",
+      "rise": 60,
+      "gap": 0,
+      "overlap": 160,
+      "required_center_travel": 0,
+      "from_rest_distance": 105.57223821128329,
+      "run_distance": 123.57223821128329,
+      "rest_margin": 105.57223821128329,
+      "run_margin": 123.57223821128329,
+      "launch_safe_interval": [
+        100,
+        1180
+      ],
+      "landing_safe_interval": [
+        320,
+        440
+      ],
+      "nominal_under_support_clearance": 12,
+      "analytic_only": true
+    },
+    {
+      "from": "R1",
+      "to": "F0",
+      "rise": -60,
+      "gap": 0,
+      "overlap": 160,
+      "required_center_travel": 0,
+      "from_rest_distance": 154.50783909444993,
+      "run_distance": 172.50783909444993,
+      "rest_margin": 154.50783909444993,
+      "run_margin": 172.50783909444993,
+      "launch_safe_interval": [
+        320,
+        440
+      ],
+      "landing_safe_interval": [
+        100,
+        1180
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "R1",
+      "to": "P1",
+      "rise": 60,
+      "gap": 40,
+      "overlap": -40,
+      "required_center_travel": 80,
+      "from_rest_distance": 105.57223821128329,
+      "run_distance": 123.57223821128329,
+      "rest_margin": 25.57223821128329,
+      "run_margin": 43.57223821128329,
+      "launch_safe_interval": [
+        320,
+        440
+      ],
+      "landing_safe_interval": [
+        520,
+        640
+      ],
+      "nominal_under_support_clearance": 12,
+      "analytic_only": true
+    },
+    {
+      "from": "P1",
+      "to": "R1",
+      "rise": -60,
+      "gap": 40,
+      "overlap": -40,
+      "required_center_travel": 80,
+      "from_rest_distance": 154.50783909444993,
+      "run_distance": 172.50783909444993,
+      "rest_margin": 74.50783909444993,
+      "run_margin": 92.50783909444993,
+      "launch_safe_interval": [
+        520,
+        640
+      ],
+      "landing_safe_interval": [
+        320,
+        440
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "P1",
+      "to": "T1",
+      "rise": 0,
+      "gap": 40,
+      "overlap": -40,
+      "required_center_travel": 80,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": 54.5539340382804,
+      "run_margin": 72.5539340382804,
+      "launch_safe_interval": [
+        520,
+        640
+      ],
+      "landing_safe_interval": [
+        720,
+        840
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "T1",
+      "to": "P1",
+      "rise": 0,
+      "gap": 40,
+      "overlap": -40,
+      "required_center_travel": 80,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": 54.5539340382804,
+      "run_margin": 72.5539340382804,
+      "launch_safe_interval": [
+        720,
+        840
+      ],
+      "landing_safe_interval": [
+        520,
+        640
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "T1",
+      "to": "R2",
+      "rise": -60,
+      "gap": 0,
+      "overlap": 80,
+      "required_center_travel": 0,
+      "from_rest_distance": 154.50783909444993,
+      "run_distance": 172.50783909444993,
+      "rest_margin": 154.50783909444993,
+      "run_margin": 172.50783909444993,
+      "launch_safe_interval": [
+        720,
+        840
+      ],
+      "landing_safe_interval": [
+        800,
+        920
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "R2",
+      "to": "T1",
+      "rise": 60,
+      "gap": 0,
+      "overlap": 80,
+      "required_center_travel": 0,
+      "from_rest_distance": 105.57223821128329,
+      "run_distance": 123.57223821128329,
+      "rest_margin": 105.57223821128329,
+      "run_margin": 123.57223821128329,
+      "launch_safe_interval": [
+        800,
+        920
+      ],
+      "landing_safe_interval": [
+        720,
+        840
+      ],
+      "nominal_under_support_clearance": 12,
+      "analytic_only": true
+    },
+    {
+      "from": "R2",
+      "to": "F0",
+      "rise": -60,
+      "gap": 0,
+      "overlap": 160,
+      "required_center_travel": 0,
+      "from_rest_distance": 154.50783909444993,
+      "run_distance": 172.50783909444993,
+      "rest_margin": 154.50783909444993,
+      "run_margin": 172.50783909444993,
+      "launch_safe_interval": [
+        800,
+        920
+      ],
+      "landing_safe_interval": [
+        100,
+        1180
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "F0",
+      "to": "R2",
+      "rise": 60,
+      "gap": 0,
+      "overlap": 160,
+      "required_center_travel": 0,
+      "from_rest_distance": 105.57223821128329,
+      "run_distance": 123.57223821128329,
+      "rest_margin": 105.57223821128329,
+      "run_margin": 123.57223821128329,
+      "launch_safe_interval": [
+        100,
+        1180
+      ],
+      "landing_safe_interval": [
+        800,
+        920
+      ],
+      "nominal_under_support_clearance": 12,
+      "analytic_only": true
+    }
+  ],
+  "links_native_scaled": [
+    {
+      "from": "S0",
+      "to": "S1",
+      "rise": 78.375,
+      "gap": 52.25,
+      "overlap": -52.25,
+      "required_center_travel": 92.25,
+      "from_rest_distance": 90.62691535582077,
+      "run_distance": 108.62691535582077,
+      "rest_margin": -1.6230846441792295,
+      "run_margin": 16.37691535582077,
+      "launch_safe_interval": [
+        98.375,
+        319.625
+      ],
+      "landing_safe_interval": [
+        411.875,
+        633.125
+      ],
+      "nominal_under_support_clearance": 30.375,
+      "analytic_only": true
+    },
+    {
+      "from": "S1",
+      "to": "S0",
+      "rise": -78.375,
+      "gap": 52.25,
+      "overlap": -52.25,
+      "required_center_travel": 92.25,
+      "from_rest_distance": 159.7734149084259,
+      "run_distance": 177.7734149084259,
+      "rest_margin": 67.5234149084259,
+      "run_margin": 85.5234149084259,
+      "launch_safe_interval": [
+        411.875,
+        633.125
+      ],
+      "landing_safe_interval": [
+        98.375,
+        319.625
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S1",
+      "to": "P1",
+      "rise": 78.375,
+      "gap": 0,
+      "overlap": 156.75,
+      "required_center_travel": 0,
+      "from_rest_distance": 90.62691535582077,
+      "run_distance": 108.62691535582077,
+      "rest_margin": 90.62691535582077,
+      "run_margin": 108.62691535582077,
+      "launch_safe_interval": [
+        411.875,
+        633.125
+      ],
+      "landing_safe_interval": [
+        516.375,
+        737.625
+      ],
+      "nominal_under_support_clearance": 30.375,
+      "analytic_only": true
+    },
+    {
+      "from": "P1",
+      "to": "S1",
+      "rise": -78.375,
+      "gap": 0,
+      "overlap": 156.75,
+      "required_center_travel": 0,
+      "from_rest_distance": 159.7734149084259,
+      "run_distance": 177.7734149084259,
+      "rest_margin": 159.7734149084259,
+      "run_margin": 177.7734149084259,
+      "launch_safe_interval": [
+        516.375,
+        737.625
+      ],
+      "landing_safe_interval": [
+        411.875,
+        633.125
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "P1",
+      "to": "T1",
+      "rise": 0.0,
+      "gap": 78.375,
+      "overlap": -78.375,
+      "required_center_travel": 118.375,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": 16.178934038280403,
+      "run_margin": 34.1789340382804,
+      "launch_safe_interval": [
+        516.375,
+        737.625
+      ],
+      "landing_safe_interval": [
+        856.0,
+        1077.25
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "T1",
+      "to": "P1",
+      "rise": 0.0,
+      "gap": 78.375,
+      "overlap": -78.375,
+      "required_center_travel": 118.375,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": 16.178934038280403,
+      "run_margin": 34.1789340382804,
+      "launch_safe_interval": [
+        856.0,
+        1077.25
+      ],
+      "landing_safe_interval": [
+        516.375,
+        737.625
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S1",
+      "to": "S2",
+      "rise": 0.0,
+      "gap": 130.625,
+      "overlap": -130.625,
+      "required_center_travel": 170.625,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": -36.0710659617196,
+      "run_margin": -18.071065961719597,
+      "launch_safe_interval": [
+        411.875,
+        633.125
+      ],
+      "landing_safe_interval": [
+        803.75,
+        1025.0
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S2",
+      "to": "S1",
+      "rise": 0.0,
+      "gap": 130.625,
+      "overlap": -130.625,
+      "required_center_travel": 170.625,
+      "from_rest_distance": 134.5539340382804,
+      "run_distance": 152.5539340382804,
+      "rest_margin": -36.0710659617196,
+      "run_margin": -18.071065961719597,
+      "launch_safe_interval": [
+        803.75,
+        1025.0
+      ],
+      "landing_safe_interval": [
+        411.875,
+        633.125
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "T1",
+      "to": "S2",
+      "rise": -78.375,
+      "gap": 0,
+      "overlap": 209.0,
+      "required_center_travel": 0,
+      "from_rest_distance": 159.7734149084259,
+      "run_distance": 177.7734149084259,
+      "rest_margin": 159.7734149084259,
+      "run_margin": 177.7734149084259,
+      "launch_safe_interval": [
+        856.0,
+        1077.25
+      ],
+      "landing_safe_interval": [
+        803.75,
+        1025.0
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S2",
+      "to": "T1",
+      "rise": 78.375,
+      "gap": 0,
+      "overlap": 209.0,
+      "required_center_travel": 0,
+      "from_rest_distance": 90.62691535582077,
+      "run_distance": 108.62691535582077,
+      "rest_margin": 90.62691535582077,
+      "run_margin": 108.62691535582077,
+      "launch_safe_interval": [
+        803.75,
+        1025.0
+      ],
+      "landing_safe_interval": [
+        856.0,
+        1077.25
+      ],
+      "nominal_under_support_clearance": 30.375,
+      "analytic_only": true
+    },
+    {
+      "from": "S2",
+      "to": "S3",
+      "rise": -78.375,
+      "gap": 52.25,
+      "overlap": -52.25,
+      "required_center_travel": 92.25,
+      "from_rest_distance": 159.7734149084259,
+      "run_distance": 177.7734149084259,
+      "rest_margin": 67.5234149084259,
+      "run_margin": 85.5234149084259,
+      "launch_safe_interval": [
+        803.75,
+        1025.0
+      ],
+      "landing_safe_interval": [
+        1117.25,
+        1573.625
+      ],
+      "nominal_under_support_clearance": null,
+      "analytic_only": true
+    },
+    {
+      "from": "S3",
+      "to": "S2",
+      "rise": 78.375,
+      "gap": 52.25,
+      "overlap": -52.25,
+      "required_center_travel": 92.25,
+      "from_rest_distance": 90.62691535582077,
+      "run_distance": 108.62691535582077,
+      "rest_margin": -1.6230846441792295,
+      "run_margin": 16.37691535582077,
+      "launch_safe_interval": [
+        1117.25,
+        1573.625
+      ],
+      "landing_safe_interval": [
+        803.75,
+        1025.0
+      ],
+      "nominal_under_support_clearance": 30.375,
+      "analytic_only": true
+    }
+  ],
+  "jump": {
+    "speed": 240,
+    "acceleration": 1600,
+    "body": [
+      24,
+      40
+    ],
+    "gravity_asc": 1470.0,
+    "gravity_desc": 2205.0,
+    "jump_v": -514.3928459844674,
+    "max_height": 90,
+    "apex_s": 0.3499271061118826,
+    "same_level_air_s": 0.6356413918261683,
+    "sword_delay_from_input_s": 0.20833333333333334,
+    "sword_active_s": 0.1
+  },
+  "kneel_sword_timing": {
+    "core_above_feet": 56.93024999999999,
+    "jump_height_interval_for_point": [
+      18.930249999999987,
+      46.93024999999999
+    ],
+    "held_jump_descending_overlap_s": [
+      0.5475771323699599,
+      0.6038214902101607
+    ],
+    "attack_input_interval_for_any_overlap_s": [
+      0.2392437990366265,
+      0.39548815687682737
+    ],
+    "not_a_boss_vulnerability_duration": true,
+    "assumes_core_fixed_pose2_and_Player_not_hit": true
+  },
+  "deck_coverage_at_y620": {
+    "interval": [
+      80,
+      1200
+    ],
+    "min_alpha": 255,
+    "pixels_alpha_below128": 0,
+    "not_collision_validation": true
+  },
+  "boss_envelope": {
+    "0.375": [
+      960.125,
+      425.75,
+      1163.375,
+      621.125
+    ],
+    "0.45": [
+      938.15,
+      386.9,
+      1182.05,
+      621.35
+    ]
+  }
+}

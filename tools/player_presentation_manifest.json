@@ -1,0 +1,453 @@
+{
+  "attack": {
+    "fps": 24,
+    "loop": false,
+    "source_directory": "Accion de golpear",
+    "resize": [
+      338,
+      338
+    ],
+    "canvas": [
+      400,
+      724
+    ],
+    "destination": [
+      48,
+      201
+    ],
+    "frames": [
+      {
+        "source": "attack_01.png",
+        "source_frame": 1,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_02.png",
+        "source_frame": 2,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_03.png",
+        "source_frame": 3,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_04.png",
+        "source_frame": 4,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_05.png",
+        "source_frame": 5,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_06.png",
+        "source_frame": 6,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_07.png",
+        "source_frame": 7,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_08.png",
+        "source_frame": 8,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_09.png",
+        "source_frame": 9,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_10.png",
+        "source_frame": 10,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_11.png",
+        "source_frame": 11,
+        "duration": 1.0
+      },
+      {
+        "source": "attack_12.png",
+        "source_frame": 12,
+        "duration": 1.0
+      }
+    ]
+  },
+  "pickup": {
+    "source": "interacting down.png",
+    "fps": 25,
+    "loop": false,
+    "canvas": [
+      300,
+      724
+    ],
+    "foot_y": 502,
+    "frames": [
+      {
+        "source_frame": 1,
+        "region": [
+          48,
+          252,
+          127,
+          239
+        ],
+        "anchor_x": 111.5,
+        "support_y": 488,
+        "duration": 1
+      },
+      {
+        "source_frame": 3,
+        "region": [
+          395,
+          275,
+          134,
+          216
+        ],
+        "anchor_x": 462.0,
+        "support_y": 488,
+        "duration": 1
+      },
+      {
+        "source_frame": 4,
+        "region": [
+          570,
+          297,
+          137,
+          194
+        ],
+        "anchor_x": 638.5,
+        "support_y": 488,
+        "duration": 1
+      },
+      {
+        "source_frame": 5,
+        "region": [
+          755,
+          313,
+          135,
+          178
+        ],
+        "anchor_x": 822.5,
+        "support_y": 488,
+        "duration": 1
+      },
+      {
+        "source_frame": 7,
+        "region": [
+          1111,
+          312,
+          132,
+          179
+        ],
+        "anchor_x": 1177.0,
+        "support_y": 488,
+        "duration": 1
+      },
+      {
+        "source_frame": 8,
+        "region": [
+          1294,
+          298,
+          127,
+          193
+        ],
+        "anchor_x": 1357.5,
+        "support_y": 488,
+        "duration": 1
+      },
+      {
+        "source_frame": 9,
+        "region": [
+          1473,
+          283,
+          129,
+          208
+        ],
+        "anchor_x": 1537.5,
+        "support_y": 488,
+        "duration": 1
+      },
+      {
+        "source_frame": 10,
+        "region": [
+          1653,
+          269,
+          125,
+          222
+        ],
+        "anchor_x": 1715.5,
+        "support_y": 488,
+        "duration": 1
+      },
+      {
+        "source_frame": 11,
+        "region": [
+          1835,
+          255,
+          117,
+          236
+        ],
+        "anchor_x": 1893.5,
+        "support_y": 488,
+        "duration": 1
+      },
+      {
+        "source_frame": 12,
+        "region": [
+          2008,
+          252,
+          122,
+          239
+        ],
+        "anchor_x": 2069.0,
+        "support_y": 488,
+        "duration": 1
+      }
+    ]
+  },
+  "hurt": {
+    "source": "damaged.png",
+    "fps": 24,
+    "loop": false,
+    "canvas": [
+      300,
+      724
+    ],
+    "foot_y": 502,
+    "frames": [
+      {
+        "source_frame": 4,
+        "region": [
+          560,
+          254,
+          154,
+          240
+        ],
+        "anchor_x": 633.5,
+        "support_y": 487,
+        "duration": 1
+      },
+      {
+        "source_frame": 5,
+        "region": [
+          729,
+          261,
+          157,
+          231
+        ],
+        "anchor_x": 814.5,
+        "support_y": 487,
+        "duration": 1
+      },
+      {
+        "source_frame": 6,
+        "region": [
+          905,
+          268,
+          181,
+          221
+        ],
+        "anchor_x": 995.5,
+        "support_y": 487,
+        "duration": 1
+      },
+      {
+        "source_frame": 9,
+        "region": [
+          1474,
+          270,
+          129,
+          220
+        ],
+        "anchor_x": 1538.5,
+        "support_y": 487,
+        "duration": 1
+      },
+      {
+        "source_frame": 11,
+        "region": [
+          1828,
+          267,
+          129,
+          223
+        ],
+        "anchor_x": 1900.5,
+        "support_y": 487,
+        "duration": 1
+      },
+      {
+        "source_frame": 12,
+        "region": [
+          2002,
+          264,
+          134,
+          226
+        ],
+        "anchor_x": 2081.5,
+        "support_y": 487,
+        "duration": 1
+      }
+    ]
+  },
+  "defeat": {
+    "source": "defeated.png",
+    "fps": 16,
+    "loop": false,
+    "canvas": [
+      300,
+      724
+    ],
+    "foot_y": 502,
+    "frames": [
+      {
+        "source_frame": 1,
+        "region": [
+          45,
+          245,
+          138,
+          256
+        ],
+        "anchor_x": 114.0,
+        "support_y": 498,
+        "duration": 1
+      },
+      {
+        "source_frame": 2,
+        "region": [
+          221,
+          249,
+          134,
+          252
+        ],
+        "anchor_x": 288.0,
+        "support_y": 498,
+        "duration": 1
+      },
+      {
+        "source_frame": 3,
+        "region": [
+          391,
+          265,
+          141,
+          236
+        ],
+        "anchor_x": 461.5,
+        "support_y": 498,
+        "duration": 1
+      },
+      {
+        "source_frame": 4,
+        "region": [
+          555,
+          281,
+          160,
+          220
+        ],
+        "anchor_x": 635.0,
+        "support_y": 498,
+        "duration": 1
+      },
+      {
+        "source_frame": 5,
+        "region": [
+          721,
+          297,
+          171,
+          210
+        ],
+        "anchor_x": 806.5,
+        "support_y": 504,
+        "duration": 1
+      },
+      {
+        "source_frame": 6,
+        "region": [
+          892,
+          323,
+          179,
+          188
+        ],
+        "anchor_x": 981.5,
+        "support_y": 508,
+        "duration": 1
+      },
+      {
+        "source_frame": 7,
+        "region": [
+          1080,
+          343,
+          172,
+          171
+        ],
+        "anchor_x": 1166.0,
+        "support_y": 511,
+        "duration": 1
+      },
+      {
+        "source_frame": 8,
+        "region": [
+          1270,
+          364,
+          142,
+          149
+        ],
+        "anchor_x": 1341.0,
+        "support_y": 510,
+        "duration": 1
+      },
+      {
+        "source_frame": 9,
+        "region": [
+          1428,
+          386,
+          160,
+          128
+        ],
+        "anchor_x": 1508.0,
+        "support_y": 511,
+        "duration": 1
+      },
+      {
+        "source_frame": 10,
+        "region": [
+          1601,
+          407,
+          164,
+          107
+        ],
+        "anchor_x": 1683.0,
+        "support_y": 511,
+        "duration": 1
+      },
+      {
+        "source_frame": 11,
+        "region": [
+          1780,
+          421,
+          171,
+          93
+        ],
+        "anchor_x": 1865.5,
+        "support_y": 511,
+        "duration": 1
+      },
+      {
+        "source_frame": 12,
+        "region": [
+          1962,
+          423,
+          183,
+          91
+        ],
+        "anchor_x": 2053.5,
+        "support_y": 511,
+        "duration": 1
+      }
+    ]
+  }
+}

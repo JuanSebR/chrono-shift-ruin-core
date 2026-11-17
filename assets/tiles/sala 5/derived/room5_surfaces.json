@@ -1,0 +1,302 @@
+{
+  "original": [
+    {
+      "id": "P1",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        46,
+        506
+      ],
+      "visible_width": 460,
+      "upper_y_approx": 144,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P2",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        611,
+        1060
+      ],
+      "visible_width": 449,
+      "upper_y_approx": 144,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P3",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        1166,
+        1627
+      ],
+      "visible_width": 461,
+      "upper_y_approx": 144,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P4",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        46,
+        506
+      ],
+      "visible_width": 460,
+      "upper_y_approx": 683,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P5",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        612,
+        1061
+      ],
+      "visible_width": 449,
+      "upper_y_approx": 683,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "P6",
+      "dimension": "Present",
+      "source": "plataformasPresent.png",
+      "x": [
+        1167,
+        1627
+      ],
+      "visible_width": 460,
+      "upper_y_approx": 683,
+      "category": "B",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_presente_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "T1",
+      "dimension": "Past",
+      "source": "plataformasPast.png",
+      "x": [
+        62,
+        475
+      ],
+      "visible_width": 413,
+      "upper_y_approx": 420,
+      "category": "C",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_pasado_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "T2",
+      "dimension": "Past",
+      "source": "plataformasPast.png",
+      "x": [
+        629,
+        1043
+      ],
+      "visible_width": 414,
+      "upper_y_approx": 420,
+      "category": "C",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_pasado_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    },
+    {
+      "id": "T3",
+      "dimension": "Past",
+      "source": "plataformasPast.png",
+      "x": [
+        1196,
+        1610
+      ],
+      "visible_width": 414,
+      "upper_y_approx": 420,
+      "category": "C",
+      "support": "visual floating platform; collider not assigned",
+      "ghost": "plataforma_pasado_translucida.png",
+      "floor_relation": "no continuous floor in original artwork",
+      "reconstruction": "transparent individual positioned by measured lip/width; not pixel-identical to RGB montage"
+    }
+  ],
+  "candidate": [
+    {
+      "id": "S0",
+      "category": "A-proposed",
+      "dimension": "Shared",
+      "x": [
+        60,
+        260
+      ],
+      "y": 620,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "S1",
+      "category": "A-proposed",
+      "dimension": "Shared",
+      "x": [
+        300,
+        500
+      ],
+      "y": 560,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "P1",
+      "category": "B",
+      "dimension": "Present",
+      "x": [
+        380,
+        580
+      ],
+      "y": 500,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "T1",
+      "category": "C",
+      "dimension": "Past",
+      "x": [
+        640,
+        840
+      ],
+      "y": 500,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "S2",
+      "category": "A-proposed",
+      "dimension": "Shared",
+      "x": [
+        600,
+        800
+      ],
+      "y": 560,
+      "support": "reused individual art; no physical collider"
+    },
+    {
+      "id": "S3",
+      "category": "A-proposed",
+      "dimension": "Shared",
+      "x": [
+        840,
+        1220
+      ],
+      "y": 620,
+      "support": "reused individual art; no physical collider"
+    }
+  ],
+  "platform_pairs": {
+    "plataforma_presente.png": {
+      "atlas_rect": [
+        0,
+        0,
+        512,
+        288
+      ],
+      "translation": [
+        0,
+        23
+      ],
+      "source_anchor": [
+        256,
+        73
+      ],
+      "atlas_anchor": [
+        256,
+        96
+      ],
+      "source_pixels": "RGBA copied losslessly; no black threshold"
+    },
+    "plataforma_pasado.png": {
+      "atlas_rect": [
+        512,
+        0,
+        512,
+        288
+      ],
+      "translation": [
+        0,
+        20
+      ],
+      "source_anchor": [
+        256,
+        76
+      ],
+      "atlas_anchor": [
+        256,
+        96
+      ],
+      "source_pixels": "RGBA copied losslessly; no black threshold"
+    },
+    "plataforma_presente_translucida.png": {
+      "atlas_rect": [
+        1024,
+        0,
+        512,
+        288
+      ],
+      "translation": [
+        0,
+        23
+      ],
+      "source_anchor": [
+        256,
+        73
+      ],
+      "atlas_anchor": [
+        256,
+        96
+      ],
+      "source_pixels": "RGBA copied losslessly; no black threshold"
+    },
+    "plataforma_pasado_translucida.png": {
+      "atlas_rect": [
+        1536,
+        0,
+        512,
+        288
+      ],
+      "translation": [
+        0,
+        6
+      ],
+      "source_anchor": [
+        256,
+        90
+      ],
+      "atlas_anchor": [
+        256,
+        96
+      ],
+      "source_pixels": "RGBA copied losslessly; no black threshold"
+    }
+  }
+}

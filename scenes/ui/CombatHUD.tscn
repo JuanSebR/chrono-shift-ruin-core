@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/combat_hud.gd" id="1_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/TemporalLensHUD.tscn" id="2_lens_hud"]
+
+[node name="CombatHUD" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_hud")
+
+[node name="TemporalLensHUD" parent="." instance=ExtResource("2_lens_hud")]
+
+[node name="HealthAnchor" type="Control" parent="."]
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 222.0
+offset_bottom = 104.0
+mouse_filter = 2
+
+[node name="HealthFrame" type="TextureRect" parent="HealthAnchor"]
+offset_right = 272.0
+offset_bottom = 140.0
+scale = Vector2(0.7, 0.7)
+mouse_filter = 2
+
+[node name="LostEffect" type="TextureRect" parent="HealthAnchor"]
+offset_right = 272.0
+offset_bottom = 290.0
+scale = Vector2(0.5, 0.5)
+mouse_filter = 2
+visible = false
+
+[node name="HealthValue" type="Label" parent="HealthAnchor"]
+offset_left = 4.0
+offset_top = 82.0
+offset_right = 190.0
+offset_bottom = 104.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.85, 0.97, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+text = "INTEGRIDAD  3/3"
+
+[node name="Message" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 112.0
+offset_right = 950.0
+offset_bottom = 136.0
+mouse_filter = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2

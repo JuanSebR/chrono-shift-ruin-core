@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/temporal_lens_hud.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/temporal_lens/temporal_lens_owned_neutral.png" id="2_icon"]
+
+[node name="TemporalLensHUD" type="Control"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -148.0
+offset_top = 12.0
+offset_right = -16.0
+offset_bottom = 152.0
+grow_horizontal = 0
+pivot_offset = Vector2(66, 70)
+mouse_filter = 2
+texture_filter = 1
+script = ExtResource("1_script")
+
+[node name="LensIcon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 126.0
+offset_bottom = 116.0
+mouse_filter = 2
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Status" type="Label" parent="."]
+layout_mode = 0
+offset_top = 112.0
+offset_right = 132.0
+offset_bottom = 140.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.65, 0.88, 0.92, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 12
+text = "LENTE INSTALADA"
+horizontal_alignment = 1

@@ -1,0 +1,91 @@
+@startuml
+title Combate contra el Guardián del Núcleo — Sala 5
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 14
+skinparam sequence {
+  ArrowColor #333333
+  ActorBorderColor #222222
+  LifeLineBorderColor #555555
+  LifeLineBackgroundColor white
+  ParticipantBorderColor #222222
+  ParticipantBackgroundColor white
+  ParticipantFontColor #111111
+  GroupBorderColor #555555
+  GroupBackgroundColor white
+  GroupFontColor #111111
+}
+
+actor Jugador
+participant "Player" as Player
+control "Room5 /\nEncounterTrigger" as Room5
+control "CoreGuardian" as Boss
+control "Controladores de ataque\nVerticalBurst · HorizontalLaser\nDirectProjectile" as Attacks
+control "DimensionManager" as Dimension
+boundary "BossHUD" as HUD
+control "GameProgress\n<<autoload>>" as Progress
+
+Jugador -> Player: entrar en Sala 5
+Player -> Room5: body_entered(Player)
+activate Room5
+Room5 -> Room5: bloquear salida y estado INTRO
+Room5 -> Boss: play_diagnostic("starting")
+activate Boss
+Boss --> Room5: state_changed(IDLE)\n(fin de introducción)
+Room5 -> Room5: estado ACTIVE
+Room5 -> Boss: start_combat_cycle()
+Boss -> Boss: _begin_offense()\ncycle_elapsed = 0 s
+deactivate Room5
+
+loop mientras Player y Guardián tengan salud
+  Boss -> Attacks: attack_slot_ready(horizontal_laser)\na partir de 1 s, Guardián fuera de pantalla
+  Boss -> Attacks: attack_slot_ready(vertical_burst)
+  activate Attacks
+  Attacks -> Player: avisos y zonas de daño\nvertical: 1,4 s aviso; 0,75 s activo\nhorizontal: 0,75 s aviso; 0,5 s activo
+  Jugador -> Player: moverse y saltar para esquivar
+  Jugador -> Dimension: solicitar cambio dimensional
+  activate Dimension
+  Dimension -> Player: validar espacio y aplicar protección 0,16 s
+  Dimension --> Jugador: Presente ↔ Pasado / cambio rechazado
+  deactivate Dimension
+  Boss -> Attacks: cancelar láseres al iniciar regreso (40 s)
+  deactivate Attacks
+  Boss -> Boss: regresar y aterrizar (40–41,5 s)
+  Boss -> Attacks: attack_slot_ready(direct_projectile)\ntras aterrizar
+  activate Attacks
+  Attacks -> Player: aviso 0,6 s; proyectil directo a 900 u/s\nvuelo máximo 1,8 s
+  Jugador -> Player: saltar o cambiar dimensión para esquivar
+  Boss -> Attacks: cancelar antes de abrir el núcleo (44,25 s)
+  deactivate Attacks
+  Boss -> Boss: al llegar a 45 s: state = VULNERABLE\ncore_exposed = true por 6 s
+
+  loop durante la ventana vulnerable (máx. 6 s)
+    Jugador -> Player: atacar con espada cronal
+    Player -> Boss: take_damage(1)\nsolo en Presente y con núcleo expuesto
+    Boss -> Boss: health -= 1
+    Boss -> HUD: health_changed(health, 3)
+    activate HUD
+    HUD --> Jugador: actualizar barra y fase
+    deactivate HUD
+  end
+
+  alt health > 0 al cerrar la ventana
+    Boss -> Boss: CORE_CLOSING → _begin_offense()
+  else health == 0
+    Boss -> Boss: _confirm_defeat()\nstate = DEFEATED
+    Boss --> Room5: defeated
+    deactivate Boss
+    activate Room5
+    Room5 -> Room5: estado BOSS_DEFEATED
+    Room5 -> Progress: record_core_guardian_victory()
+    activate Progress
+    Progress -> Progress: core_guardian_defeated = true\nsave_progress()
+    Progress --> Room5: victoria persistida / reintento (máx. 2)
+    deactivate Progress
+    Room5 -> Room5: desbloquear salida tras animación y HUD
+    deactivate Room5
+  end
+end
+@enduml

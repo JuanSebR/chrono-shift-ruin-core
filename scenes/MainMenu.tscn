@@ -1,0 +1,277 @@
+[gd_scene load_steps=31 format=3]
+
+[ext_resource type="Script" path="res://MainMenu.gd" id="1_main_menu"]
+[ext_resource type="Texture2D" path="res://assets/inicio/fondo solo.jpg" id="2_background"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_007.png" id="3_frame_007"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_008.png" id="4_frame_008"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_009.png" id="5_frame_009"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_010.png" id="6_frame_010"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_011.png" id="7_frame_011"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_012.png" id="8_frame_012"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_013.png" id="9_frame_013"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_014.png" id="10_frame_014"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_015.png" id="11_frame_015"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_016.png" id="12_frame_016"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_017.png" id="13_frame_017"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_018.png" id="14_frame_018"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_019.png" id="15_frame_019"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_020.png" id="16_frame_020"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_021.png" id="17_frame_021"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_022.png" id="18_frame_022"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_023.png" id="19_frame_023"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_024.png" id="20_frame_024"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_025.png" id="21_frame_025"]
+[ext_resource type="Texture2D" path="res://assets/inicio/personaje_sin_fondo_estabilizado/core9_menu_idle_026.png" id="22_frame_026"]
+[ext_resource type="Texture2D" path="res://assets/inicio/logo-removebg-preview.png" id="7_logo"]
+[ext_resource type="Texture2D" path="res://assets/inicio/botones-removebg-preview.png" id="8_buttons"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_new_game"]
+atlas = ExtResource("8_buttons")
+region = Rect2(176, 33, 316, 104)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_options"]
+atlas = ExtResource("8_buttons")
+region = Rect2(176, 136, 316, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_quit"]
+atlas = ExtResource("8_buttons")
+region = Rect2(176, 240, 316, 102)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_logo"]
+atlas = ExtResource("7_logo")
+region = Rect2(48, 112, 570, 146)
+
+[sub_resource type="Animation" id="Animation_wind"]
+resource_name = "wind"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterLayer:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_frame_007"), ExtResource("4_frame_008"), ExtResource("5_frame_009"), ExtResource("6_frame_010"), ExtResource("7_frame_011"), ExtResource("8_frame_012"), ExtResource("9_frame_013"), ExtResource("10_frame_014"), ExtResource("11_frame_015"), ExtResource("12_frame_016"), ExtResource("13_frame_017"), ExtResource("14_frame_018"), ExtResource("15_frame_019"), ExtResource("16_frame_020"), ExtResource("17_frame_021"), ExtResource("18_frame_022"), ExtResource("19_frame_023"), ExtResource("20_frame_024"), ExtResource("21_frame_025"), ExtResource("22_frame_026")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wind"]
+_data = {
+&"wind": SubResource("Animation_wind")
+}
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_main_menu")
+
+[node name="Letterbox" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AspectRatio" type="AspectRatioContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+ratio = 1.790209
+stretch_mode = 2
+
+[node name="MenuCanvas" type="Control" parent="AspectRatio"]
+layout_mode = 2
+
+[node name="Background" type="TextureRect" parent="AspectRatio/MenuCanvas"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_background")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CharacterLayer" type="TextureRect" parent="AspectRatio/MenuCanvas"]
+layout_mode = 1
+offset_left = -64.52
+offset_top = -123.22
+offset_right = 959.48
+offset_bottom = 900.78
+scale = Vector2(0.915, 0.915)
+mouse_filter = 2
+texture = ExtResource("3_frame_007")
+expand_mode = 1
+stretch_mode = 0
+
+[node name="WindAnim" type="AnimationPlayer" parent="AspectRatio/MenuCanvas"]
+libraries = {
+&"": SubResource("AnimationLibrary_wind")
+}
+autoplay = "wind"
+
+[node name="Logo" type="TextureRect" parent="AspectRatio/MenuCanvas"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -534.0
+offset_top = 52.0
+offset_right = -4.0
+offset_bottom = 188.0
+grow_horizontal = 0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_logo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MenuButtons" type="VBoxContainer" parent="AspectRatio/MenuCanvas"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -479.0
+offset_top = 205.0
+offset_right = -59.0
+offset_bottom = 501.0
+grow_horizontal = 0
+theme_override_constants/separation = 16
+
+[node name="NewGameButton" type="TextureButton" parent="AspectRatio/MenuCanvas/MenuButtons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 88)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("AtlasTexture_new_game")
+texture_hover = SubResource("AtlasTexture_new_game")
+texture_pressed = SubResource("AtlasTexture_new_game")
+ignore_texture_size = true
+stretch_mode = 5
+focus_mode = 2
+
+[node name="OptionsButton" type="TextureButton" parent="AspectRatio/MenuCanvas/MenuButtons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 88)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("AtlasTexture_options")
+texture_hover = SubResource("AtlasTexture_options")
+texture_pressed = SubResource("AtlasTexture_options")
+ignore_texture_size = true
+stretch_mode = 5
+focus_mode = 2
+
+[node name="QuitButton" type="TextureButton" parent="AspectRatio/MenuCanvas/MenuButtons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 88)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("AtlasTexture_quit")
+texture_hover = SubResource("AtlasTexture_quit")
+texture_pressed = SubResource("AtlasTexture_quit")
+ignore_texture_size = true
+stretch_mode = 5
+focus_mode = 2
+
+[node name="OptionsPanel" type="ColorRect" parent="AspectRatio/MenuCanvas"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.85)
+
+[node name="OptionsBox" type="VBoxContainer" parent="AspectRatio/MenuCanvas/OptionsPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -175.0
+offset_right = 300.0
+offset_bottom = 175.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Title" type="Label" parent="AspectRatio/MenuCanvas/OptionsPanel/OptionsBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.96, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 40
+text = "CONFIGURACIÓN"
+horizontal_alignment = 1
+
+[node name="FullscreenRow" type="HBoxContainer" parent="AspectRatio/MenuCanvas/OptionsPanel/OptionsBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="FullscreenLabel" type="Label" parent="AspectRatio/MenuCanvas/OptionsPanel/OptionsBox/FullscreenRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "Pantalla Completa"
+vertical_alignment = 1
+
+[node name="FullscreenCheck" type="CheckButton" parent="AspectRatio/MenuCanvas/OptionsPanel/OptionsBox/FullscreenRow"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 2
+
+[node name="VolumeRow" type="HBoxContainer" parent="AspectRatio/MenuCanvas/OptionsPanel/OptionsBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="VolumeLabel" type="Label" parent="AspectRatio/MenuCanvas/OptionsPanel/OptionsBox/VolumeRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "Volumen General"
+vertical_alignment = 1
+
+[node name="VolumeSlider" type="HSlider" parent="AspectRatio/MenuCanvas/OptionsPanel/OptionsBox/VolumeRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 24)
+layout_mode = 2
+size_flags_vertical = 4
+focus_mode = 2
+max_value = 100.0
+step = 1.0
+value = 100.0
+
+[node name="Spacer" type="Control" parent="AspectRatio/MenuCanvas/OptionsPanel/OptionsBox"]
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="AspectRatio/MenuCanvas/OptionsPanel/OptionsBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "VOLVER"
+

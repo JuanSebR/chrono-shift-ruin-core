@@ -1,0 +1,47 @@
+@startuml
+title Casos de uso — Combate y cierre
+
+top to bottom direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 16
+skinparam ArrowFontSize 13
+skinparam ArrowColor #333333
+skinparam ActorBorderColor #222222
+skinparam ActorFontColor #111111
+skinparam UsecaseBorderColor #333333
+skinparam UsecaseBackgroundColor white
+skinparam UsecaseFontColor #111111
+skinparam RectangleBorderColor #222222
+skinparam RectangleFontColor #111111
+skinparam NoteBackgroundColor white
+skinparam NoteBorderColor #333333
+skinparam linetype ortho
+skinparam nodesep 64
+skinparam ranksep 80
+
+actor Jugador
+
+rectangle " " {
+  usecase "Enfrentar enemigos" as UC_Enemies
+  usecase "Combatir contra el\nGuardián del Núcleo" as UC_Boss
+  usecase "Acceder al cierre" as UC_End
+  usecase "Regresar al\nmenú principal" as UC_Menu
+
+  note right of UC_End
+    Precondición: Guardián derrotado
+    y victoria persistida.
+  end note
+
+  UC_Enemies -[hidden]right-> UC_End
+  UC_Enemies -[hidden]down-> UC_Boss
+  UC_Boss -[hidden]right-> UC_Menu
+}
+
+Jugador -- UC_Enemies
+Jugador -- UC_End
+Jugador -- UC_Menu
+
+UC_Boss -|> UC_Enemies
+@enduml

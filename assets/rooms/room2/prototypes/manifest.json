@@ -1,0 +1,82 @@
+{
+  "original_sha256": {
+    "dise\u00f1o general s2.1.png": "32e8400f4e7b9af3f4456c95cc56db2f2e07cba1293f6cf962c8f77352ae1255",
+    "fondo s2.1 v1.png": "591a7f08452455182be7a05afeece6f5f981e030ebd7f37fad0e936af294dd72",
+    "fondo s2.1 v2.png": "106759da9891967c58919ac0d48a8895880db7e7de85ccdf99836a2f55321992",
+    "midOverlay s2.1.png": "167af4c4f1c717279f2dab28d87d6d571637f89d70f9eec4b6bcc65aea611640",
+    "plataformas s2.1.png": "c1a6f8d235f13e7a6f7eb95c3073a2f227ea16f622f976a893aa8fd9f9a94a0e"
+  },
+  "B_parts": [
+    {
+      "name": "left_floor",
+      "source_rect": [
+        0,
+        545,
+        355,
+        941
+      ],
+      "destination": [
+        0,
+        520
+      ],
+      "scale": 1
+    },
+    {
+      "name": "bridge",
+      "source_rect": [
+        285,
+        540,
+        665,
+        941
+      ],
+      "destination": [
+        350,
+        515
+      ],
+      "scale": 1
+    },
+    {
+      "name": "right_floor",
+      "source_rect": [
+        635,
+        540,
+        1672,
+        941
+      ],
+      "destination": [
+        705,
+        515
+      ],
+      "scale": 1
+    },
+    {
+      "name": "left_ledge",
+      "source_rect": [
+        0,
+        0,
+        380,
+        540
+      ],
+      "destination": [
+        0,
+        -5
+      ],
+      "scale": 1
+    },
+    {
+      "name": "right_steps",
+      "source_rect": [
+        755,
+        0,
+        1672,
+        455
+      ],
+      "destination": [
+        850,
+        25
+      ],
+      "scale": 1
+    }
+  ],
+  "originals_unchanged": true
+}
