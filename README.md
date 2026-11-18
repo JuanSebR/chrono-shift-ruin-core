@@ -39,12 +39,12 @@ Los archivos de `.godot/` y `*.import` no se versionan porque Godot los reconstr
 
 ## Descargar y jugar en Windows
 
-1. Abre la sección **Releases** del repositorio.
-2. Descarga `Chrono-Shift_Ruin_Core_Windows_x86_64_Release.zip`.
+1. Abre la [Release pública v1.0.0](https://github.com/JuanSebR/chrono-shift-ruin-core/releases/tag/v1.0.0).
+2. Descarga [Chrono-Shift_Ruin_Core_Windows_x86_64_Release.zip](https://github.com/JuanSebR/chrono-shift-ruin-core/releases/download/v1.0.0/Chrono-Shift_Ruin_Core_Windows_x86_64_Release.zip).
 3. Extrae el ZIP completo.
 4. Ejecuta `Chrono-Shift_Ruin_Core.exe`.
 
-La distribución es Windows x86_64, lleva el PCK integrado y no requiere instalar Godot, Python ni .NET. El ejecutable no está firmado digitalmente. Los detalles de construcción, validación e integridad están en [docs/WINDOWS_RELEASE.md](docs/WINDOWS_RELEASE.md).
+La distribución es Windows x86_64, lleva el PCK integrado y no requiere instalar Godot, Python ni .NET. El ejecutable no está firmado digitalmente. SHA-256 del ZIP v1.0.0: `c4d8c354d758e1ee88b01784dba98e4912d167881d4f9798d4fc7986c7d42d71`. Los detalles de construcción, validación e integridad están en [docs/WINDOWS_RELEASE.md](docs/WINDOWS_RELEASE.md).
 
 ## Capturas
 
