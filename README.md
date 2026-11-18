@@ -97,6 +97,15 @@ Cada diagrama cuenta con PNG, SVG y fuente PlantUML editable en [`docs/diagramas
 
 **Proyecto académico:** *Chrono-Shift: Ruin Core*.
 
-El motor Godot se distribuye bajo licencia MIT; el ZIP de Windows incluye `GODOT_LICENSE.txt` y `THIRD_PARTY_NOTICES.txt`. Los pasos utilizados por el jugador se derivan de [“Footsteps w Clothes Loop” de qubodup](https://freesound.org/people/qubodup/sounds/816018/), basado a su vez en una grabación de jtnewlin13 y publicado bajo CC0.
+El motor Godot se distribuye bajo licencia MIT; el ZIP de Windows incluye `GODOT_LICENSE.txt`, `THIRD_PARTY_NOTICES.txt` y `AUDIO_CREDITS.txt`.
 
-El proyecto no declara una licencia general de reutilización. La pista musical global y el audio ambiental anterior no se incluyen en el repositorio público porque no se encontró documentación suficiente sobre su autoría o licencia. Permanecen únicamente en la copia local y en el ejecutable local ya construido; no se publicará ese ejecutable hasta aclarar esos derechos o sustituir el audio mediante una decisión autorizada.
+Los efectos de terceros utilizados se acreditan así:
+
+- Espada cronal: [“electric woosh” de HadaHector](https://freesound.org/people/HadaHector/sounds/446383/), CC BY 4.0. La obra incorpora [“WOOSH WOBBLE.wav” de SkyernAklea](https://freesound.org/people/SkyernAklea/sounds/439941/), también CC BY 4.0.
+- Aterrizaje: [“Footsteps-Tile-Stomp-08.wav” de DWOBoyle](https://freesound.org/people/DWOBoyle/sounds/458358/), CC BY 4.0.
+- Pasos: fragmentos derivados de [“Footsteps w Clothes Loop” de qubodup](https://freesound.org/people/qubodup/sounds/816018/), basado en “Footsteps on Tile” de jtnewlin13 y publicado bajo CC0 1.0.
+- El repositorio conserva `Enemy1_Sound.wav`, correspondiente a [“glitchy arcade sfx tense” de CogFireStudios](https://freesound.org/people/CogFireStudios/sounds/676817/), CC0 1.0. El runtime actual no referencia este archivo y la Release no lo empaqueta.
+
+La metodología, las siete fuentes candidatas y las correspondencias verificadas se documentan en [`docs/AUDIO_ATTRIBUTION_AUDIT.md`](docs/AUDIO_ATTRIBUTION_AUDIT.md).
+
+El proyecto no declara una licencia general de reutilización. La pista musical global y el audio ambiental anterior no se incluyen en el repositorio público ni en la Release preparada porque no se encontró documentación suficiente sobre su autoría o licencia. Los originales permanecen únicamente en la copia local.
